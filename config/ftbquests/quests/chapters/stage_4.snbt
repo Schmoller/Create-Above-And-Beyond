@@ -1,0 +1,847 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stage_4"
+	group: "331B6409EF6A7840"
+	icon: "chisel:futura/controller_purple"
+	id: "2FDA7DFC0C684E58"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["74CFD83C501C4952"]
+			description: [
+				"The next target will be Printed Silicon. As one of two known ways to obtain it, the assembly line will move items, fluids and energy in and out of the new and rather compact Invar Machinery."
+				""
+				"Much like previous chapters, a few new material sources or shipments are required first."
+			]
+			hide: true
+			icon: "kubejs:inductive_mechanism"
+			id: "4B80A801A5BE4A01"
+			rewards: [{
+				id: "01697377D270DD3C"
+				item: "create:builders_tea"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "0C162B64EE377FC8"
+				type: "checkmark"
+			}]
+			title: "Chapter 4 Start!"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1BF8F3CC8BEBB620"
+				"71D90A1E5D53FC0A"
+			]
+			description: ["For one last time, a line of Deployers will be needed to upgrade the previous mechanism to the next tier."]
+			icon: "kubejs:calculation_mechanism"
+			id: "6824055533465010"
+			subtitle: "Contraption 40-2"
+			tasks: [
+				{
+					consume_items: false
+					id: "34B7E632F7FD83DB"
+					item: "kubejs:calculation_mechanism"
+					type: "item"
+				}
+				{
+					id: "48B114D2C0F51F6D"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Ready to Deploy"
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6824055533465010"]
+			description: [
+				"Great work! The final assembly line is now complete. Your factory just entered the Digital Age."
+				""
+				"New options have opened up in the Overview. Whenever you are ready."
+			]
+			id: "28DAED70768C6A50"
+			rewards: [
+				{
+					count: 16
+					id: "40B14407CE6BAB56"
+					item: "kubejs:calculation_mechanism"
+					type: "item"
+				}
+				{
+					id: "1825E20FFD3BEBFF"
+					item: "ae2:fluix_crystal"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "3FD881040347300A"
+					item: "thermal:lead_plate"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: false
+				id: "3E607053D3B0C552"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			title: "Chapter 4 Complete!"
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4B80A801A5BE4A01"]
+			description: ["A new Shipment of Sand should be scheduled, for it is significantly rich in silicon."]
+			hide_dependency_lines: true
+			icon: "minecraft:sand"
+			id: "22202C87352242D6"
+			subtitle: "Contraption 31-1"
+			tasks: [
+				{
+					consume_items: false
+					id: "54D2F2F87424AB45"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "58353DEAB0670141"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Sand Delivery"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["22202C87352242D6"]
+			description: [
+				"First, the raw blocks are washed and refined into small orbs of wet sand."
+				""
+				"Since they could easily collapse, they should never be stacked on top of another. The inductive Fluid Encapsulator should have the necessary precision to generate these reliably."
+			]
+			icon: "kubejs:sand_ball"
+			id: "42F1A649D86DB86D"
+			subtitle: "Contraption 31-2"
+			tasks: [
+				{
+					consume_items: false
+					id: "05FFE255DDB4E66F"
+					item: "kubejs:sand_ball"
+					type: "item"
+				}
+				{
+					id: "36183F0BBDAA8DB8"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Ball o' Sand"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["42F1A649D86DB86D"]
+			description: ["Sifting for Coarse Sand creates a byproduct relevant for further refining the silicon compound."]
+			icon: "kubejs:fine_sand_bucket"
+			id: "4412F3B2827606E4"
+			shape: "circle"
+			tasks: [{
+				id: "5C23F9DBF4F2F484"
+				type: "checkmark"
+			}]
+			title: "Liquid Sand"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["42F1A649D86DB86D"]
+			description: ["Rolling the sand ball over an item drain reveals the larger chunks contained within."]
+			icon: "kubejs:rough_sand"
+			id: "0F5AA5DF001DCDF5"
+			subtitle: "Contraption 31-3"
+			tasks: [
+				{
+					consume_items: false
+					id: "006110328A2D022F"
+					item: "kubejs:rough_sand"
+					type: "item"
+				}
+				{
+					id: "589AB5A61CD95E2F"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Coarse Sand"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"60A8B4C736CE3226"
+				"0F5AA5DF001DCDF5"
+			]
+			description: ["Enriching coarse sand with earth charges creates Sand Crystals. Not much more processing is left until the Silicon content reaches a state usable for circuits."]
+			icon: "kubejs:purified_sand"
+			id: "343050A40A3AB1F0"
+			subtitle: "Contraption 33-3"
+			tasks: [
+				{
+					consume_items: false
+					id: "76715E399222E329"
+					item: "kubejs:purified_sand"
+					type: "item"
+				}
+				{
+					id: "2BE9DD7F346679E2"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Crystalline Sand"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["46820FBDDDEE491E"]
+			description: ["A Pyrolisation process is not strictly required for Charcoal, but the increased yield makes it worthwhile if the wood supply is limited."]
+			icon: "minecraft:charcoal"
+			id: "3249CD08992F2BCD"
+			subtitle: "Contraption 34-2"
+			tasks: [
+				{
+					consume_items: false
+					id: "700F644CCBEBCA5A"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+				{
+					id: "760709B05A0FEF11"
+					type: "checkmark"
+				}
+			]
+			title: "Pyrolyzer Round I"
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3249CD08992F2BCD"]
+			description: ["In a secondary, more lengthy pyrolisation process, Coal Coke is formed. An ideal material for both refining Silicon and to provide heat as Solid Fuel."]
+			icon: "thermal:coal_coke"
+			id: "1A383F96B312D1B8"
+			subtitle: "Contraption 34-3"
+			tasks: [
+				{
+					consume_items: false
+					id: "7AFFEF4014CE671C"
+					item: "thermal:coal_coke"
+					type: "item"
+				}
+				{
+					id: "4960B920CCF3C186"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Pyrolyzer Round II"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1A383F96B312D1B8"]
+			description: ["Using Mechanical Saws and Water, the coke can to be cut up into chunks in order to become a more effective catalyst."]
+			icon: "kubejs:coke_chunk"
+			id: "16F920C2AF2FA2E0"
+			subtitle: "Contraption 35"
+			tasks: [
+				{
+					consume_items: false
+					id: "36A367A143AD6175"
+					item: "kubejs:coke_chunk"
+					type: "item"
+				}
+				{
+					id: "44D36B403AA26E97"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Controlled Cuts"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"343050A40A3AB1F0"
+				"4412F3B2827606E4"
+				"16F920C2AF2FA2E0"
+			]
+			description: ["The process of refining silicon requires a blend of Sand Crystals, Fine Sand and the Carbon Catalyst."]
+			icon: "kubejs:silicon_compound"
+			id: "2268AFAF6E9AB5E2"
+			subtitle: "Contraption 36"
+			tasks: [
+				{
+					consume_items: false
+					id: "7824435744C12C18"
+					item: "kubejs:silicon_compound"
+					type: "item"
+				}
+				{
+					id: "2F239D4D9BB9B47A"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "The Merge"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5799B4124EE20DB1"]
+			description: ["Compact enough powder back together to create the highly reactive Earth Charge."]
+			icon: "thermal:earth_charge"
+			id: "60A8B4C736CE3226"
+			subtitle: "Contraption 33-2"
+			tasks: [
+				{
+					consume_items: false
+					id: "2C3C495C9B18005A"
+					item: "thermal:earth_charge"
+					type: "item"
+				}
+				{
+					id: "21545C0F55D9D8C8"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Concentrated Heat"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6C4CB8F616A9C3DF"]
+			description: ["Before it is ready for processing, the basalz essence needs a bit of refinement. "]
+			icon: "thermal:basalz_powder"
+			id: "5799B4124EE20DB1"
+			subtitle: "Contraption 33-1"
+			tasks: [
+				{
+					consume_items: false
+					id: "54F29099D9D81837"
+					item: "thermal:basalz_powder"
+					type: "item"
+				}
+				{
+					id: "05969082F437FCA9"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Basalz Mill"
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B602ED47A0195A4"]
+			description: [
+				"The first Alchemical Laser forms activated basalz essence from Basalt. This works only if a charged FluxoMagnet is present alongside it in the Hopper Cart."
+				""
+				"A reliable way to automate the Laser is to use two Cart Loaders, one to place a magnet, one to fill the remaining slots with Basalt Blocks. Move the cart under the laser and activate it. From here you can use one Unloader to extract the worn magnet as well as the desired output."
+			]
+			icon: "thermal:basalz_rod"
+			id: "6C4CB8F616A9C3DF"
+			subtitle: "Contraption 32-2"
+			tasks: [
+				{
+					consume_items: false
+					id: "712E7C4EEB4BCF55"
+					item: "thermal:basalz_rod"
+					type: "item"
+				}
+				{
+					id: "7DF47F688E5C795C"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Hot Laser"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4B80A801A5BE4A01"]
+			description: ["Basalt is an accessible type of rock that contains traces of inert Basalz Powder. For the purposes of this, a steady supply of them is needed."]
+			hide_dependency_lines: true
+			icon: "minecraft:basalt"
+			id: "0B602ED47A0195A4"
+			subtitle: "Contraption 32-1"
+			tasks: [
+				{
+					consume_items: false
+					id: "4649973A51C977D9"
+					item: "minecraft:basalt"
+					type: "item"
+				}
+				{
+					id: "738E569981496B56"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Modern Cobblegen"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0B602ED47A0195A4"]
+			description: [
+				"In order for the basalz essence to form, the FluxoMagnet present in the cart has to be charged."
+				""
+				"Therefore, the contraption will have to route the magnets from the cart unloader through an Energetic Infuser before passing it back into the circuit."
+			]
+			icon: {
+				Count: 1b
+				id: "thermal:flux_magnet"
+				tag: { }
+			}
+			id: "58B534C4AEB4139D"
+			subtitle: "Contraption 32-3"
+			tasks: [
+				{
+					consume_items: false
+					id: "7538F2E8CFAF69F6"
+					item: {
+						Count: 1b
+						id: "thermal:flux_magnet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "11A074DF1CA99AD3"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Flux Charger"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4B80A801A5BE4A01"]
+			description: ["New Invar Technology makes forming snowballs out of Water quite a simple process. Perhaps we should set aside a few for our next unannounced visitor.."]
+			hide_dependency_lines: true
+			icon: "minecraft:snowball"
+			id: "4B34B52092BA32BE"
+			subtitle: "Contraption 37"
+			tasks: [
+				{
+					consume_items: false
+					id: "56F4F1F21FE5FB17"
+					item: "minecraft:snowball"
+					type: "item"
+				}
+				{
+					id: "193D8F8FEC7F864B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Snowball Machine"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4B34B52092BA32BE"]
+			description: [
+				"In order for the blizz essence to form, the Entropy Manipulator present in the cart has to be charged."
+				""
+				"Ensure the charge in it restored before its next use."
+			]
+			icon: "ae2:entropy_manipulator"
+			id: "6D1519B746E032FB"
+			subtitle: "Contraption 38-2"
+			tasks: [
+				{
+					consume_items: false
+					id: "641183133CA49CCA"
+					item: "ae2:entropy_manipulator"
+					type: "item"
+				}
+				{
+					id: "49EAB67814570219"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Entropy Charger"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4B34B52092BA32BE"]
+			description: [
+				"The second Alchemical Laser forms activated blizz essence from Snowballs. This works only if a charged Entropy Manipulator is present alongside it in the Hopper Cart."
+				""
+				"Your automation strategy from Contraption 32 will perform just as effective here."
+			]
+			icon: "thermal:blizz_rod"
+			id: "0AE7FAEBD5F86D9C"
+			subtitle: "Contraption 38-1"
+			tasks: [
+				{
+					consume_items: false
+					id: "11B1248ECFCD2F26"
+					item: "thermal:blizz_rod"
+					type: "item"
+				}
+				{
+					id: "518D5675C9D1757D"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Cool Laser"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0AE7FAEBD5F86D9C"]
+			description: ["Just like earlier, the essence becomes usable only after a bit of refinement."]
+			icon: "thermal:blizz_powder"
+			id: "01B0A6236A5073D1"
+			subtitle: "Contraption 39-1"
+			tasks: [
+				{
+					consume_items: false
+					id: "7EA6D73F7A49EBAF"
+					item: "thermal:blizz_powder"
+					type: "item"
+				}
+				{
+					id: "5CA556BB4614DD06"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Blizz Mill"
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["01B0A6236A5073D1"]
+			description: ["Compact enough powder back together to create the highly reactive Ice Charge."]
+			icon: "thermal:ice_charge"
+			id: "4732465116D723EE"
+			subtitle: "Contraption 39-2"
+			tasks: [
+				{
+					consume_items: false
+					id: "3DFF735C19CE82A5"
+					item: "thermal:ice_charge"
+					type: "item"
+				}
+				{
+					id: "220B89A9B897FA67"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Concentrated Cold"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"2268AFAF6E9AB5E2"
+				"4732465116D723EE"
+			]
+			description: ["One final pass in the Induction Smelter now produces a chunk of high-quality Silicon."]
+			icon: "ae2:silicon"
+			id: "067C5FDA4709F195"
+			subtitle: "Contraption 39-3"
+			tasks: [
+				{
+					consume_items: false
+					id: "263459FBEC9F9868"
+					item: "ae2:silicon"
+					type: "item"
+				}
+				{
+					id: "57D267DD10A22D32"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Final Induction"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"067C5FDA4709F195"
+				"4B19B6EAD511378D"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Use Deployers to create a circuit base out of silicon. The required Press can be located at the center of Sky Stone Meteors."]
+			icon: "ae2:printed_silicon"
+			id: "71D90A1E5D53FC0A"
+			subtitle: "Contraption 40-1"
+			tasks: [
+				{
+					consume_items: false
+					id: "12C1BB8D09D664B4"
+					item: "ae2:printed_silicon"
+					type: "item"
+				}
+				{
+					id: "20B36555F58C4DB1"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Circuit Stamper"
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3B431AAADE8845FA"]
+			description: ["The Secret path has been discovered and pursued. From here, getting the Calculation Mechanism will be trivial."]
+			disable_toast: true
+			hide: true
+			icon: "kubejs:substrate_silicon"
+			id: "0CE88FEA070DC46C"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				icon: "kubejs:substrate_chaos"
+				id: "5B4F2E2F7BDEA6A0"
+				stat: "minecraft:play_one_minute"
+				title: "Complete Chapter 4a"
+				type: "stat"
+				value: 1
+			}]
+			title: "Secrets uncovered"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4B80A801A5BE4A01"]
+			description: [
+				"A central role in this age of technology is played by the Alchemical Laser."
+				""
+				"It usually involves converting one material into another, using a high-energy beam and a catalyst or tool of some kind."
+				""
+				"Inventors can familiarise themselves with the necessary machinery components via JEI or via entering"
+				""
+				" &6/c ponder kubejs:alchemical_laser"
+			]
+			icon: "projectred-illumination:lime_inverted_cage_light"
+			id: "6D26DAB7D0FF6E90"
+			rewards: [{
+				command: "/create ponder kubejs:alchemical_laser"
+				icon: {
+					Count: 1b
+					id: "occultism:book_of_calling_djinni_manage_machine"
+					tag: {
+						spiritName: "Rayarces"
+					}
+				}
+				id: "14F213F493035F9B"
+				team_reward: false
+				title: "Open Ponder Scene"
+				type: "command"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "16897A4EF323B02E"
+				type: "checkmark"
+			}]
+			title: "The Alchemical Laser"
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4B80A801A5BE4A01"]
+			description: ["It'll be good to order a Wood supply to this location. Aside from Silicon it can contribute to this assembly line for some other useful products."]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_log"
+			id: "46820FBDDDEE491E"
+			shape: "square"
+			subtitle: "Contraption 34-1"
+			tasks: [
+				{
+					consume_items: false
+					icon: "minecraft:oak_log"
+					id: "0AA0DEB1A87DA675"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any Wooden Log"
+					type: "item"
+				}
+				{
+					id: "72BA1D3BD545CBE6"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Wood Delivery"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["71D90A1E5D53FC0A"]
+			description: [
+				"The installation process of Calculation Mechanisms can be facilitated by a Flash Drive."
+				"The precious Cobalt required can be found in the Nether. "
+			]
+			hide_dependency_lines: true
+			id: "1BF8F3CC8BEBB620"
+			shape: "circle"
+			tasks: [{
+				consume_items: false
+				id: "1CC8A01100CE4AE3"
+				item: {
+					Count: 1b
+					id: "kubejs:flash_drive"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Arming the Deployer IV"
+			x: -0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0CE88FEA070DC46C"]
+			description: ["Separate the Silicon from its jar using a Reagent Extractor."]
+			icon: "ae2:silicon"
+			id: "4B19B6EAD511378D"
+			subtitle: "Contraption 39-A"
+			tasks: [
+				{
+					consume_items: false
+					id: "6FCB9E7E2CC10348"
+					item: "ae2:silicon"
+					type: "item"
+				}
+				{
+					id: "0A4B691EF3CDC7A0"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Unboxing"
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3249CD08992F2BCD"]
+			description: ["Creosote is created as a by-product. It can be used as an additional Fuel Source."]
+			icon: "thermal:creosote_bucket"
+			id: "33674138F4866C18"
+			shape: "circle"
+			tasks: [{
+				id: "224ACB0727C6F84E"
+				type: "checkmark"
+			}]
+			title: "Coal Juice"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["28DAED70768C6A50"]
+			description: ["Additional Processors are required in creating logistical components of ME Technology. At some point some Semi-Automation should come into consideration."]
+			id: "24C48CFAAD71B230"
+			subtitle: "Contraption 41-1"
+			tasks: [
+				{
+					consume_items: false
+					id: "10D5C1E5071B1B53"
+					item: "ae2:printed_calculation_processor"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "32F50DF8BD6E3927"
+					item: "ae2:printed_logic_processor"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2E5AD5026FDB28CB"
+					item: "ae2:printed_engineering_processor"
+					type: "item"
+				}
+			]
+			title: "Express Circuitry I"
+			x: 3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["24C48CFAAD71B230"]
+			description: ["Assembling the Processors is not a trivial process. But it sure is fun to watch it work."]
+			id: "2B8F1D804107EB8C"
+			subtitle: "Contraption 41-2"
+			tasks: [
+				{
+					consume_items: false
+					id: "186FEC9FE047828F"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2DCA8F3CB7884170"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "75950A3A22C9DC8E"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			title: "Express Circuitry II"
+			x: 4.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4B80A801A5BE4A01"]
+			description: ["The upcoming Assembly Line will require a significant amount of flux energy to run. It is recommended to find a suitable generation method and to consider higher scales in planning should it become necessary later."]
+			icon: "thermal:dynamo_magmatic"
+			id: "13B197C90F9812C8"
+			shape: "circle"
+			tasks: [{
+				id: "4C687EF00A44ED1E"
+				type: "checkmark"
+			}]
+			title: "New Capacity"
+			x: -1.0d
+			y: -2.5d
+		}
+	]
+	title: "&f4&r Into the Box"
+}

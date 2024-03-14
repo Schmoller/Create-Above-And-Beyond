@@ -1,0 +1,1215 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "market"
+	group: "0810E42B2DD79973"
+	icon: "minecraft:chest"
+	id: "44F68408CAD025B8"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Your last resort in case the sundown beat you to it."]
+			icon: "minecraft:cyan_bed"
+			id: "5D17CB247942013A"
+			rewards: [{
+				id: "55EF0FE847AE3353"
+				item: "minecraft:cyan_bed"
+				type: "item"
+			}]
+			subtitle: "10 Silver"
+			tasks: [{
+				count: 10L
+				icon: { Count: 10b, id: "thermal:silver_coin" }
+				id: "0783860FB502A201"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Sleepless"
+			x: -9.5d
+			y: -1.5d
+		}
+		{
+			description: ["Aimlessly traversing the nether is just the worst. This wonderful gadget will point you in the correct direction at all times."]
+			icon: "create:blaze_burner"
+			id: "252B9DD5BFB8184A"
+			rewards: [{
+				id: "160328DECC54AD5A"
+				item: {
+					Count: 1b
+					id: "structurescompass:structures_compass"
+					tag: {
+						Structure: "minecraft:fortress"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "2 Gold"
+			tasks: [{
+				count: 2L
+				icon: { Count: 2b, id: "thermal:gold_coin" }
+				id: "5345AA8760A95127"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			title: "Fortress Locator"
+			x: -7.5d
+			y: 0.5d
+		}
+		{
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Kinetic Mechanisms&r."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "cb_microblock:diamond_saw"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 3s
+					}]
+					RepairCost: 0
+					display: {
+						Name: "{\"text\":\"Enchanted Saw\"}"
+					}
+				}
+			}
+			id: "4F953BACF4D1C151"
+			rewards: [{
+				id: "56DB21D18FB1FF64"
+				item: {
+					Count: 1b
+					id: "cb_microblock:diamond_saw"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 10s
+						}]
+						HideFlags: 1
+						RepairCost: 0
+						Unbreakable: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "5 Gold"
+			tasks: [
+				{
+					id: "4C77B71D0EC3B2EA"
+					item: {
+						Count: 1b
+						id: "cb_microblock:diamond_saw"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3EE8736C08EF80F4"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+			]
+			title: "Saw everything"
+			x: -8.5d
+			y: -6.5d
+		}
+		{
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms&r."]
+			icon: {
+				Count: 1b
+				id: "projectred-core:screwdriver"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "72CACE8F0E4701B1"
+			rewards: [{
+				id: "743730BBE32A0875"
+				item: {
+					Count: 1b
+					id: "projectred-core:screwdriver"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 10s
+						}]
+						HideFlags: 1
+						Unbreakable: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "7 Gold"
+			tasks: [
+				{
+					id: "1E25EB2883C9A960"
+					item: {
+						Count: 1b
+						id: "projectred-core:screwdriver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "74585BB7E80CF010"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+			]
+			title: "Never Screwed"
+			x: -7.0d
+			y: -6.5d
+		}
+		{
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Inductive Mechanisms&r."]
+			icon: {
+				Count: 1b
+				id: "kubejs:chromatic_resonator"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "43FC566E833BE834"
+			rewards: [{
+				id: "0F4C7BB4C0ECB4CC"
+				item: {
+					Count: 1b
+					id: "kubejs:chromatic_resonator"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 10s
+						}]
+						HideFlags: 1
+						Unbreakable: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Resonator\",\"color\":\"gold\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "9 Gold"
+			tasks: [
+				{
+					id: "36CBD54BCB068EB1"
+					item: {
+						Count: 1b
+						id: "kubejs:chromatic_resonator"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "5B31A98B9EFCCFAB"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+			]
+			title: "Magnetic Energetic"
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			description: [
+				"&6The Market&r gives you options to spend your money on a variety of fun and useful items and gadgets."
+				""
+				"Have a look around. I'm sure you'll find something of use."
+			]
+			icon: "minecraft:chest"
+			id: "0F870BEA235D662D"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "3929233A89B34A71"
+				type: "checkmark"
+			}]
+			title: "The Market"
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0F870BEA235D662D"]
+			description: ["Here you can exchange a Gold Coin back to a Stack of Silver."]
+			icon: { Count: 16b, id: "thermal:silver_coin" }
+			id: "5326F6482C45D22A"
+			rewards: [
+				{
+					auto: "enabled"
+					count: 64
+					icon: { Count: 64b, id: "thermal:silver_coin" }
+					id: "26512E93CE404069"
+					item: "thermal:silver_coin"
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					icon: "thermal:machine_cycle_augment"
+					id: "6FA6A9A201CA27BE"
+					tags: ["reset"]
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			shape: "circle"
+			subtitle: "Gold -> Silver"
+			tasks: [{
+				id: "772821832EE93341"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			title: "Manual Exchange"
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0F870BEA235D662D"]
+			description: ["Some trades require you to hand in Gold Coins. These are worth a stack of Silver each."]
+			icon: { Count: 2b, id: "thermal:gold_coin" }
+			id: "1A566C74B1F7F050"
+			rewards: [
+				{
+					auto: "enabled"
+					id: "66BE3DDEC92812C4"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					icon: "thermal:machine_cycle_augment"
+					id: "6E78A95786CA5B28"
+					tags: ["reset"]
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			shape: "circle"
+			subtitle: "Silver -> Gold"
+			tasks: [{
+				count: 64L
+				icon: { Count: 64b, id: "thermal:silver_coin" }
+				id: "2387D852CA97AD1A"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Manual Exchange"
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			description: ["Sometimes you have to treat yourself and the co-workers to a nice meal."]
+			icon: "farmersdelight:steak_and_potatoes"
+			id: "09DC2E2BE2BE32F4"
+			rewards: [
+				{
+					count: 4
+					id: "05B553B614119E4A"
+					item: "farmersdelight:steak_and_potatoes"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "607D48921297C475"
+					item: "create:builders_tea"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "37DB33F821AD0AFE"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "51A8014ACD2153F6"
+					item: "farmersdelight:mixed_salad"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5CD27D9058DAFAAB"
+					item: "farmersdelight:sweet_berry_cookie"
+					type: "item"
+				}
+			]
+			subtitle: "10 Silver"
+			tasks: [{
+				count: 10L
+				icon: { Count: 10b, id: "thermal:silver_coin" }
+				id: "6235F365D702DF2B"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Corporate Dinner"
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			description: ["Early on it might help to import some dirt for base building."]
+			icon: "minecraft:dirt"
+			id: "4B01606CE7AF3121"
+			rewards: [
+				{
+					count: 64
+					id: "65597F84B69546EF"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "5ED9F3AFC25DD60E"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "1A8CE751232C7235"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+			]
+			subtitle: "15 Silver"
+			tasks: [{
+				count: 15L
+				icon: { Count: 15b, id: "thermal:silver_coin" }
+				id: "188BEC2BA245DB13"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Landfill Pickup"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			description: ["This mysterious fellow is offering a puzzle box with seemingly endless layers of depth. As an expert you know that this can only be finite. But what will await you at the bottom?"]
+			icon: {
+				Count: 1b
+				id: "minecraft:barrel"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 1s
+					}]
+				}
+			}
+			id: "09EA580B3D32FEEB"
+			rewards: [{
+				id: "1E10CE8D433DD70E"
+				item: {
+					Count: 1b
+					id: "minecraft:barrel"
+					tag: {
+						BlockEntityTag: {
+							Items: [
+								{
+									Count: 1b
+									Slot: 11b
+									id: "minecraft:paper"
+									tag: {
+										RepairCost: 0
+										display: {
+											Name: "{\"italic\": false, \"text\":\"Welcome, Challenger\"}"
+											bold: 0b
+										}
+									}
+								}
+								{
+									Count: 1b
+									Slot: 15b
+									id: "minecraft:barrel"
+									tag: {
+										BlockEntityTag: {
+											Items: [
+												{
+													Count: 1b
+													Slot: 3b
+													id: "minecraft:paper"
+													tag: {
+														RepairCost: 0
+														display: {
+															Name: "{\"italic\": false, \"text\":\"You'll have to unbox a few of these\"}"
+														}
+													}
+												}
+												{
+													Count: 1b
+													Slot: 23b
+													id: "minecraft:barrel"
+													tag: {
+														BlockEntityTag: {
+															Items: [
+																{
+																	Count: 1b
+																	Slot: 11b
+																	id: "minecraft:barrel"
+																	tag: {
+																		BlockEntityTag: {
+																			LootTable: "custom:chests/patience_1"
+																		}
+																		display: {
+																			Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
+																		}
+																	}
+																}
+																{
+																	Count: 1b
+																	Slot: 13b
+																	id: "minecraft:paper"
+																	tag: {
+																		RepairCost: 0
+																		display: {
+																			Name: "{\"italic\": false, \"text\":\"Good luck, see you at the bottom!\"}"
+																		}
+																	}
+																}
+																{
+																	Count: 1b
+																	Slot: 14b
+																	id: "minecraft:apple"
+																	tag: {
+																		display: {
+																			Name: "{\"italic\": false, \"text\":\"Motivational Apple\"}"
+																		}
+																	}
+																}
+															]
+															id: "minecraft:barrel"
+														}
+														display: {
+															Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
+														}
+													}
+												}
+											]
+											id: "minecraft:barrel"
+										}
+										display: {
+											Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
+										}
+									}
+								}
+							]
+							id: "minecraft:barrel"
+						}
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 1s
+						}]
+						HideFlags: 1
+						display: {
+							Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
+							Name: "{\"italic\":false,\"text\":\"Test of Patience\",\"color\":\"dark_purple\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "50 Silver"
+			tasks: [{
+				count: 50L
+				icon: { Count: 50b, id: "thermal:silver_coin" }
+				id: "3EA558277444F605"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Test of Patience"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			description: ["It's like a backpack but classy."]
+			icon: "minecraft:shulker_box"
+			id: "4FD46F841CCD59F8"
+			rewards: [
+				{
+					id: "7B8F11CCEDEBEBD6"
+					item: "minecraft:shulker_shell"
+					type: "item"
+				}
+				{
+					id: "364AA663BD7C519F"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					id: "440DF47BEF341626"
+					item: "minecraft:shulker_shell"
+					type: "item"
+				}
+			]
+			subtitle: "55 Silver"
+			tasks: [{
+				count: 55L
+				icon: { Count: 55b, id: "thermal:silver_coin" }
+				id: "709557A517B0143F"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Enderpack"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			description: ["\"I found this in an abandoned Workshop down the road; would you like to buy it?\""]
+			icon: {
+				Count: 1b
+				id: "tconstruct:creative_slot"
+				tag: {
+					slot: "upgrades"
+				}
+			}
+			id: "0CCF34BF1C5829AE"
+			rewards: [{
+				id: "37DBD1EF724A42D9"
+				item: {
+					Count: 1b
+					id: "minecraft:chest"
+					tag: {
+						BlockEntityTag: {
+							LootTable: "custom:chests/tinker"
+							id: "minecraft:chest"
+						}
+						display: {
+							Lore: ["{\"text\":\"Contains Loot\",\"color\":\"gray\",\"italic\":\"false\"}"]
+							Name: "{\"text\":\"Tinkerbox\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "25 Silver"
+			tasks: [{
+				count: 25L
+				icon: { Count: 25b, id: "thermal:silver_coin" }
+				id: "32ACF7B1C0BD9D97"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "The Tinkerbox"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			icon: "minecraft:totem_of_undying"
+			id: "6D9F2FBEB7CC5195"
+			rewards: [{
+				id: "6BCBFB22A82A5698"
+				item: "minecraft:totem_of_undying"
+				type: "item"
+			}]
+			subtitle: "60 Silver"
+			tasks: [{
+				count: 60L
+				icon: { Count: 60b, id: "thermal:silver_coin" }
+				id: "165B9A886A26BCC8"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "1-Up!"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			description: ["As seen on TV: This Magical Bell can detect unlit areas around it. Free shipping, bonus cursed campfire. What a Deal!"]
+			icon: "create:haunted_bell"
+			id: "4B52A04818075900"
+			rewards: [
+				{
+					id: "0257303302DADA1B"
+					item: "create:peculiar_bell"
+					type: "item"
+				}
+				{
+					id: "30D4605E06FF45B6"
+					item: "minecraft:soul_campfire"
+					type: "item"
+				}
+			]
+			subtitle: "45 Silver"
+			tasks: [{
+				count: 45L
+				icon: { Count: 35b, id: "thermal:silver_coin" }
+				id: "4FB1B4787D648565"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Where mob ?"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Calculation Mechanisms&r."]
+			icon: {
+				Count: 1b
+				id: "kubejs:flash_drive"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 10s
+					}]
+					display: {
+						Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
+					}
+				}
+			}
+			id: "00D6DD6AE8E3C014"
+			rewards: [{
+				id: "3EA7518063CBEA5B"
+				item: {
+					Count: 1b
+					id: "kubejs:flash_drive"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 10s
+						}]
+						HideFlags: 1
+						Unbreakable: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "11 Gold"
+			tasks: [
+				{
+					id: "561DF7A17B804B1F"
+					item: {
+						Count: 1b
+						id: "kubejs:flash_drive"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 11L
+					icon: { Count: 11b, id: "thermal:gold_coin" }
+					id: "04FA9389D991556D"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+			]
+			title: "Windows Update"
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			description: ["In case you are struggling to find all the right Circuit Casts, we will sell you additional dice rolls!"]
+			icon: "ae2:silicon_press"
+			id: "4BAC95CCC72369AD"
+			rewards: [
+				{
+					auto: "enabled"
+					id: "6F0FBFF6BA7C765A"
+					item: {
+						Count: 1b
+						id: "ae2:sky_stone_chest"
+						tag: {
+							BlockEntityTag: {
+								forward: "NORTH"
+								id: "ae2:sky_chest"
+								inv: {
+									item0: {
+										Count: 1b
+										id: "ae2:engineering_processor_press"
+									}
+									item1: {
+										Count: 1b
+										id: "ae2:calculation_processor_press"
+									}
+									item10: { }
+									item11: { }
+									item12: { }
+									item13: { }
+									item14: { }
+									item15: { }
+									item16: { }
+									item17: { }
+									item18: { }
+									item19: { }
+									item2: {
+										Count: 8b
+										id: "minecraft:gold_nugget"
+									}
+									item20: { }
+									item21: { }
+									item22: { }
+									item23: { }
+									item24: { }
+									item25: { }
+									item26: { }
+									item27: { }
+									item28: { }
+									item29: { }
+									item3: { }
+									item30: { }
+									item31: { }
+									item32: { }
+									item33: { }
+									item34: { }
+									item35: { }
+									item4: { }
+									item5: { }
+									item6: { }
+									item7: { }
+									item8: { }
+									item9: { }
+								}
+								up: "UP"
+							}
+							display: {
+								Lore: ["{\"text\":\"Contains Loot\",\"color\":\"gray\",\"italic\":\"false\"}"]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					icon: "thermal:machine_cycle_augment"
+					id: "264D6C3DDCB53B20"
+					tags: ["reset"]
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "2 Gold"
+			tasks: [{
+				count: 2L
+				icon: { Count: 3b, id: "thermal:gold_coin" }
+				id: "3D328A6D69E64EDA"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			title: "Press Express"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			description: ["Quack"]
+			icon: "minecraft:egg"
+			id: "6C00F2935F27C2AD"
+			rewards: [
+				{
+					auto: "enabled"
+					id: "500098FD4762A38F"
+					item: "exoticbirds:duck_spawn_egg"
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					icon: "thermal:machine_cycle_augment"
+					id: "79C8307ED8450347"
+					tags: ["reset"]
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "5 Silver"
+			tasks: [
+				{
+					count: 5L
+					icon: { Count: 5b, id: "thermal:silver_coin" }
+					id: "491FF95EFE8DCB67"
+					item: "thermal:silver_coin"
+					type: "item"
+				}
+				{
+					id: "5F58BA2473FD6DDA"
+					item: "rubber_duck:rubber_duck_item"
+					type: "item"
+				}
+			]
+			title: "Adopt a Duck"
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			description: ["Ah the joy of gambling."]
+			icon: "buddycards:mystery_pack"
+			id: "093FB7B7FEC6B886"
+			rewards: [
+				{
+					auto: "enabled"
+					id: "198DC310752F341F"
+					item: "buddycards:mystery_pack"
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					icon: "thermal:machine_cycle_augment"
+					id: "423CFA69329BD06E"
+					tags: ["reset"]
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			subtitle: "4 Gold"
+			tasks: [{
+				count: 4L
+				icon: { Count: 8b, id: "thermal:gold_coin" }
+				id: "30B16CC21946FE8E"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			title: "Expensive Hobby"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			description: ["A little testing selection of Thermal Weaponry."]
+			icon: "thermal:explosive_grenade"
+			id: "1CC29991D5F248CA"
+			rewards: [
+				{
+					count: 8
+					id: "1C6218230C6D71A0"
+					item: "thermal:explosive_grenade"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2D1A3F35DF8894FF"
+					item: "thermal:glowstone_grenade"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "093F58649A1E0DD6"
+					item: "thermal:ice_grenade"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "71BB0C93A4A7BC04"
+					item: "thermal:earth_grenade"
+					type: "item"
+				}
+			]
+			subtitle: "32 Silver"
+			tasks: [{
+				count: 32L
+				icon: { Count: 32b, id: "thermal:silver_coin" }
+				id: "2BF8F9E5070C6122"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Playing with Fire"
+			x: -12.5d
+			y: -1.5d
+		}
+		{
+			icon: "biomesoplenty:glowflower"
+			id: "42384DE39AA48976"
+			rewards: [
+				{
+					count: 8
+					id: "26A16DC998FEF595"
+					item: "farmersdelight:organic_compost"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "68B1199F9AE6B8FE"
+					item: "supplementaries:planter_rich"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5DEDD7BBA8A712AA"
+					item: "minecraft:flower_pot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "01196A417139EA21"
+					item: "supplementaries:flower_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "648B819C1B484A3F"
+					item: "minecraft:grass_block"
+					type: "item"
+				}
+			]
+			subtitle: "24 Silver"
+			tasks: [{
+				count: 24L
+				icon: { Count: 24b, id: "thermal:silver_coin" }
+				id: "05BB5DFA82280C0C"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Gardener's Starter Pack"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			icon: "minecraft:painting"
+			id: "61B040CD0832EFC0"
+			rewards: [
+				{
+					count: 16
+					id: "6375AD9CBA9276E0"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "72F57D408AD5C84A"
+					item: "minecraft:white_dye"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "3477DB4BB2003475"
+					item: "minecraft:yellow_dye"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "14FE738419E8578F"
+					item: "minecraft:black_dye"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "4D37425F17A9D45F"
+					item: "minecraft:blue_dye"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "4A3F1D820F9F1D26"
+					item: "minecraft:green_dye"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "4FFD3D4728DFBB16"
+					item: "minecraft:red_dye"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "0F0A7101131FFC08"
+					item: "minecraft:brown_dye"
+					type: "item"
+				}
+			]
+			subtitle: "24 Silver"
+			tasks: [{
+				count: 24L
+				icon: { Count: 24b, id: "thermal:silver_coin" }
+				id: "6404722100F1DEF7"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Painter's Starter Kit"
+			x: -9.5d
+			y: 1.5d
+		}
+		{
+			icon: "minecraft:minecart"
+			id: "117587D824D23D69"
+			rewards: [
+				{
+					count: 8
+					id: "738387AED344C59B"
+					item: "moreminecarts:powered_locking_rail"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4D33B3525FF09C68"
+					item: "minecraft:powered_rail"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0A214A7B25C331F6"
+					item: "minecraft:lever"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "3F0919FBED64778C"
+					item: "minecraft:rail"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "6D3CCD1BF0BFD7D6"
+					item: "minecraft:rail"
+					type: "item"
+				}
+			]
+			subtitle: "24 Silver"
+			tasks: [{
+				count: 24L
+				icon: { Count: 24b, id: "thermal:silver_coin" }
+				id: "06C835DB602D6F9F"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Railway Starter Pack"
+			x: -11.0d
+			y: 2.0d
+		}
+		{
+			description: ["Bedrock? How is this possible?"]
+			icon: "minecraft:bedrock"
+			id: "4E3CA739584CF5A3"
+			rewards: [{
+				id: "0BCFC6C5ED72C57C"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			subtitle: "32 Gold"
+			tasks: [{
+				count: 32L
+				icon: { Count: 32b, id: "thermal:gold_coin" }
+				id: "4090D8BF82115765"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			title: "Handle with Care"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			icon: "minecraft:tropical_fish"
+			id: "2D75D1864FB1EF75"
+			rewards: [
+				{
+					count: 4
+					id: "4961B49D79004571"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "054AEE030B3B81F6"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "29F276B6CDE4D6B5"
+					item: "minecraft:tropical_fish"
+					type: "item"
+				}
+				{
+					id: "53AA2AF7CA1EF02C"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "762BB57B2AFDB21F"
+					item: "minecraft:lead"
+					type: "item"
+				}
+			]
+			subtitle: "24 Silver"
+			tasks: [{
+				count: 24L
+				icon: { Count: 24b, id: "thermal:silver_coin" }
+				id: "3AA788B63B6A73EF"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Pet Owner's Starter Pack"
+			x: -13.0d
+			y: 0.0d
+		}
+		{
+			description: ["Not too stoked with your facade? Not a problem! Foliage solves everything."]
+			icon: "minecraft:oak_leaves"
+			id: "7D93DAB3E8ACF953"
+			rewards: [
+				{
+					count: 32
+					id: "1BA12452E9A090EC"
+					item: "biomesoplenty:flowering_oak_leaves"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "17FCE9D6C12A7822"
+					item: "minecraft:oak_leaves"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "51C2FE4F4F5057CC"
+					item: "minecraft:oak_leaves"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "5B801D097C1C538F"
+					item: "minecraft:spruce_leaves"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "5A23AFB90F20641B"
+					item: "minecraft:spruce_leaves"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1EC1E1486084AE66"
+					item: "minecraft:spruce_fence"
+					type: "item"
+				}
+			]
+			subtitle: "24 Silver"
+			tasks: [{
+				count: 24L
+				icon: { Count: 24b, id: "thermal:silver_coin" }
+				id: "06028A67C6DCCD00"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Instant Aesthetics"
+			x: 1.0d
+			y: 0.0d
+		}
+	]
+	title: "&a The Market"
+}

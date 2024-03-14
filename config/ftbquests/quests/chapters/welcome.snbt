@@ -1,0 +1,230 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: "biomesoplenty:wildflower"
+	id: "2EE5FBD9BD7C0265"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"This pack is for you."
+				"We hope you'll have a good time with it."
+				""
+			]
+			disable_toast: true
+			icon: "minecraft:gold_ore"
+			id: "09356B3BEF298E06"
+			rewards: [
+				{
+					id: "732AA66A91BA5C2B"
+					item: "biomesoplenty:wildflower"
+					type: "item"
+				}
+				{
+					id: "1EE277823ACFB886"
+					item: "minecraft:flower_pot"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "7670232EEE67FE29"
+				type: "checkmark"
+			}]
+			title: "Limitless Potential"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["09356B3BEF298E06"]
+			description: [
+				"The Questing system helps you with the primary customisations of the Modpack: &3Trades&r and the &6Progression of Tech&r"
+				""
+				"Completing Quests is not required to progress through the game."
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "minecraft:grass_block"
+			id: "69D55492A8F42A94"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0680791525813778"
+				type: "checkmark"
+			}]
+			title: "Completely Optional"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["69D55492A8F42A94"]
+			description: [
+				"Modpack Description:"
+				"The sandbox has been turned upside down - be ready to invent your best Create Contraptions yet. "
+				"&7(Or the first, if you are that brave!)"
+			]
+			disable_toast: true
+			icon: "create:cogwheel"
+			id: "407236D2B1D2257D"
+			rewards: [{
+				id: "3D4250D2B4800C1C"
+				item: "create:builders_tea"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "71C8186F3C7861F2"
+				type: "checkmark"
+			}]
+			title: "I"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["407236D2B1D2257D"]
+			description: [
+				"About fifty inventions lie between you and the moon. "
+				""
+				"Thousands of components will flow through the ever-growing sequence of your machines, providing the means to explore the next level of technology. "
+			]
+			disable_toast: true
+			icon: "create:large_cogwheel"
+			id: "2C7ADB6C11B918B1"
+			rewards: [{
+				id: "1BF6428DE53BC0FF"
+				item: "minecraft:cookie"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "36AF6DA4FFED8DC2"
+				type: "checkmark"
+			}]
+			title: "II"
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2C7ADB6C11B918B1"]
+			description: [
+				"Your entire factory will be put to the test as final products flow into the Data Centre, programming the Guidance computer of your Spaceship."
+				""
+				"Every step is different, some may even differ depending on the generation seed of your World."
+			]
+			disable_toast: true
+			icon: "kubejs:andesite_machine"
+			id: "1947C6CE179EBAC6"
+			rewards: [{
+				id: "4000DE1B90DA84CE"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "235CD0501F0E807C"
+				type: "checkmark"
+			}]
+			title: "III"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1947C6CE179EBAC6"]
+			description: [
+				"Tired of the grind?"
+				""
+				"Fund the operation with coin provided either from various errands, or your chosen professions. "
+				""
+				"Automatically ship produce from your farms or gather other players to aid you in your mission."
+				""
+				"Then you can purchase all manner of resources, artifacts and building blocks from the market, making your life just a little bit easier."
+			]
+			disable_toast: true
+			icon: "thermal:machine_press"
+			id: "58E38BA6D927409F"
+			rewards: [{
+				id: "583C35BA7A7B9004"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3A69DCA5AB7A36F2"
+				type: "checkmark"
+			}]
+			title: "IV"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["58E38BA6D927409F"]
+			description: [
+				"- &6The Bulletin Board&r provides means to earn currency for Trading."
+				"Here you can complete various errands or buy a profession permit for use in the Trading Machine."
+				""
+				"- &6The Market&r gives you options to spend your money on a variety of fun and useful items and gadgets."
+				""
+				"- &6Shipments&r are the Automated way to exchange coin for resources. Here you can buy Import Cards for use in the Trading Machine."
+				""
+				"- The &3Factory Guide&r provides useful information for the path of Technology and Automation. All challenges to be overcome have been neatly organised into chapters and tasks. It is entirely optional to follow this Guide."
+				""
+				"- The Section on &3Metallurgy&r gives an overview of the ways to turn your ore into refined metal. Different paths yield differently."
+				""
+				"- &3Lifesavers&r brings a spotlight to all those little utilities that can help you overcome the challenges set before you."
+			]
+			disable_toast: true
+			icon: {
+				Count: 1b
+				id: "occultism:book_of_calling_djinni_manage_machine"
+				tag: {
+					spiritName: "Marredaeus"
+				}
+			}
+			id: "00003FCBB33E62C4"
+			rewards: [{
+				id: "67E25D801A479C56"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "181383A364ECB6F1"
+				type: "checkmark"
+			}]
+			title: "Quest Content Overwiew"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["00003FCBB33E62C4"]
+			description: ["Now that you have an idea of what is new and what is not, settle in and start your Journey."]
+			disable_toast: true
+			icon: "minecraft:gold_block"
+			id: "31EDFA6D2FF86CB0"
+			rewards: [{
+				id: "27FC36C810ADB897"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "422CD0E2E5F2F158"
+				type: "checkmark"
+			}]
+			title: "Off you go"
+			x: 2.0d
+			y: -1.5d
+		}
+	]
+	title: "Welcome"
+}

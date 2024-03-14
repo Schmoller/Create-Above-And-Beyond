@@ -1,0 +1,17 @@
+.vscode/
+coremods/
+mods/
+crash-reports/
+kubejs/exported/
+local/
+logs/
+patchouli_books/
+saves/
+schematics/
+screenshots/
+XaeroWaypoints/
+XaeroWaypoints*/
+icon.png/
+patchouli_data.json
+rhino.local.properties
+*cache.json
