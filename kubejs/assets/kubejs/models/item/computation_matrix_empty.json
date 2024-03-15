@@ -1,0 +1,8 @@
+{
+	"parent": "kubejs:item/computation_matrix",
+	"textures": {
+		"0": "kubejs:block/empty_computation_matrix",
+		"1": "kubejs:block/empty_computation_matrix",
+		"particle": "kubejs:block/empty_computation_matrix"
+	}
+}

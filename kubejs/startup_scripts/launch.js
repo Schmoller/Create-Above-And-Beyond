@@ -56,21 +56,18 @@ StartupEvents.registry('item', event => {
 	mechanism('Abstruse', "RARE")
 	mechanism('Calculation', "RARE")
 
-	let slime_types = ["Earth", "Sky", "Ender"]
-	let slime_colours = [0x8FDB84, 0x00F9DE, 0xAC2EFC]
+	event.create('torchflower_petal').texture('kubejs:item/torchflower_petal').displayName('Torchflower Petal');
+	event.create('pitcher_plant_petal').texture('kubejs:item/pitcher_plant_petal').displayName('Pitcher Plant Petal');
+	
+	event.create(`torchflower_paste`)
+		.color(0, 0xF6B927)
+		.texture("kubejs:item/ground_slimy_fern")
+		.displayName(`Torchflower Blend`);
 
-	for (let i = 0; i < slime_types.length; i++) {
-		let name = slime_types[i]
-		let id = name.toLowerCase()
-		event.create(`${id}_slimy_fern_leaf`)
-			.color(0, slime_colours[i])
-			.texture("kubejs:item/slimy_fern_leaf")
-			.displayName(`Slimy Fern Leaf`)
-		event.create(`${id}_slime_fern_paste`)
-			.color(0, slime_colours[i])
-			.texture("kubejs:item/ground_slimy_fern")
-			.displayName(`Slimy Fern Blend`)
-	}
+	event.create(`pitcher_plant_paste`)
+		.color(0, 0x9585E6)
+		.texture("kubejs:item/ground_slimy_fern")
+		.displayName(`Pitcher Plant Blend`);
 
 	// Misc / Integration
 	event.create('pipe_module_utility').texture("kubejs:item/pipe_module_utility").displayName('Utility Pipe Module')
@@ -106,7 +103,17 @@ StartupEvents.registry('item', event => {
 	event.create('minus_cast').texture("kubejs:item/minus_cast").displayName('Operator Cast (-)').unstackable()
 	event.create('multiply_cast').texture("kubejs:item/multiply_cast").displayName('Operator Cast (x)').unstackable()
 	event.create('divide_cast').texture("kubejs:item/divide_cast").displayName('Operator Cast (/)').unstackable()
+	event.create('three_cast_filled').texture("kubejs:item/three_cast_filled").displayName('Filled Integer Cast (3)').unstackable()
+	event.create('eight_cast_filled').texture("kubejs:item/eight_cast_filled").displayName('Filled Integer Cast (8)').unstackable()
+	event.create('plus_cast_filled').texture("kubejs:item/plus_cast_filled").displayName('Filled Operator Cast (+)').unstackable()
+	event.create('minus_cast_filled').texture("kubejs:item/minus_cast_filled").displayName('Filled Operator Cast (-)').unstackable()
+	event.create('multiply_cast_filled').texture("kubejs:item/multiply_cast_filled").displayName('Filled Operator Cast (x)').unstackable()
+	event.create('divide_cast_filled').texture("kubejs:item/divide_cast_filled").displayName('Filled Operator Cast (/)').unstackable()
 	event.create('computation_matrix').parentModel("kubejs:item/computation_matrix").displayName('Computation Matrix').rarity("UNCOMMON").unstackable()
+	event.create('empty_computation_matrix').parentModel("kubejs:item/computation_matrix_empty").displayName('Empty Computation Matrix').rarity("UNCOMMON").unstackable()
+	event.create('partial_computation_matrix').parentModel("kubejs:item/partial_computation_matrix").displayName('Incomplete Computation Matrix').rarity("UNCOMMON").unstackable()
+	event.create('incomplete_computation_matrix_1', 'create:sequenced_assembly').parentModel("kubejs:item/computation_matrix_empty").displayName('Incomplete Computation Matrix').rarity("UNCOMMON").unstackable()
+	event.create('incomplete_computation_matrix_2', 'create:sequenced_assembly').parentModel("kubejs:item/partial_computation_matrix").displayName('Incomplete Computation Matrix').rarity("UNCOMMON").unstackable()
 })
 
 StartupEvents.registry('block',  event => {

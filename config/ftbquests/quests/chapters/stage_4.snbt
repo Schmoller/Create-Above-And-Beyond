@@ -650,7 +650,7 @@
 				""
 				" &6/c ponder kubejs:alchemical_laser"
 			]
-			icon: "projectred-illumination:lime_inverted_cage_light"
+			icon: "createdeco:green_industrial_iron_lamp"
 			id: "6D26DAB7D0FF6E90"
 			rewards: [{
 				command: "/create ponder kubejs:alchemical_laser"

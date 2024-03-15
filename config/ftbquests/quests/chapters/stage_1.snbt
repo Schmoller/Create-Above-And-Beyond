@@ -128,14 +128,14 @@
 				"Since bedrock is blocking the space beneath, you'll have to find a way to collect the drops from other sides."
 			]
 			hide_dependency_lines: true
-			icon: "create:andesite_cobblestone"
+			icon: "minecraft:andesite"
 			id: "106C6DFDCB97327C"
 			subtitle: "Contraption 4"
 			tasks: [
 				{
 					consume_items: false
 					id: "5E14AA73F8E1AFE4"
-					item: "create:andesite_cobblestone"
+					item: "minecraft:andesite"
 					type: "item"
 				}
 				{

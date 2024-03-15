@@ -231,7 +231,7 @@
 				""
 				"With that, the role of this Factory Guide has been fulfilled. Enjoy building up your new Hi-Tech Empire, and we'll see you in the next modpack!"
 			]
-			icon: "advancedrocketry:moonturf"
+			icon: "ad_astra:moon_cobblestone"
 			id: "4F7A70041B67A348"
 			shape: "hexagon"
 			size: 2.0d
@@ -248,7 +248,7 @@
 				{
 					consume_items: false
 					id: "68543E92A6B517DC"
-					item: "advancedrocketry:moonturf"
+					item: "ad_astra:moon_cobblestone"
 					type: "item"
 				}
 			]

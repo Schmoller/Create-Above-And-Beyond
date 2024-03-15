@@ -56,7 +56,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["402F89CABF6BCDA4"]
+			dependencies: ["6F5A413CB239C0DE"]
 			description: ["For production of chromatic materials, a colour pigment is needed. It is up to you which colour dye should be automated for this purpose. The only exception is white dye."]
 			icon: "minecraft:rose_bush"
 			id: "27C191346BB14D9D"
@@ -523,7 +523,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Transmuting the green reactive blend requires very special heating conditions, only available on Campfires or Stoves."
+				"Transmuting the orange reactive blend requires very special heating conditions, only available on Campfires or Stoves."
 				""
 				"This Contraption will need the special ability to both place and collect items from these places."
 			]
@@ -578,7 +578,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Transmuting the purple reactive blend requires very special heating conditions, only available on Campfires or Stoves."
+				"Transmuting the blue reactive blend requires very special heating conditions, only available on Campfires or Stoves."
 				""
 				"This Contraption will need the special ability to both place and collect items from these places."
 			]
@@ -905,59 +905,22 @@
 			y: 9.0d
 		}
 		{
-			dependencies: [
-				"3D1EEB596FDBE4E7"
-				"016864AD0C9247B9"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"Transmuting the blue reactive blend requires very special heating conditions, only available on Campfires or Stoves."
-				""
-				"This Contraption will need the special ability to both place and collect items from these places."
-			]
-			icon: "minecraft:bone_meal"
-			id: "402F89CABF6BCDA4"
-			subtitle: "Contraption 22-4"
-			tasks: [
-				{
-					consume_items: false
-					id: "0B625314B34801AA"
-					item: "minecraft:bone_meal"
-					type: "item"
-				}
-				{
-					id: "4002627D52C3A616"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Cooking up some Fertiliser"
-			x: 1.5d
-			y: 7.0d
-		}
-		{
 			dependencies: ["38D19F4EC634F33B"]
-			description: ["Route the excess leaves into a crusher, in preparation for the upcoming magic trick."]
-			icon: "kubejs:sky_slime_fern_paste"
+			description: ["Route the excess petals into a crusher, in preparation for the upcoming magic trick."]
+			icon: "kubejs:pitcher_plant_paste"
 			id: "3D1EEB596FDBE4E7"
 			subtitle: "Contraption 22-1"
 			tasks: [
 				{
 					consume_items: false
 					id: "3EB8C2219D74126B"
-					item: "kubejs:ender_slime_fern_paste"
+					item: "kubejs:pitcher_plant_paste"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "4CB87BE063DACC5F"
-					item: "kubejs:earth_slime_fern_paste"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "1F0B0F9D72A6F611"
-					item: "kubejs:sky_slime_fern_paste"
+					item: "kubejs:torchflower_paste"
 					type: "item"
 				}
 				{
@@ -973,34 +936,28 @@
 		{
 			dependencies: ["01BE1A7FCE79C63D"]
 			description: [
-				"Slimy Ferns have the property of instant regeneration when exposed to Spirit Fire. Much like the Quartz Incubator in the other Factory, we can use this property to create a passive supply."
+				"Ancient plants have the property of instant regeneration when exposed to Spirit Fire. Much like the Quartz Incubator in the other Factory, we can use this property to create a passive supply."
 				""
-				"The cycle is simple: Cut the fern plant into halves using a Deployer, then throw one of the leaves into Spirit Fire. It is recommended to ensure that all colours of fern are duplicated at similar rates."
+				"The cycle is simple: Cut the plant into halves using a Deployer, then throw one of the petals into Spirit Fire. It is recommended to ensure that both plants are duplicated at similar rates."
 				""
 				"Create Spirit Fire by tossing a Demon's Dream Fruit on the floor and then setting a fire in its space."
 				""
-				"Oh, and keep a backup of each fern somewhere safe."
+				"Oh, and keep a backup of each plant somewhere safe."
 			]
-			icon: "kubejs:sky_slimy_fern_leaf"
+			icon: "kubejs:pitcher_plant_petal"
 			id: "38D19F4EC634F33B"
 			subtitle: "Contraption 21"
 			tasks: [
 				{
 					consume_items: false
 					id: "135871C95B811F71"
-					item: "kubejs:sky_slimy_fern_leaf"
+					item: "kubejs:torchflower_petal"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "315328866377A0DC"
-					item: "kubejs:ender_slimy_fern_leaf"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "65D5A32F475D78B6"
-					item: "kubejs:earth_slimy_fern_leaf"
+					item: "kubejs:pitcher_plant_petal"
 					type: "item"
 				}
 				{
@@ -1086,31 +1043,25 @@
 		{
 			dependencies: ["397232F676CB621B"]
 			description: [
-				"In order to produce Gunpowder, Bone Meal and Ender Dust, the peculiar 'slimy fern' can be used as an alternative to Monster farms."
+				"In order to produce Gunpowder and Ender Dust, the ancient plants can be used as an alternative to Monster farms."
 				""
-				"Roam the lands for a bit and look out for egregiously vibrant spots of colour in the vegetation. Don't forget to bring a pair of Shears."
+				"You will need to do some archeology to find these."
 			]
 			hide_dependency_lines: true
-			icon: "tconstruct:sky_slime_fern"
+			icon: "minecraft:pitcher_plant"
 			id: "01BE1A7FCE79C63D"
 			shape: "circle"
 			tasks: [
 				{
 					consume_items: false
 					id: "2967A771F32C223D"
-					item: "tconstruct:earth_slime_fern"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "2A559C5996DF8E69"
-					item: "tconstruct:sky_slime_fern"
+					item: "minecraft:torchflower"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "1EE76BAC230B9232"
-					item: "tconstruct:ender_slime_fern"
+					item: "minecraft:pitcher_plant"
 					type: "item"
 				}
 			]
@@ -1137,7 +1088,7 @@
 			description: [
 				"An automation alternative to the Spirit Cycle is to set up a Monster Spawner of some kind."
 				""
-				"Click the Checkmark to skip the Fern Duplication Contraption."
+				"Click the Checkmark to skip the Plant Duplication Contraption."
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:zombie_head"
@@ -1160,7 +1111,7 @@
 				""
 				"More concretely: When the output buffer exceeds 75%, stop producing items. Once it reaches below 25%, start the process up again. This prevents overflow and machines from spewing items everywhere."
 				""
-				"The Stockpile Switch is designed for this purpose exactly. "
+				"The Threshold Switch is designed for this purpose exactly. "
 			]
 			id: "472FB03D0E5A38D6"
 			rewards: [{
@@ -1198,6 +1149,33 @@
 			title: "Mechanical Auto Hammer"
 			x: 0.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["397232F676CB621B"]
+			description: [
+				"A source of bonemeal will be invaluable for the coming contraption."
+				"Whether from mobs, crops, or moss farms, you can't go wrong."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:bone_meal"
+			id: "6F5A413CB239C0DE"
+			subtitle: "Contraption 22-4"
+			tasks: [
+				{
+					consume_items: false
+					id: "1AA29D77A6979A8A"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "6426D862221005D5"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "A source of bonemeal"
+			x: 1.5d
+			y: 7.017857142857153d
 		}
 	]
 	title: "&f3&r The Catharsis"
