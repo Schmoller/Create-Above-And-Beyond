@@ -2,6 +2,8 @@
 
 JEIEvents.hideItems(event => {
 	event.hide('ae2:facade')
+	event.hide('kubejs:ponder_laser_lamp_on')
+	event.hide('kubejs:ponder_laser_lamp')
 	// event.hide(`#buddycards:cards`)
 })
 

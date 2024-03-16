@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "stage_4"
 	group: "331B6409EF6A7840"
-	icon: "chisel:futura/controller_purple"
+	icon: "ae2:controller"
 	id: "2FDA7DFC0C684E58"
 	order_index: 4
 	quest_links: [ ]

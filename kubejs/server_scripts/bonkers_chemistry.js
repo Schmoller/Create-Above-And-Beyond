@@ -1,4 +1,3 @@
-
 global.cachedSeed = undefined
 global.cachedAlchemyData = {}
 
@@ -36,26 +35,43 @@ function shuffle(array, random) {
     return array
 }
 
+/**
+ * 
+ * @param {Internal.Level} world 
+ * @param {number} x 
+ * @param {number} y 
+ * @param {number} z 
+ */
 function attackNearby(world, x, y, z) {
-    let aabb = AABB.CUBE.func_72317_d(x - .5, y + .5, z - .5).func_72321_a(-3, -3, -3).func_72321_a(3, 3, 3)
-    let list = world.minecraftWorld.func_217394_a(null, aabb, e => true)
+    let aabb = AABB.CUBE.move(x - .5, y + .5, z - .5).inflate(-3, -3, -3).inflate(3, 3, 3)
+    let list = world.getEntitiesWithin(aabb)
 
-    list.forEach(e => {
-        let entity = world.getEntity(e)
+    list.forEach(entity => {
         if (!entity.isLiving())
             return
-        entity.attack("magic", 6)
+        // FIXME: .attack throws error
+        // entity.attack("magic", 6)
     })
 }
 
+const randomClass = Java.loadClass('java.util.Random')
+
+/**
+ * 
+ * @param {Internal.Level} world 
+ * @param {Internal.BlockContainerJS} block 
+ * @param {Internal.Entity} entity 
+ * @param {Internal.BlockFace} face 
+ * @returns 
+ */
 function process(world, block, entity, face) {
 
     if (global.cachedSeed != world.getSeed()) {
         global.cachedSeed = world.getSeed()
-        let random = new java("java.util.Random")(world.getSeed())
+        let random = new randomClass(world.getSeed())
         let next = () => random.nextInt(6)
         let generateCode = () => [next(), next(), next(), next()]
-        for (cat = 0; cat < 7; cat++) {
+        for (let cat = 0; cat < 7; cat++) {
             global.cachedAlchemyData[cat] = {
                 code: generateCode(),
                 result: cat == 6 ? "kubejs:substrate_chaos" : global.substrates[6][cat].id,
@@ -88,7 +104,7 @@ function process(world, block, entity, face) {
         }
     }
 
-    let nbt = entity.getFullNBT()
+    let nbt = entity.getNbt()
     let items = nbt.Items
 
     // Laser Recipe
@@ -128,30 +144,34 @@ function process(world, block, entity, face) {
         if (validTool.id.startsWith(magnet)) {
             if (!toProcess.equals("minecraft:basalt"))
                 return
-            let energy = validTool.tag.func_74762_e("Energy") - 80 * processAmount
+            
+            let existingEnergy = validTool.tag.Energy || 0
+            let energy = existingEnergy - 80 * processAmount
             if (energy < 0)
                 return
-            validTool.tag.func_74768_a("Energy", energy)
+            validTool.tag.Energy = energy
             resultItem = "thermal:basalz_rod"
             particle = "flame"
         }
         if (validTool.id.startsWith(staff)) {
             if (!toProcess.equals("kubejs:smoke_mote"))
                 return
-            let energy = validTool.tag.func_74769_h("internalCurrentPower") - 40 * processAmount
+            let existingEnergy = validTool.tag.internalCurrentPower || 0
+            let energy = existingEnergy - 40 * processAmount
             if (energy < 0)
                 return
-            validTool.tag.func_74780_a("internalCurrentPower", energy)
+            validTool.tag.internalCurrentPower = energy
             resultItem = "thermal:blitz_rod"
             particle = "firework"
         }
         if (validTool.id.startsWith(entropy)) {
             if (!toProcess.equals("minecraft:snowball"))
                 return
-            let energy = validTool.tag.func_74769_h("internalCurrentPower") - 80 * processAmount
+            let existingEnergy = validTool.tag.internalCurrentPower || 0
+            let energy = existingEnergy - 80 * processAmount
             if (energy < 0)
                 return
-            validTool.tag.func_74780_a("internalCurrentPower", energy)
+            validTool.tag.internalCurrentPower = energy
             resultItem = "thermal:blizz_rod"
             particle = "spit"
         }
@@ -178,17 +198,19 @@ function process(world, block, entity, face) {
             if (resultCount <= 0)
                 continue
 
-            let resultItemNBT = utils.newMap();
-            resultItemNBT.put("Slot", i)
-            resultItemNBT.put("id", resultItem)
-            resultItemNBT.put("Count", Math.min(64, resultCount))
-            nbt.Items.add(actualIndex, resultItemNBT.toNBT())
+            let resultItemNBT = NBT.compoundTag()
+            
+            resultItemNBT.Slot = i;
+            resultItemNBT.id = resultItem;
+            resultItemNBT.Count = Math.min(64, resultCount);
+            nbt.Items.add(actualIndex, resultItemNBT);
+
             actualIndex++
 
             resultCount = resultCount - 64
         }
 
-        entity.setFullNBT(nbt)
+        entity.setNbt(nbt)
         return
     }
 
@@ -295,11 +317,11 @@ function process(world, block, entity, face) {
                     continue
             }
 
-            let resultItemNBT = utils.newMap();
-            resultItemNBT.put("Slot", i)
-            resultItemNBT.put("id", resultItems[itemIndex])
-            resultItemNBT.put("Count", Math.min(64, resultCounts[itemIndex]))
-            nbt.Items.add(actualIndex, resultItemNBT.toNBT())
+            let resultItemNBT = NBT.compoundTag()
+            resultItemNBT.Slot = i;
+            resultItemNBT.id = resultItems[itemIndex];
+            resultItemNBT.Count = Math.min(64, resultCounts[itemIndex]);
+            nbt.Items.add(actualIndex, resultItemNBT)
             actualIndex++
 
             resultCounts[itemIndex] = resultCounts[itemIndex] - 64
@@ -368,9 +390,9 @@ function process(world, block, entity, face) {
     let retain = -1
 
     trueFalse.forEach(exact => {
-        for (digit = 0; digit < 4; digit++) {
+        for (let digit = 0; digit < 4; digit++) {
             let guessed = unmatchedGuessedSet[digit]
-            for (digit2 = 0; digit2 < unmatchedCorrectSet.length; digit2++) {
+            for (let digit2 = 0; digit2 < unmatchedCorrectSet.length; digit2++) {
                 let correct = unmatchedCorrectSet[digit2]
                 if (correct != guessed)
                     continue
@@ -387,8 +409,7 @@ function process(world, block, entity, face) {
     })
 
     if (glowstoneAccellerator || redstoneAccellerator) {
-        let random = new java("java.util.Random")()
-        let shuffled = shuffle(Array(0, 1, 2, 3), random)
+        let shuffled = shuffle(Array(0, 1, 2, 3), Utils.getRandom())
         for (let i = 0; i < 4; i++) {
             let j = shuffled[i]
             if (glowstoneAccellerator && resultEval[j] == 2) {
@@ -459,99 +480,84 @@ function process(world, block, entity, face) {
         world.server.runCommandSilent(`/playsound minecraft:block.beacon.activate block @a ${entity.x} ${entity.y} ${entity.z} 0.95 1.5`)
     nbt.Items.clear()
 
-    let resultItemNBT = utils.newMap();
-    let resultItemTagNBT = utils.newMap();
-    let resultItemLoreNBT = utils.newMap();
-    let resultItemLoreList = utils.newList();
+    let resultItemNBT = NBT.compoundTag();
+    let resultItemTagNBT = NBT.compoundTag();
+    let resultItemLoreNBT = NBT.compoundTag();
+    let resultItemLoreList = NBT.listTag();
 
-    resultItemLoreList.add('{"text": "' + guessedString + '", "italic": false}')
-    resultItemLoreNBT.put("Lore", resultItemLoreList.toNBT())
-    resultItemTagNBT.put("display", resultItemLoreNBT.toNBT())
+    let loreNBT = NBT.compoundTag();
+    loreNBT.text = guessedString;
+    loreNBT.italic = false;
 
-    resultItemNBT.put("Slot", 0)
-    resultItemNBT.put("id", resultItem)
-    resultItemNBT.put("Count", 1)
+    resultItemLoreList.push(loreNBT)
+    resultItemLoreNBT.put("Lore", resultItemLoreList)
+    resultItemTagNBT.put("display", resultItemLoreNBT)
+
+    resultItemNBT.Slot = 0;
+    resultItemNBT.id = resultItem;
+    resultItemNBT.Count = 1;
     if (errorId != -1)
-        resultItemNBT.put("tag", resultItemTagNBT.toNBT())
-    nbt.Items.add(0, resultItemNBT.toNBT())
+        resultItemNBT.put("tag", resultItemTagNBT)
+    nbt.Items.add(0, resultItemNBT)
 
     if (retain != -1) {
-        resultItemNBT = utils.newMap();
-        resultItemNBT.put("Slot", 1)
-        resultItemNBT.put("id", reagents[retain])
-        resultItemNBT.put("Count", 1)
-        nbt.Items.add(1, resultItemNBT.toNBT())
+        resultItemNBT = NBT.compoundTag();
+        resultItemNBT.Slot = 1;
+        resultItemNBT.id = reagents[retain];
+        resultItemNBT.Count = 1;
+        nbt.Items.add(1, resultItemNBT)
     }
 
-    entity.setFullNBT(nbt)
-
+    entity.setNbt(nbt)
 }
 
 BlockEvents.leftClicked(event => {
-
     let block = event.getBlock()
     let tags = block.getTags()
 
     if (!block.id.startsWith("thermal:machine_frame"))
         return
 
-    let world = event.getWorld()
+    let world = event.getLevel()
     let clickedFace = event.getFacing()
     let item = event.getItem()
     let player = event.getPlayer()
 
     if (!item.empty)
         return
-    if (player.name != "Deployer")
-        return
-
+    
+    if (!player.isFake())
+        return;
     let sound = false
 
     Direction.ALL.values().forEach(face => {
         if (clickedFace == face)
             return
         let laser = block.offset(face)
-        if (!laser.id.startsWith("cb_multipart:multipart"))
+        if (!laser.id.startsWith("create_deco:") && !laser.id.endsWith('_lamp'))
             return
-        let te = laser.getEntity()
-        if (!te)
+        
+        if (laser.blockState.getValue(BlockProperties.LIT) == false)
             return
-        let nbt = utils.newMap().toNBT()
-        te.func_189515_b(nbt)
-        let parts = nbt.func_150295_c("parts", 10)
-        let valid = false
-        let color = ""
-        if (parts) {
-            parts.forEach(part => {
-                if (!part.id.endsWith("_cage_light"))
-                    return
-                if (part.pow == part.id.contains("inverted"))
-                    return
-                if (part.side != face.getOpposite().ordinal())
-                    return
-                valid = true
-                color = part.id.replace("_inverted", "").replace("_cage_light", "").replace("projectred-illumination:", "")
-            })
-        }
-
-        if (!valid)
-            return
+        
+        let color = laser.id.split(':')[1].split('_')[0]
 
         let x = laser.x
         let y = laser.y
         let z = laser.z
-        let aabb = AABB.CUBE.func_72317_d(x, y, z).func_72321_a(4 * face.x, 4 * face.y, 4 * face.z)
-        let list = world.minecraftWorld.func_217394_a(null, aabb, e => true)
+        let aabb = AABB.CUBE.move(x, y, z).inflate(4 * face.x, 4 * face.y, 4 * face.z)
+        let list = world.getEntitiesWithin(aabb);
 
-        list.forEach(e => {
-            let entity = world.getEntity(e)
+        list.forEach(entity => {
             if (!entity.type.equals("minecraft:hopper_minecart")) {
-                if (!entity.type.equals("minecraft:item"))
-                    entity.attack("magic", 6)
+                // if (!entity.type.equals("minecraft:item"))
+                // FIXME: .attack throws error
+                    // entity.attack("magic", 6)
                 return
             }
             process(world, block, entity, face)
-            entity.attack("magic", 1)
+            // FIXME: .attack throws error
+            // entity.attack("magic", 1)
         })
 
         sound = true
@@ -573,7 +579,7 @@ BlockEvents.leftClicked(event => {
 ItemEvents.pickedUp(event => {
     let entity = event.getEntity()
     if (event.getItem().id == 'kubejs:missingno') {
-        event.getWorld().getBlock(entity.x, entity.y, entity.z)
+        event.getLevel().getBlock(entity.x, entity.y, entity.z)
             .createExplosion()
             .causesFire(true)
             .damagesTerrain(true)

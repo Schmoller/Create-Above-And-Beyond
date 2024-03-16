@@ -194,6 +194,7 @@ StartupEvents.registry('block',  event => {
 		event.create(`substrate_${id}`)
 			.soundType('glass')
 			.mapColor('glass')
+			// FIXME: Colour is not working
 			.color(0, c1)
 			.color(1, c2)
 			.hardness(0.1)
