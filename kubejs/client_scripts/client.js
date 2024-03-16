@@ -85,7 +85,7 @@ ItemEvents.tooltip(tooltip => {
 	not_consumed('cb_microblock:stone_saw')
 	not_consumed('cb_microblock:iron_saw')
 	not_consumed('cb_microblock:diamond_saw')
-	not_consumed('projectred-core:screwdriver')
+	not_consumed('kubejs:screwdriver')
 	// not_consumed('create:super_glue')
 	not_consumed('kubejs:chromatic_resonator')
 	not_consumed('kubejs:flash_drive')

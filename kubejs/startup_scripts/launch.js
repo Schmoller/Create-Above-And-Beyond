@@ -114,6 +114,18 @@ StartupEvents.registry('item', event => {
 	event.create('partial_computation_matrix').parentModel("kubejs:item/partial_computation_matrix").displayName('Incomplete Computation Matrix').rarity("UNCOMMON").unstackable()
 	event.create('incomplete_computation_matrix_1', 'create:sequenced_assembly').parentModel("kubejs:item/computation_matrix_empty").displayName('Incomplete Computation Matrix').rarity("UNCOMMON").unstackable()
 	event.create('incomplete_computation_matrix_2', 'create:sequenced_assembly').parentModel("kubejs:item/partial_computation_matrix").displayName('Incomplete Computation Matrix').rarity("UNCOMMON").unstackable()
+
+	event.create('ingot_cast').texture("kubejs:item/ingot_cast").displayName('Ingot Cast').unstackable()
+	event.create('ingot_cast_filled_iron').texture("kubejs:item/ingot_cast_filled_iron").displayName('Filled Ingot Cast').unstackable()
+	event.create('ingot_cast_filled_gold').texture("kubejs:item/ingot_cast_filled_gold").displayName('Filled Ingot Cast').unstackable()
+	event.create('ingot_cast_filled_copper').texture("kubejs:item/ingot_cast_filled_copper").displayName('Filled Ingot Cast').unstackable()
+	event.create('ingot_cast_filled_lead').texture("kubejs:item/ingot_cast_filled_lead").displayName('Filled Ingot Cast').unstackable()
+	event.create('ingot_cast_filled_tin').texture("kubejs:item/ingot_cast_filled_tin").displayName('Filled Ingot Cast').unstackable()
+	event.create('ingot_cast_filled_silver').texture("kubejs:item/ingot_cast_filled_silver").displayName('Filled Ingot Cast').unstackable()
+	event.create('ingot_cast_filled_nickel').texture("kubejs:item/ingot_cast_filled_nickel").displayName('Filled Ingot Cast').unstackable()
+	event.create('ingot_cast_filled_zinc').texture("kubejs:item/ingot_cast_filled_zinc").displayName('Filled Ingot Cast').unstackable()
+
+	event.create('screwdriver').texture('kubejs:item/screwdriver').maxDamage(250).displayName('Screwdriver')
 })
 
 StartupEvents.registry('block',  event => {
@@ -306,13 +318,40 @@ StartupEvents.registry('block',  event => {
 
 StartupEvents.registry('fluid', event => {
 	let colors = [0xCBE827, 0xAEE827, 0x68E827, 0x27E86E, 0x27E8B1, 0x27DEE8, 0x27B5E8, 0x2798E8, 0x2778E8, 0x2748E8]
-	event.create('raw_logic').displayName(`Liquified Logic (Unprocessed)`).stillTexture('kubejs:fluid/number_still').flowingTexture('kubejs:fluid/number_flow').color(0xE7FFCB)
+	event.create('raw_logic').displayName(`Liquified Logic (Unprocessed)`).stillTexture('kubejs:block/fluid/number_still').flowingTexture('kubejs:block/fluid/number_flow').color(0xE7FFCB)
 	for (let i = 0; i < 10; i++)
-		event.create('number_' + i).displayName(`Liquified Logic (${i})`).stillTexture('kubejs:fluid/number_still').flowingTexture('kubejs:fluid/number_flow').color(colors[i])
-	event.create('matrix').displayName(`Liquified Computation Matrix`).stillTexture('kubejs:fluid/matrix_still').flowingTexture('kubejs:fluid/matrix_flow').bucketColor(colors[0])
-	event.create('fine_sand').displayName(`Fine Sand`).stillTexture('kubejs:fluid/fine_sand_still').flowingTexture('kubejs:fluid/fine_sand_flow').bucketColor(0xE3DBB0)
+		event.create('number_' + i).displayName(`Liquified Logic (${i})`).stillTexture('kubejs:block/fluid/number_still').flowingTexture('kubejs:block/fluid/number_flow').color(colors[i])
+	event.create('matrix').displayName(`Liquified Computation Matrix`).stillTexture('kubejs:block/fluid/matrix_still').flowingTexture('kubejs:block/fluid/matrix_flow').bucketColor(colors[0])
+	event.create('fine_sand').displayName(`Fine Sand`).stillTexture('kubejs:block/fluid/fine_sand_still').flowingTexture('kubejs:block/fluid/fine_sand_flow').bucketColor(0xE3DBB0)
 	event.create('crude_oil').displayName(`Crude Oil`).stillTexture('thermal:block/fluids/crude_oil_still').flowingTexture('thermal:block/fluids/crude_oil_flow').bucketColor(0x222118)
 	event.create('liquid_smoke').displayName(`Liquid Smoke`).stillTexture('advancedrocketry:blocks/fluid/oxygen_still').flowingTexture('advancedrocketry:blocks/fluid/oxygen_flow').bucketColor(0xEBEBEB)
+
+	// molten metals
+	function molten(metal, color) {
+		event.create(`molten_${metal}`).displayName(`Molten ${metal}`).stillTexture('kubejs:block/fluid/molten_still').flowingTexture('kubejs:block/fluid/molten_flowing').color(color).bucketColor(color)
+	}
+
+	molten('iron', 0x8e3013);
+	molten('gold', 0xfaf25e);
+	molten('copper', 0xe47b55);
+	molten('zinc', 0xb7e6bf);
+	molten('silver', 0xd2d6d2);
+	molten('tin', 0x9fc4c0);
+	molten('nickel', 0xae9e74);
+	molten('lead', 0x444866);
+
+	// Alloys
+	molten('brass', 0xfce892);
+	molten('constantan', 0xd7a44d);
+	// molten('rose_gold', 0x444866);
+	molten('bronze', 0xd77d29);
+	molten('invar', 0xc3cac1);
+	molten('diamond', 0x4aeae3);
+	molten('glass', 0xefefef);
+
+	event.create('sky_solution').displayName(`Sky Solution`).stillTexture('kubejs:block/fluid/obsidian/still').flowingTexture('kubejs:block/fluid/obsidian/flowing').bucketColor(0x36234C)
+	event.create('chromatic').displayName(`Chromatic Waste`).stillTexture('kubejs:block/fluid/liquid/still').flowingTexture('kubejs:block/fluid/liquid/flowing').color(0x0b4037).bucketColor(0x0b4037)
+	event.create('liquid_soul').displayName(`Liquid Soul`).stillTexture('kubejs:block/fluid/soul/still').flowingTexture('kubejs:block/fluid/soul/flowing').bucketColor(0x413027)
 })
 
 ItemEvents.modification(event => {

@@ -11,7 +11,9 @@ schematics/
 screenshots/
 XaeroWaypoints/
 XaeroWaypoints*/
+XaeroWorldMap/
 icon.png/
 patchouli_data.json
 rhino.local.properties
 *cache.json
+.cache

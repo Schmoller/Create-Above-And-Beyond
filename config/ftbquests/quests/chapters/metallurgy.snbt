@@ -119,10 +119,9 @@
 			dependencies: [
 				"18EDB4CD525CE110"
 				"715BBD0DF0136FF1"
-				"409A50CBCDBBA1F0"
 			]
 			dependency_requirement: "one_completed"
-			icon: "tconstruct:molten_gold_bucket"
+			icon: "kubejs:molten_gold_bucket"
 			id: "6509024553997AB0"
 			shape: "circle"
 			subtitle: "[in Nuggets]"
@@ -203,7 +202,7 @@
 				type: "checkmark"
 			}]
 			title: "Superheated Mixing"
-			x: -3.0d
+			x: -5.0d
 			y: 1.0d
 		}
 		{
@@ -235,14 +234,14 @@
 		}
 		{
 			dependencies: ["07BE7128982202A7"]
-			icon: "tconstruct:smeltery_controller"
+			icon: "create:mechanical_mixer"
 			id: "715BBD0DF0136FF1"
 			subtitle: "1 to 3"
 			tasks: [{
 				id: "3B4F0668876D88E3"
 				type: "checkmark"
 			}]
-			title: "Melting"
+			title: "Heated Mixing"
 			x: -7.0d
 			y: 1.0d
 		}
@@ -266,7 +265,7 @@
 		}
 		{
 			dependencies: ["6509024553997AB0"]
-			icon: "tconstruct:seared_table"
+			icon: "create:spout"
 			id: "1A5A81CA749DAB2A"
 			subtitle: "9 to 1"
 			tasks: [{
@@ -314,19 +313,6 @@
 			}]
 			title: "Washing"
 			x: -15.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["07BE7128982202A7"]
-			icon: "tconstruct:foundry_controller"
-			id: "409A50CBCDBBA1F0"
-			subtitle: "1 to 3"
-			tasks: [{
-				id: "6EBC75DD42F7BB3E"
-				type: "checkmark"
-			}]
-			title: "Foundry Melting"
-			x: -5.0d
 			y: 1.0d
 		}
 	]

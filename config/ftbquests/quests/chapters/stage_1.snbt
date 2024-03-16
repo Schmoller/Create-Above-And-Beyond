@@ -468,7 +468,6 @@
 			dependencies: [
 				"59E4A6163753BC12"
 				"73FCA432DEFC1DED"
-				"5A055D0421861318"
 			]
 			description: ["Bringing together Andesite Alloy and cut planks using a row of Deployers concludes your first Assembly Line."]
 			icon: "kubejs:kinetic_mechanism"
@@ -489,42 +488,6 @@
 			]
 			title: "Deploy, Deploy, Deploy."
 			x: 2.0d
-			y: 6.5d
-		}
-		{
-			dependencies: [
-				"59E4A6163753BC12"
-				"73FCA432DEFC1DED"
-			]
-			description: [
-				"It'll be good to stock up on a couple of saws for the Mechanism Assembly."
-				"However, they are not nearly consumed as quickly as something that would require an automated supply."
-			]
-			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				id: "cb_microblock:stone_saw"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "5A055D0421861318"
-			shape: "circle"
-			tasks: [{
-				consume_items: false
-				id: "52A4AF128B571664"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:saws"
-					}
-				}
-				title: "Any Saw"
-				type: "item"
-			}]
-			title: "Arming the Deployer"
-			x: 3.5d
 			y: 6.5d
 		}
 		{

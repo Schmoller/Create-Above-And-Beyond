@@ -183,14 +183,14 @@
 				"4F95D5136E944ADB"
 			]
 			description: ["Dissolving this strange reactive powder in water creates a fun and useful liquid."]
-			icon: "tconstruct:molten_obsidian_bucket"
+			icon: "kubejs:sky_solution_bucket"
 			id: "1256352748B93449"
 			subtitle: "Contraption 13-1"
 			tasks: [
 				{
 					consume_items: false
 					id: "36E36D584FCBC358"
-					item: "tconstruct:molten_obsidian_bucket"
+					item: "kubejs:sky_solution_bucket"
 					type: "item"
 				}
 				{
@@ -236,28 +236,16 @@
 		}
 		{
 			dependencies: ["53735DC4231AB566"]
-			description: ["Route the nuggets into your High-Temperature melting equipment. A Melter from Tinkers' Construct, for example."]
-			icon: {
-				Count: 1b
-				id: "tconstruct:copper_can"
-				tag: {
-					fluid: "tconstruct:molten_iron"
-				}
-			}
+			description: ["Route the nuggets into a mixer with lava"]
+			icon: "kubejs:molten_iron_bucket"
 			id: "2167272204B6627B"
 			subtitle: "Contraption 15-4"
 			tasks: [
 				{
 					consume_items: false
 					id: "611F921F94FAE142"
-					item: {
-						Count: 1b
-						id: "tconstruct:copper_can"
-						tag: {
-							fluid: "tconstruct:molten_iron"
-						}
-					}
-					title: "Copper Can (Molten Iron)"
+					item: "kubejs:molten_iron_bucket"
+					title: "Bucket of Molten Iron"
 					type: "item"
 				}
 				{
@@ -555,14 +543,14 @@
 				"5DCF9C8212AA3BE3"
 			]
 			description: ["Drop all the harvested vines into a Heated Mixing Basin."]
-			icon: "tconstruct:liquid_soul_bucket"
+			icon: "kubejs:liquid_soul_bucket"
 			id: "239C64263B91350D"
 			subtitle: "Contraption 17-3"
 			tasks: [
 				{
 					consume_items: false
 					id: "7BBC2AAED0A77FDC"
-					item: "tconstruct:liquid_soul_bucket"
+					item: "kubejs:liquid_soul_bucket"
 					type: "item"
 				}
 				{
@@ -653,7 +641,7 @@
 				id: "7DF53EF0CF55B5D7"
 				item: {
 					Count: 1b
-					id: "projectred-core:screwdriver"
+					id: "kubejs:screwdriver"
 					tag: {
 						Damage: 0
 					}

@@ -684,14 +684,14 @@
 			description: [
 				"After your flawless encounter with the Ender Dragon, make your way to the Gateway and travel to the outer Islands."
 				""
-				"Here you should be able to find the poise bushes necessary for creating Enderium Alloy."
+				"Here you should be able to find the ender roots necessary for creating Enderium Alloy."
 			]
 			id: "794B3C10C6110CB5"
 			shape: "circle"
 			tasks: [{
 				consume_items: false
 				id: "7E7DF9C3DCFF0724"
-				item: "endergetic:tall_poise_bush"
+				item: "outer_end:tall_ender_roots"
 				type: "item"
 			}]
 			title: "Gateway Expedition"
@@ -700,8 +700,8 @@
 		}
 		{
 			dependencies: ["794B3C10C6110CB5"]
-			description: ["Thanks to Inductive Technology, you have the option to replicate Poise Bushes passively, should you require a steadier and more convenient supply of Enderium."]
-			icon: "endergetic:poise_cluster"
+			description: ["Thanks to Inductive Technology, you have the option to replicate ender roots passively, should you require a steadier and more convenient supply of Enderium."]
+			icon: "outer_end:azure_sprouts"
 			id: "1CCDA748B237F6F5"
 			rewards: [{
 				count: 16
@@ -716,7 +716,7 @@
 				item: "thermal:machine_insolator"
 				type: "item"
 			}]
-			title: "The Poise Cycle"
+			title: "The Azure Cycle"
 			x: 0.0d
 			y: 19.5d
 		}
@@ -729,7 +729,7 @@
 			description: [
 				"Fire up your Induction Smelter for two rounds of processing:"
 				""
-				"First off, refine your Silver Ingots with Ender Dust and Poise Bushes."
+				"First off, refine your Silver Ingots with Ender Dust and Ender Roots"
 			]
 			id: "7B080B5C87247EA1"
 			shape: "circle"
@@ -774,13 +774,7 @@
 			shape: "circle"
 			tasks: [{
 				id: "1E9F96D2152F7384"
-				item: {
-					Count: 1b
-					id: "tconstruct:copper_can"
-					tag: {
-						fluid: "tconstruct:molten_silver"
-					}
-				}
+				item: "kubejs:molten_silver_bucket"
 				title: "Copper Can (Molten Silver)"
 				type: "item"
 			}]
@@ -893,7 +887,7 @@
 		{
 			dependencies: ["3B421C8F7947E542"]
 			description: ["Draining paint balls creates a significant amount of liquid byproduct, which has to be disposed of before it starts clogging up the production line."]
-			icon: "tconstruct:molten_ender_bucket"
+			icon: "kubejs:chromatic_bucket"
 			id: "2C40901DB42DD8F8"
 			shape: "circle"
 			tasks: [{

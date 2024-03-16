@@ -53,8 +53,8 @@
 				type: "item"
 			}]
 			title: "Fortress Locator"
-			x: -7.5d
-			y: 0.5d
+			x: -7.678571428571416d
+			y: 0.9107142857142847d
 		}
 		{
 			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Kinetic Mechanisms&r."]
@@ -124,13 +124,18 @@
 			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms&r."]
 			icon: {
 				Count: 1b
-				id: "projectred-core:screwdriver"
+				id: "kubejs:screwdriver"
 				tag: {
 					Damage: 0
 					Enchantments: [{
 						id: "minecraft:unbreaking"
-						lvl: 3s
+						lvl: 10s
 					}]
+					HideFlags: 1
+					Unbreakable: 1
+					display: {
+						Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
+					}
 				}
 			}
 			id: "72CACE8F0E4701B1"
@@ -138,7 +143,7 @@
 				id: "743730BBE32A0875"
 				item: {
 					Count: 1b
-					id: "projectred-core:screwdriver"
+					id: "kubejs:screwdriver"
 					tag: {
 						Damage: 0
 						Enchantments: [{
@@ -160,7 +165,7 @@
 					id: "1E25EB2883C9A960"
 					item: {
 						Count: 1b
-						id: "projectred-core:screwdriver"
+						id: "kubejs:screwdriver"
 						tag: {
 							Damage: 0
 						}
@@ -367,8 +372,8 @@
 				type: "item"
 			}]
 			title: "Corporate Dinner"
-			x: -8.0d
-			y: -2.0d
+			x: 0.642857142857153d
+			y: 0.9464285714285694d
 		}
 		{
 			description: ["Early on it might help to import some dirt for base building."]
@@ -539,8 +544,8 @@
 				type: "item"
 			}]
 			title: "Test of Patience"
-			x: -9.0d
-			y: 0.0d
+			x: -7.964285714285701d
+			y: -0.5535714285714235d
 		}
 		{
 			description: ["It's like a backpack but classy."]
@@ -576,46 +581,6 @@
 			y: -0.5d
 		}
 		{
-			description: ["\"I found this in an abandoned Workshop down the road; would you like to buy it?\""]
-			icon: {
-				Count: 1b
-				id: "tconstruct:creative_slot"
-				tag: {
-					slot: "upgrades"
-				}
-			}
-			id: "0CCF34BF1C5829AE"
-			rewards: [{
-				id: "37DBD1EF724A42D9"
-				item: {
-					Count: 1b
-					id: "minecraft:chest"
-					tag: {
-						BlockEntityTag: {
-							LootTable: "custom:chests/tinker"
-							id: "minecraft:chest"
-						}
-						display: {
-							Lore: ["{\"text\":\"Contains Loot\",\"color\":\"gray\",\"italic\":\"false\"}"]
-							Name: "{\"text\":\"Tinkerbox\",\"italic\":false}"
-						}
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "25 Silver"
-			tasks: [{
-				count: 25L
-				icon: { Count: 25b, id: "thermal:silver_coin" }
-				id: "32ACF7B1C0BD9D97"
-				item: "thermal:silver_coin"
-				type: "item"
-			}]
-			title: "The Tinkerbox"
-			x: -2.5d
-			y: 1.5d
-		}
-		{
 			icon: "minecraft:totem_of_undying"
 			id: "6D9F2FBEB7CC5195"
 			rewards: [{
@@ -632,8 +597,8 @@
 				type: "item"
 			}]
 			title: "1-Up!"
-			x: -3.0d
-			y: 0.0d
+			x: -2.4285714285714235d
+			y: 1.9821428571428612d
 		}
 		{
 			description: ["As seen on TV: This Magical Bell can detect unlit areas around it. Free shipping, bonus cursed campfire. What a Deal!"]
@@ -660,8 +625,8 @@
 				type: "item"
 			}]
 			title: "Where mob ?"
-			x: -4.0d
-			y: 2.0d
+			x: -4.107142857142854d
+			y: 1.1607142857142847d
 		}
 		{
 			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Calculation Mechanisms&r."]
@@ -855,38 +820,6 @@
 			title: "Adopt a Duck"
 			x: -11.0d
 			y: -2.0d
-		}
-		{
-			description: ["Ah the joy of gambling."]
-			icon: "buddycards:mystery_pack"
-			id: "093FB7B7FEC6B886"
-			rewards: [
-				{
-					auto: "enabled"
-					id: "198DC310752F341F"
-					item: "buddycards:mystery_pack"
-					type: "item"
-				}
-				{
-					auto: "no_toast"
-					icon: "thermal:machine_cycle_augment"
-					id: "423CFA69329BD06E"
-					tags: ["reset"]
-					title: "Repeatable"
-					type: "custom"
-				}
-			]
-			subtitle: "4 Gold"
-			tasks: [{
-				count: 4L
-				icon: { Count: 8b, id: "thermal:gold_coin" }
-				id: "30B16CC21946FE8E"
-				item: "thermal:gold_coin"
-				type: "item"
-			}]
-			title: "Expensive Hobby"
-			x: 0.5d
-			y: 1.5d
 		}
 		{
 			description: ["A little testing selection of Thermal Weaponry."]
@@ -1086,8 +1019,8 @@
 				type: "item"
 			}]
 			title: "Railway Starter Pack"
-			x: -11.0d
-			y: 2.0d
+			x: -11.82142857142857d
+			y: 1.8035714285714306d
 		}
 		{
 			description: ["Bedrock? How is this possible?"]
@@ -1207,8 +1140,8 @@
 				type: "item"
 			}]
 			title: "Instant Aesthetics"
-			x: 1.0d
-			y: 0.0d
+			x: 0.6428571428571388d
+			y: -0.8392857142857153d
 		}
 	]
 	title: "&a The Market"

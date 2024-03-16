@@ -14,48 +14,9 @@
 			hide_dependency_lines: true
 			icon: {
 				Count: 1b
-				id: "tconstruct:pickaxe"
+				id: "minecraft:diamond_pickaxe"
 				tag: {
 					Damage: 0
-					tic_broken: 0b
-					tic_materials: [
-						"tconstruct:tinkers_bronze"
-						"tconstruct:constantan"
-						"tconstruct:electrum"
-					]
-					tic_modifiers: [
-						{
-							level: 1s
-							name: "tconstruct:experienced"
-						}
-						{
-							level: 1s
-							name: "tconstruct:maintained"
-						}
-						{
-							level: 1s
-							name: "tconstruct:piercing"
-						}
-						{
-							level: 1s
-							name: "tconstruct:temperate"
-						}
-					]
-					tic_multipliers: { }
-					tic_persistent_data: {
-						abilities: 1
-						upgrades: 3
-					}
-					tic_stats: {
-						"tconstruct:attack_damage": 2.0f
-						"tconstruct:attack_speed": 1.2f
-						"tconstruct:durability": 683.0f
-						"tconstruct:harvest_level": 3.0f
-						"tconstruct:mining_speed": 8.05f
-					}
-					tic_volatile_data: {
-						"tconstruct:durability": 683
-					}
 				}
 			}
 			id: "1E26046FA8177616"
@@ -93,58 +54,9 @@
 			hide_dependency_lines: true
 			icon: {
 				Count: 1b
-				id: "tconstruct:kama"
+				id: "minecraft:diamond_hoe"
 				tag: {
 					Damage: 0
-					tic_broken: 0b
-					tic_materials: [
-						"tconstruct:tinkers_bronze"
-						"tconstruct:constantan"
-						"tconstruct:electrum"
-					]
-					tic_modifiers: [
-						{
-							level: 1s
-							name: "tconstruct:experienced"
-						}
-						{
-							level: 1s
-							name: "tconstruct:maintained"
-						}
-						{
-							level: 1s
-							name: "tconstruct:temperate"
-						}
-						{
-							level: 1s
-							name: "tconstruct:shears"
-						}
-						{
-							level: 1s
-							name: "tconstruct:harvest"
-						}
-						{
-							level: 1s
-							name: "tconstruct:hoe_transform_hidden"
-						}
-					]
-					tic_multipliers: {
-						"tconstruct:attack_damage": 0.75f
-					}
-					tic_persistent_data: {
-						abilities: 1
-						upgrades: 3
-					}
-					tic_stats: {
-						"tconstruct:attack_damage": 2.25f
-						"tconstruct:attack_speed": 1.8f
-						"tconstruct:durability": 683.0f
-						"tconstruct:harvest_level": 3.0f
-						"tconstruct:mining_speed": 8.05f
-					}
-					tic_volatile_data: {
-						"tconstruct:durability": 683
-					}
 				}
 			}
 			id: "12B37E99B1D3837E"
@@ -182,48 +94,9 @@
 			hide_dependency_lines: true
 			icon: {
 				Count: 1b
-				id: "tconstruct:hand_axe"
+				id: "minecraft:diamond_axe"
 				tag: {
 					Damage: 0
-					tic_broken: 0b
-					tic_materials: [
-						"tconstruct:tinkers_bronze"
-						"tconstruct:constantan"
-						"tconstruct:electrum"
-					]
-					tic_modifiers: [
-						{
-							level: 1s
-							name: "tconstruct:experienced"
-						}
-						{
-							level: 1s
-							name: "tconstruct:maintained"
-						}
-						{
-							level: 1s
-							name: "tconstruct:temperate"
-						}
-						{
-							level: 1s
-							name: "tconstruct:axe_transform_hidden"
-						}
-					]
-					tic_multipliers: { }
-					tic_persistent_data: {
-						abilities: 1
-						upgrades: 3
-					}
-					tic_stats: {
-						"tconstruct:attack_damage": 8.0f
-						"tconstruct:attack_speed": 0.9f
-						"tconstruct:durability": 683.0f
-						"tconstruct:harvest_level": 3.0f
-						"tconstruct:mining_speed": 8.05f
-					}
-					tic_volatile_data: {
-						"tconstruct:durability": 683
-					}
 				}
 			}
 			id: "3A48FDC224D029BF"
@@ -389,47 +262,9 @@
 			hide_dependency_lines: true
 			icon: {
 				Count: 1b
-				id: "tconstruct:sword"
+				id: "minecraft:diamond_sword"
 				tag: {
 					Damage: 0
-					tic_broken: 0b
-					tic_materials: [
-						"tconstruct:tinkers_bronze"
-						"tconstruct:constantan"
-						"tconstruct:constantan"
-					]
-					tic_modifiers: [
-						{
-							level: 1s
-							name: "tconstruct:maintained"
-						}
-						{
-							level: 2s
-							name: "tconstruct:temperate"
-						}
-						{
-							level: 1s
-							name: "tconstruct:silky_shears"
-						}
-					]
-					tic_multipliers: {
-						"tconstruct:durability": 1.1f
-						"tconstruct:mining_speed": 0.5f
-					}
-					tic_persistent_data: {
-						abilities: 1
-						upgrades: 3
-					}
-					tic_stats: {
-						"tconstruct:attack_damage": 5.0f
-						"tconstruct:attack_speed": 1.6f
-						"tconstruct:durability": 751.3f
-						"tconstruct:harvest_level": 3.0f
-						"tconstruct:mining_speed": 4.025f
-					}
-					tic_volatile_data: {
-						"tconstruct:durability": 751
-					}
 				}
 			}
 			id: "66DDDE912A191E57"
@@ -1209,7 +1044,7 @@
 			subtitle: "50 Silver"
 			tasks: [{
 				entity: "minecraft:spider"
-				icon: "tconstruct:spider_head"
+				icon: "minecraft:spider_eye"
 				id: "60B3526FA0D6A2AF"
 				type: "kill"
 				value: 30L
@@ -1260,7 +1095,7 @@
 			y: -1.5d
 		}
 		{
-			icon: "create:crushed_gold_ore"
+			icon: "create:crushed_raw_gold"
 			id: "39D56A2B01DBD865"
 			rewards: [{
 				count: 30
@@ -1274,37 +1109,37 @@
 				{
 					count: 5L
 					id: "592A29507FE620D0"
-					item: "create:crushed_iron_ore"
+					item: "create:crushed_raw_iron"
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "5CAA30D3A26DE48A"
-					item: "create:crushed_copper_ore"
+					item: "create:crushed_raw_copper"
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "58D69FCA7C1035F5"
-					item: "create:crushed_zinc_ore"
+					item: "create:crushed_raw_zinc"
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "4C2DB8A65AD97FAB"
-					item: "create:crushed_nickel_ore"
+					item: "create:crushed_raw_nickel"
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "73726468F48CE993"
-					item: "create:crushed_lead_ore"
+					item: "create:crushed_raw_lead"
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "176CF773DF3BBBD0"
-					item: "create:crushed_gold_ore"
+					item: "create:crushed_raw_gold"
 					type: "item"
 				}
 			]
