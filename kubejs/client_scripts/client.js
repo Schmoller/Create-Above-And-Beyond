@@ -5,6 +5,10 @@ JEIEvents.hideItems(event => {
 	event.hide('kubejs:ponder_laser_lamp_on')
 	event.hide('kubejs:ponder_laser_lamp')
 	// event.hide(`#buddycards:cards`)
+
+	event.hide('ad_astra:compressor')
+	event.hide('ad_astra:coal_generator')
+	event.hide('ad_astra:fuel_refinery')
 })
 
 JEIEvents.subtypes(event => {
@@ -91,8 +95,8 @@ ItemEvents.tooltip(tooltip => {
 	// not_consumed('create:super_glue')
 	not_consumed('kubejs:chromatic_resonator')
 	not_consumed('kubejs:flash_drive')
-	// not_consumed('xreliquary:mercy_cross')
-	// not_consumed('xreliquary:ender_staff')
+	// not_consumed('reliquary:mercy_cross')
+	// not_consumed('reliquary:ender_staff')
 
 	global.substrates[0].forEach(e => tooltip.add(e.id, [`§8Category: §7Igneous`]));
 	global.substrates[1].forEach(e => tooltip.add(e.id, [`§8Category: §7Herbal`]));

@@ -126,6 +126,9 @@ StartupEvents.registry('item', event => {
 	event.create('ingot_cast_filled_zinc').texture("kubejs:item/ingot_cast_filled_zinc").displayName('Filled Ingot Cast').unstackable()
 
 	event.create('screwdriver').texture('kubejs:item/screwdriver').maxDamage(250).displayName('Screwdriver')
+
+	// Templates
+	event.create('matter_plastic_upgrade_template', 'smithing_template').texture('kubejs:item/matter_plastic_upgrade_template').displayName('Matter Plastic Upgrade').appliesTo('Equipment').ingredients('Matter Plastic')
 })
 
 StartupEvents.registry('block',  event => {

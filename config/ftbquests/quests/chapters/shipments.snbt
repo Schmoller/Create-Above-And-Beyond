@@ -3459,7 +3459,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:witch_hat"
+			icon: "reliquary:witch_hat"
 			id: "09CE5AD4CB4B5E30"
 			rewards: [
 				{
@@ -3492,7 +3492,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:zombie_heart"
+			icon: "reliquary:zombie_heart"
 			id: "282F6B669035353D"
 			rewards: [
 				{
@@ -3525,7 +3525,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:squid_beak"
+			icon: "reliquary:squid_beak"
 			id: "2AE355FCE8F6A0AE"
 			rewards: [
 				{
@@ -3558,7 +3558,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:rib_bone"
+			icon: "reliquary:rib_bone"
 			id: "076FEDF607F4EFC6"
 			rewards: [
 				{
@@ -3591,7 +3591,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:catalyzing_gland"
+			icon: "reliquary:catalyzing_gland"
 			id: "2868D7A0EF373C25"
 			rewards: [
 				{
@@ -3624,7 +3624,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:chelicerae"
+			icon: "reliquary:chelicerae"
 			id: "09AD9D377AC72988"
 			rewards: [
 				{
@@ -3657,7 +3657,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:slime_pearl"
+			icon: "reliquary:slime_pearl"
 			id: "584290368876B425"
 			rewards: [
 				{
@@ -3690,7 +3690,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:bat_wing"
+			icon: "reliquary:bat_wing"
 			id: "09A6B378B772D578"
 			rewards: [
 				{
@@ -3723,7 +3723,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:withered_rib"
+			icon: "reliquary:withered_rib"
 			id: "36564FF598EBA474"
 			rewards: [
 				{
@@ -3756,7 +3756,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:molten_core"
+			icon: "reliquary:molten_core"
 			id: "635E61DFEF2C2C2A"
 			rewards: [
 				{
@@ -3789,7 +3789,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:eye_of_the_storm"
+			icon: "reliquary:eye_of_the_storm"
 			id: "6E864CDCF999B4AA"
 			rewards: [
 				{
@@ -3822,7 +3822,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:frozen_core"
+			icon: "reliquary:frozen_core"
 			id: "44DCE7EAB47F42CB"
 			rewards: [
 				{
@@ -3855,7 +3855,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:nebulous_heart"
+			icon: "reliquary:nebulous_heart"
 			id: "7A6EDAB72AC92EC2"
 			rewards: [
 				{
@@ -3888,7 +3888,7 @@
 		}
 		{
 			disable_toast: true
-			icon: "xreliquary:guardian_spike"
+			icon: "reliquary:guardian_spike"
 			id: "79B138737D0E5E7C"
 			rewards: [
 				{

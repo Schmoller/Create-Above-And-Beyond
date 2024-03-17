@@ -37,10 +37,8 @@
 				id: "160328DECC54AD5A"
 				item: {
 					Count: 1b
-					id: "structurescompass:structures_compass"
-					tag: {
-						Structure: "minecraft:fortress"
-					}
+					id: "explorerscompass:explorerscompass"
+					tag: { }
 				}
 				type: "item"
 			}]
@@ -783,45 +781,6 @@
 			y: 2.0d
 		}
 		{
-			description: ["Quack"]
-			icon: "minecraft:egg"
-			id: "6C00F2935F27C2AD"
-			rewards: [
-				{
-					auto: "enabled"
-					id: "500098FD4762A38F"
-					item: "exoticbirds:duck_spawn_egg"
-					type: "item"
-				}
-				{
-					auto: "no_toast"
-					icon: "thermal:machine_cycle_augment"
-					id: "79C8307ED8450347"
-					tags: ["reset"]
-					title: "Repeatable"
-					type: "custom"
-				}
-			]
-			subtitle: "5 Silver"
-			tasks: [
-				{
-					count: 5L
-					icon: { Count: 5b, id: "thermal:silver_coin" }
-					id: "491FF95EFE8DCB67"
-					item: "thermal:silver_coin"
-					type: "item"
-				}
-				{
-					id: "5F58BA2473FD6DDA"
-					item: "rubber_duck:rubber_duck_item"
-					type: "item"
-				}
-			]
-			title: "Adopt a Duck"
-			x: -11.0d
-			y: -2.0d
-		}
-		{
 			description: ["A little testing selection of Thermal Weaponry."]
 			icon: "thermal:explosive_grenade"
 			id: "1CC29991D5F248CA"
@@ -876,7 +835,7 @@
 				{
 					count: 16
 					id: "68B1199F9AE6B8FE"
-					item: "supplementaries:planter_rich"
+					item: "supplementaries:planter"
 					type: "item"
 				}
 				{
@@ -978,38 +937,12 @@
 		{
 			icon: "minecraft:minecart"
 			id: "117587D824D23D69"
-			rewards: [
-				{
-					count: 8
-					id: "738387AED344C59B"
-					item: "moreminecarts:powered_locking_rail"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "4D33B3525FF09C68"
-					item: "minecraft:powered_rail"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "0A214A7B25C331F6"
-					item: "minecraft:lever"
-					type: "item"
-				}
-				{
-					count: 64
-					id: "3F0919FBED64778C"
-					item: "minecraft:rail"
-					type: "item"
-				}
-				{
-					count: 64
-					id: "6D3CCD1BF0BFD7D6"
-					item: "minecraft:rail"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "166F216CC286802F"
+				item: "create:track"
+				type: "item"
+			}]
 			subtitle: "24 Silver"
 			tasks: [{
 				count: 24L

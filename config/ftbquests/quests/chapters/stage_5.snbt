@@ -36,165 +36,23 @@
 		}
 		{
 			dependencies: [
-				"6BA9A176EDA001A3"
-				"1AE7B6CA4D1DBA6F"
-				"462CE0A4C80442FB"
 				"69311E02A8B3451D"
-				"3AD7553F3C8593F9"
-				"4800892E1E70648D"
-				"25B76A897D97C9F1"
 				"73473DC7269EC5B0"
 			]
-			description: [
-				"With everything in place and the Matrices programmed, you can go ahead and assemble the Guidance Computer and add it to your Spaceship."
-				""
-				"Take a minute to craft a flag representing your space program to bring to the moon. You can apply patterns to it just like a Banner."
-				""
-				"In your own time, take a seat in your assembled rocket, and press Space."
-			]
-			icon: "advancedrocketry:guidancecomputer"
+			description: ["With the Matrices programmed, and all the pieces gathered, you can go ahead and assemble the rocket."]
+			icon: "ad_astra:nasa_workbench"
 			id: "47965C310D9847DC"
-			rewards: [{
-				count: 3
-				id: "7F4FDBDE58C30C3A"
-				item: {
-					Count: 1b
-					id: "desolation:charred_fence"
-					tag: {
-						RepairCost: 0
-						display: {
-							Name: "{\"text\":\"Flag Pole\",\"italic\":false,\"color\":\"aqua\"}"
-						}
-					}
-				}
+			shape: "square"
+			subtitle: "Contraption &b50"
+			tasks: [{
+				consume_items: false
+				id: "05BDC7ACF64D13C2"
+				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [
-				{
-					consume_items: false
-					id: "05BDC7ACF64D13C2"
-					item: "advancedrocketry:guidancecomputer"
-					type: "item"
-				}
-				{
-					consume_items: false
-					disable_toast: true
-					icon: {
-						Count: 1b
-						id: "supplementaries:flag_gray"
-						tag: {
-							BlockEntityTag: {
-								Patterns: [
-									{
-										Color: 0
-										Pattern: "gra"
-									}
-									{
-										Color: 15
-										Pattern: "bo"
-									}
-									{
-										Color: 15
-										Pattern: "bs"
-									}
-									{
-										Color: 15
-										Pattern: "ts"
-									}
-									{
-										Color: 15
-										Pattern: "rs"
-									}
-									{
-										Color: 11
-										Pattern: "ls"
-									}
-								]
-							}
-						}
-					}
-					id: "4418C7A289B17158"
-					item: {
-						Count: 1b
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "supplementaries:flag_orange"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_magenta"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_light_blue"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_lime"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_gray"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_cyan"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_green"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_red"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_white"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_light_gray"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_yellow"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_pink"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_purple"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_blue"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_brown"
-								}
-								{
-									Count: 1b
-									id: "supplementaries:flag_black"
-								}
-							]
-						}
-					}
-					title: "Any Flag"
-					type: "item"
-				}
-			]
-			title: "We have lift off!"
+			title: "Assemble the rocket"
 			x: 2.0d
-			y: 7.75d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -618,8 +476,8 @@
 				type: "item"
 			}]
 			title: "Black Gold"
-			x: -2.5d
-			y: 8.0d
+			x: 8.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4761DAE59CDD93AF"]
@@ -633,8 +491,8 @@
 				type: "item"
 			}]
 			title: "Hydrocarbon Sorter I"
-			x: -1.0d
-			y: 8.0d
+			x: 6.964285714285722d
+			y: 4.589285714285715d
 		}
 		{
 			dependencies: ["4761DAE59CDD93AF"]
@@ -648,8 +506,8 @@
 				type: "item"
 			}]
 			title: "Hydrocarbon Sorter II"
-			x: -1.0d
-			y: 9.0d
+			x: 9.000000000000014d
+			y: 4.589285714285715d
 		}
 		{
 			dependencies: [
@@ -663,13 +521,14 @@
 			subtitle: "Contraption 46"
 			tasks: [{
 				consume_items: false
+				count: 3L
 				id: "5CAC7E6BDD460233"
-				item: "thermal:refined_fuel_bucket"
+				item: "ad_astra:fuel_bucket"
 				type: "item"
 			}]
 			title: "Hydrocarbon Sorter III"
-			x: 0.5d
-			y: 9.0d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5D0454F977C4F080"]
@@ -750,40 +609,17 @@
 				}
 			]
 			title: "Attire"
-			x: -1.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["5D0454F977C4F080"]
-			description: ["In order for your Guidance Computer to know its Destination, a Planet Id Chip has to be inserted."]
-			hide_dependency_lines: true
-			id: "462CE0A4C80442FB"
-			shape: "circle"
-			tasks: [{
-				consume_items: false
-				id: "4036EE2984EFEA1A"
-				item: {
-					Count: 1b
-					id: "advancedrocketry:planet_id_chip"
-					tag: {
-						DimensionName: " The Moon "
-						dimId: "custommoon:moon"
-					}
-				}
-				type: "item"
-			}]
-			title: "Where to?"
-			x: 3.5d
-			y: 9.0d
+			x: 5.250000000000007d
+			y: 4.732142857142854d
 		}
 		{
 			dependencies: ["6A156D11D983661D"]
 			description: [
-				"In order to fill your Oxygen Tanks, stand on a Gas Charge Pad with oxygen in its internal storage."
+				"In order to fill your Space Suit, place the suit in the top right slot in an Oxygen Loader with oxygen in its internal storage."
 				""
 				"Suitable Oxygen can be gained by separating water into its components via heated mixing."
 			]
-			icon: "advancedrocketry:oxygencharger"
+			icon: "ad_astra:oxygen_loader"
 			id: "3AD7553F3C8593F9"
 			shape: "circle"
 			subtitle: "Contraption 48"
@@ -791,7 +627,7 @@
 				{
 					consume_items: false
 					id: "045DB251DB8BB97F"
-					item: "advancedrocketry:oxygencharger"
+					item: "ad_astra:oxygen_loader"
 					type: "item"
 				}
 				{
@@ -803,83 +639,28 @@
 				}
 			]
 			title: "Electrolysis"
-			x: 0.5d
-			y: 6.0d
+			x: 3.6785714285714306d
+			y: 6.910714285714285d
 		}
 		{
 			dependencies: ["6A156D11D983661D"]
 			description: [
 				"The Launch Pad for your Rocket requires special surface materials and reinforcement structures."
 				""
-				"In order to learn about the specific guidelines, locate the ponder scene of the Guidance Computer, or use the command"
 				""
-				"&6/c ponder advancedrocketry:guidancecomputer"
 			]
-			icon: "advancedrocketry:launchpad"
+			icon: "ad_astra:launch_pad"
 			id: "4800892E1E70648D"
-			rewards: [{
-				command: "/c ponder advancedrocketry:guidancecomputer"
-				icon: {
-					Count: 1b
-					id: "occultism:book_of_calling_djinni_manage_machine"
-					tag: {
-						spiritName: "Zedzeraeus"
-					}
-				}
-				id: "6023AC8699FE1451"
-				team_reward: false
-				title: "Open Ponder Scene"
-				type: "command"
+			shape: "circle"
+			tasks: [{
+				consume_items: false
+				id: "1F86655043929A18"
+				item: "ad_astra:launch_pad"
+				type: "item"
 			}]
-			shape: "circle"
-			subtitle: "Contraption 49"
-			tasks: [
-				{
-					consume_items: false
-					id: "1F86655043929A18"
-					item: "advancedrocketry:launchpad"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "2BC9E126D403902B"
-					item: "advancedrocketry:structuretower"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "3D2474BE8BAE28D1"
-					item: "advancedrocketry:rocketassembler"
-					type: "item"
-				}
-			]
 			title: "Launch Pad Structure"
-			x: 2.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["6A156D11D983661D"]
-			description: ["A couple of additional Gadgets are required in order to load the rocket with fuel. For usages refer to the Ponder Scene of the Guidance Computer."]
-			icon: "libvulpes:linker"
-			id: "1AE7B6CA4D1DBA6F"
-			shape: "circle"
-			tasks: [
-				{
-					consume_items: false
-					id: "4D0D4FCDA84500F4"
-					item: "advancedrocketry:fuelingstation"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "0CA84D5F0130C60E"
-					item: "libvulpes:linker"
-					type: "item"
-				}
-			]
-			title: "Pipeless Loading"
-			x: 5.0d
-			y: 6.0d
+			x: 4.142857142857153d
+			y: 5.732142857142854d
 		}
 		{
 			dependencies: ["70D563EF30E9CB97"]
@@ -923,43 +704,128 @@
 			y: 14.0d
 		}
 		{
-			dependencies: [
-				"6A156D11D983661D"
-				"4800892E1E70648D"
-			]
+			dependencies: ["6A156D11D983661D"]
 			description: [
 				"With the Launch Pad in place, it is time to construct your Spaceship. "
 				""
 				"Give it your best, after all this is the final Contraption you've been working towards. "
-				"&7Though perhaps keep the palette simple- with the state that mod is in, see if you can avoid using any funky special rendered blocks here. Crashing to this now would be devastating."
 			]
-			icon: "advancedrocketry:fueltank"
+			icon: "ad_astra:steel_engine"
 			id: "73473DC7269EC5B0"
 			shape: "circle"
-			subtitle: "Contraption &b50"
 			tasks: [
 				{
 					consume_items: false
 					id: "5A1CC7C1BAFFABBC"
-					item: "advancedrocketry:rocketmotor"
+					item: "ad_astra:steel_engine"
 					type: "item"
 				}
 				{
 					consume_items: false
+					count: 2L
 					id: "303C6C7B357D47D9"
-					item: "advancedrocketry:fueltank"
+					item: "ad_astra:steel_tank"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "5140EF835413E2FC"
-					item: "advancedrocketry:seat"
+					item: "ad_astra:rocket_nose_cone"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "15CF71DB08E19B4F"
+					item: "ad_astra:rocket_fin"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 6L
+					id: "598B98B02E8518EB"
+					item: "ad_astra:steel_block"
 					type: "item"
 				}
 			]
 			title: "The Spaceship"
-			x: 3.5d
+			x: 2.0d
 			y: 6.0d
+		}
+		{
+			dependencies: [
+				"47965C310D9847DC"
+				"25B76A897D97C9F1"
+				"4800892E1E70648D"
+				"3AD7553F3C8593F9"
+				"6BA9A176EDA001A3"
+			]
+			description: [
+				"With everything ready, you can go ahead and place the rocket on the launch platform."
+				""
+				"Shift+right click the rocket to access its inventory. Place 3 buckets of fuel in the fuel slot."
+				""
+				"Take a minute to craft a flag representing your space program to bring to the moon."
+				""
+				"In your own time, take a seat in your assembled rocket, and hold Space."
+				"{@pagebreak}"
+				"If you intend to return, make sure to bring three extra fuel buckets and another launch pad."
+			]
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
+			id: "2E648DE7C66D4917"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "6FEB425AEA0EE8EB"
+					item: {
+						Count: 1b
+						id: "ad_astra:tier_1_rocket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					disable_toast: true
+					icon: "ad_astra:light_blue_flag"
+					id: "4F1F75CF6B2BC0DC"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "ad_astra:flags"
+						}
+					}
+					title: "Any Flag"
+					type: "item"
+				}
+			]
+			title: "We have lift off!"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2E648DE7C66D4917"]
+			description: ["If you intend on returning from the Moon, you will need to bring an additional 3 buckets of fuel and another launch pad."]
+			disable_toast: true
+			icon: "ad_astra:earth_globe"
+			id: "6A482E2D1A2F773D"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "576C9C23F7EE363C"
+				title: "Acknowledged"
+				type: "checkmark"
+			}]
+			title: "Return trip?"
+			x: 8.0d
+			y: 10.0d
 		}
 	]
 	title: "&f5&r Divide by Digital"

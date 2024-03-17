@@ -24,7 +24,7 @@ let BOP = (id, x) => MOD("biomesoplenty", id, x)
 let PR_C = (id, x) => MOD("projectred-core", id, x)
 let PR_T = (id, x) => MOD("projectred-transmission", id, x)
 let PR_I = (id, x) => MOD("projectred-illumination", id, x)
-let RQ = (id, x) => MOD("xreliquary", id, x)
+let RQ = (id, x) => MOD("reliquary", id, x)
 let SD = (id, x) => MOD("storagedrawers", id, x)
 let SP = (id, x) => MOD("supplementaries", id, x)
 let F = (id, x) => MOD("forge", id, x)
@@ -369,7 +369,6 @@ function unwantedRecipes(event) {
 	event.remove({ id: TE('parts/electrum_gear') })
 	event.remove({ id: AP('smelting/charcoal_block_from_logs_that_burn_smoking') })
 	event.remove({ id: 'portality:generator' })
-	event.remove({ mod: 'advancedrocketry' })
 	event.remove({ mod: 'libvulpes' })
 	event.remove({ mod: 'pipez' })
 	event.remove({ mod: 'structurescompass' })
@@ -399,6 +398,32 @@ function unwantedRecipes(event) {
 		event.remove({ type: MC("blasting"), input: F("#dusts/" + e) })
 		event.remove({ type: TC("melting"), input: F("#dusts/" + e) })
 	})
+
+	event.remove({ id: 'ad_astra:nasa_workbench' })
+	event.remove({ id: 'ad_astra:space_suit' })
+	event.remove({ id: 'ad_astra:space_helmet' })
+	event.remove({ id: 'ad_astra:space_pants' })
+	event.remove({ id: 'ad_astra:space_boots' })
+	event.remove({ id: 'ad_astra:compressor' })
+	event.remove({ id: 'ad_astra:coal_generator' })
+	event.remove({ id: 'ad_astra:fuel_refinery' })
+	event.remove({ type: 'ad_astra:refining' })
+	event.remove({ type: 'ad_astra:compressing' })
+	event.remove({ type: 'ad_astra:alloying' })
+
+	event.remove({ id: 'ad_astra:steel_engine' })
+	event.remove({ id: 'ad_astra:rocket_fin' })
+	event.remove({ id: 'ad_astra:rocket_nose_cone' })
+	event.remove({ id: 'ad_astra:steel_tank' })
+	event.remove({ id: 'ad_astra:steel_block' })
+	event.remove({ id: 'ad_astra:oxygen_loader' })
+
+	event.remove({ id: 'ad_astra:oxygen_loading/oxygen_from_oxygen_loading_water'})
+	event.remove({ id: 'ad_astra:fan' })
+	event.remove({ id: 'ad_astra:launch_pad' })
+
+	event.remove({ id: 'thermal:machines/refinery/refinery_light_oil'})
+	event.remove({ id: 'thermal:machines/refinery/refinery_heavy_oil'})
 
 }
 /**
@@ -889,7 +914,7 @@ function rocketScience(event) {
 	let machine = AE2("controller")
 	let matrix = KJ("computation_matrix")
 
-	event.recipes.createMechanicalCrafting("advancedrocketry:guidancecomputer", [
+	event.recipes.createMechanicalCrafting("ad_astra:nasa_workbench", [
 		'AAAAA',
 		'ASSSA',
 		'GS SG',
@@ -902,38 +927,8 @@ function rocketScience(event) {
 		S: matrix
 	})
 
-	event.recipes.createMechanicalCrafting("advancedrocketry:fuelingstation", [
-		'AAA',
-		'GSG',
-		'AMA'
-	], {
-		A: plastic,
-		M: machine,
-		G: gear,
-		S: MC("bucket")
-	})
-
-	event.recipes.createMechanicalCrafting("advancedrocketry:oxygenvent", [
-		'AAA',
-		'GSG',
-		'AMA'
-	], {
-		A: plastic,
-		M: machine,
-		G: gear,
-		S: CR("propeller")
-	})
-
-	event.recipes.createMechanicalCrafting("advancedrocketry:rocketassembler", [
-		'AAA',
-		'GSG',
-		'AMA'
-	], {
-		A: plastic,
-		M: machine,
-		G: gear,
-		S: CR("empty_schematic")
-	})
+	event.replaceInput('ad_astra:gravity_normalizer', 'diamond_block', 'kubejs:computation_matrix')
+	event.replaceInput('ad_astra:etrionic_capacitor', 'diamond', plastic)
 
 	let pattern = [
 		' A ',
@@ -941,28 +936,28 @@ function rocketScience(event) {
 		' A '
 	];
 
-	event.recipes.createMechanicalCrafting(Item.of("advancedrocketry:spacechest", { outputItems: [{ Slot: 0, id: "advancedrocketry:pressure_tank_high", Count: 1 }], size: 6 }), pattern,
+	event.recipes.createMechanicalCrafting("ad_astra:space_suit", pattern,
 		{
 			A: plastic,
 			G: CR("golden_sheet"),
 			S: CR("copper_backtank")
 		})
 
-	event.recipes.createMechanicalCrafting("advancedrocketry:spacehelmet", pattern,
+	event.recipes.createMechanicalCrafting("ad_astra:space_helmet", pattern,
 		{
 			A: plastic,
 			G: CR("golden_sheet"),
-			S: CR("diving_helmet")
+			S: CR("copper_diving_helmet")
 		})
 
-	event.recipes.createMechanicalCrafting("advancedrocketry:spaceleggings", pattern,
+	event.recipes.createMechanicalCrafting("ad_astra:space_pants", pattern,
 		{
 			A: plastic,
 			G: CR("golden_sheet"),
 			S: MC("iron_leggings")
 		})
 
-	event.recipes.createMechanicalCrafting("advancedrocketry:spaceboots", pattern,
+	event.recipes.createMechanicalCrafting("ad_astra:space_boots", pattern,
 		{
 			A: plastic,
 			G: CR("golden_sheet"),
@@ -977,55 +972,46 @@ function rocketScience(event) {
 		G: MC("redstone_torch")
 	})
 
-	event.shaped("advancedrocketry:oxygencharger", [
-		'G',
-		'A'
+	event.shaped("ad_astra:oxygen_loader", [
+		'IFI',
+		'PCP',
+		'III'
 	], {
-		A: CR("fluid_pipe"),
-		G: MC("smooth_stone_slab")
+		I: CR('industrial_iron_block'),
+		F: CR('propeller'),
+		P: CR("fluid_pipe"),
+		C: KJ("inductive_mechanism")
 	})
 
-	event.smithing("advancedrocketry:seat", CR('#seats'), plastic)
-	event.smithing("advancedrocketry:fueltank", CR('fluid_tank'), plastic)
-	event.smithing("advancedrocketry:rocketmotor", CR('blaze_burner'), plastic)
-	event.smithing("5x advancedrocketry:structuretower", MC('scaffolding'), plastic)
-	event.smithing("5x advancedrocketry:launchpad", AP('heavy_stone_bricks'), plastic)
+	event.shapeless(KJ('matter_plastic_upgrade_template'), ['paper', plastic])
+
+	event.smithing('ad_astra:steel_engine', KJ('matter_plastic_upgrade_template'), CR('blaze_burner'), plastic)
+	event.smithing('ad_astra:rocket_fin', KJ('matter_plastic_upgrade_template'), KJ('zinc_sheet'), plastic)
+	event.smithing('ad_astra:rocket_nose_cone', KJ('matter_plastic_upgrade_template'), CR('sturdy_sheet'), plastic)
+	event.smithing('ad_astra:steel_tank', KJ('matter_plastic_upgrade_template'), CR('fluid_tank'), plastic)
+	event.smithing('ad_astra:steel_block', KJ('matter_plastic_upgrade_template'), CR('industrial_iron_block'), plastic)
+
+	event.recipes.thermal.refinery([Fluid.of('ad_astra:fuel', 100), 'thermal:sulfur_dust'], Fluid.of('thermal:light_oil', 100));
+	event.recipes.thermal.refinery([Fluid.of('ad_astra:fuel', 75), 'thermal:tar'], Fluid.of('thermal:heavy_oil', 100));
+
+	event.recipes.createMechanicalCrafting("ad_astra:launch_pad", [
+		'AAAAA',
+		'APAPA',
+		'AAPAA',
+		'APAPA',
+		'AAAAA'
+	], {
+		P: plastic,
+		A: AP('heavy_stone_bricks'),
+	})
 
 	event.recipes.createMixing(
-		[Fluid.of("advancedrocketry:oxygen", 50), Fluid.of("advancedrocketry:hydrogen", 50), Item.of(CR('copper_sheet')), Item.of(KJ('zinc_sheet'))],
+		[Fluid.of("ad_astra:oxygen", 50), Fluid.of("ad_astra:hydrogen", 50), Item.of(CR('copper_sheet')), Item.of(KJ('zinc_sheet'))],
 		[Fluid.of(MC("water"), 100), Item.of(CR('copper_sheet')), Item.of(KJ('zinc_sheet'))]
 	).heated()
 
-	// FIXME: Rocketry gone
-	// event.recipes.thermal.compression_fuel(Fluid.of("advancedrocketry:hydrogen")).energy(100000)
-	// event.recipes.thermal.compression_fuel(Fluid.of("advancedrocketry:oxygen")).energy(10000)
-
-	pattern = [
-		'A',
-		'S'
-	];
-
-	event.recipes.createMechanicalCrafting({
-		item: "advancedrocketry:planet_id_chip",
-		Count: 1,
-		nbt: { dimId: "custommoon:moon", DimensionName: " The Moon " }
-	}, pattern,
-		{
-			A: "#forge:gems/quartz",
-			S: KJ("calculation_mechanism")
-		})
-
-	event.recipes.createMechanicalCrafting({
-		item: "advancedrocketry:planet_id_chip",
-		Count: 1,
-		nbt: { dimId: "minecraft:overworld", DimensionName: " Earth " }
-	}, pattern,
-		{
-			A: "#forge:gems/certus_quartz",
-			S: KJ("calculation_mechanism")
-		})
-
-
+	event.recipes.thermal.compression_fuel(Fluid.of("ad_astra:hydrogen")).energy(100000)
+	event.recipes.thermal.compression_fuel(Fluid.of("ad_astra:oxygen")).energy(10000)
 }
 /**
  * @param {Internal.RecipesEventJS} event 
@@ -1156,6 +1142,7 @@ function unify(event) {
 	woodcutting("tconstruct", "skyroot_log", "skyroot_planks", "skyroot_planks_slab")
 	woodcutting("tconstruct", "bloodshroom_log", "bloodshroom_planks", "bloodshroom_planks_slab")
 
+	event.replaceInput({}, 'ad_astra:fan', 'create:propeller')
 }
 /**
  * @param {Internal.RecipesEventJS} event 
@@ -1625,17 +1612,18 @@ function copperMachine(event) {
 function brassMachine(event) {
 	event.shaped(KJ('screwdriver'), ['I  ',' ID',' DI'], { I: 'iron_ingot', D: '#forge:dyes/blue'})
 	let redstoneTransmute = (input, output) => {
-		event.custom({
-			"type": "tconstruct:casting_basin",
-			"cast": { "item": input },
-			"cast_consumed": true,
-			"fluid": {
-				"name": "thermal:redstone",
-				"amount": 50
-			},
-			"result": output,
-			"cooling_time": 30
-		})
+		event.recipes.create.filling(output, [input, Fluid.of('thermal:redstone', 50)])
+		// event.custom({
+		// 	"type": "tconstruct:casting_basin",
+		// 	"cast": { "item": input },
+		// 	"cast_consumed": true,
+		// 	"fluid": {
+		// 		"name": "thermal:redstone",
+		// 		"amount": 50
+		// 	},
+		// 	"result": output,
+		// 	"cooling_time": 30
+		// })
 	}
 
 	redstoneTransmute(MC("cobblestone"), MC("netherrack"))
@@ -1915,6 +1903,8 @@ function invarMachine(event) {
 	// invar_machine(TE('machine_sawmill'), 1, TE('saw_blade'))
 	// invar_machine(TE('machine_brewer'), 1, MC('brewing_stand'))
 	// invar_machine(TE('machine_insolator'), 1, MC('dirt'))
+
+
 
 }
 /**
@@ -2319,6 +2309,8 @@ function madMaths(event) {
 	}
 
 	let alloyAmount = 10
+
+	event.recipes.shaped('kubejs:empty_computation_matrix', [' Q ', 'Q Q', ' Q '], { Q: AE2('certus_quartz_crystal')})
 
 	event.recipes.createSequencedAssembly(['kubejs:partial_computation_matrix'], 'kubejs:empty_computation_matrix', [
 		event.recipes.createFilling(KJ('incomplete_computation_matrix_1'), [KJ('incomplete_computation_matrix_1'), Fluid.of(KJ('number_0'), alloyAmount)]),
