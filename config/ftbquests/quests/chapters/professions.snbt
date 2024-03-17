@@ -749,7 +749,7 @@
 				{
 					count: 8L
 					id: "0D0220AE1F3EA9A4"
-					item: "create:deepslate"
+					item: "minecraft:deepslate"
 					type: "item"
 				}
 				{
@@ -761,7 +761,7 @@
 				{
 					count: 8L
 					id: "62545E644E0DD998"
-					item: "create:dolomite"
+					item: "minecraft:calcite"
 					type: "item"
 				}
 			]
