@@ -355,28 +355,37 @@ let cobble = (id, cobbleId) => ({
 ServerEvents.blockLootTables(event => {
 
     // Vanilla stone variants drop as cobble
-    event.addJson(MC('andesite'), cobble(MC('andesite'), "chipped:cobbled_andesite"))
-    event.addJson(MC('diorite'), cobble(MC('diorite'), 'chipped:cobbled_diorite'))
-    event.addJson(MC('granite'), cobble(MC('granite'), "chipped:cobbled_granite"))
-    event.addSimpleBlock('chisel:basalt/raw', 'extcaves:lavastone')
+    // event.addJson(MC('andesite'), cobble(MC('andesite'), "chipped:cobbled_andesite"))
+    // event.addJson(MC('diorite'), cobble(MC('diorite'), 'chipped:cobbled_diorite'))
+    // event.addJson(MC('granite'), cobble(MC('granite'), "chipped:cobbled_granite"))
+    // event.addSimpleBlock('chisel:basalt/raw', 'extcaves:lavastone')
 
     event.addSimpleBlock('minecraft:twisting_vines', 'minecraft:twisting_vines')
     event.addSimpleBlock('minecraft:weeping_vines', 'minecraft:weeping_vines')
-    event.addSimpleBlock('advancedrocketry:moonturf', 'advancedrocketry:moonturf')
+    // event.addSimpleBlock('advancedrocketry:moonturf', 'advancedrocketry:moonturf')
 
     // 1.17-esque Ores
-    let extra_ores = ['minecraft:', 'darkerdepths:aridrock_', 'darkerdepths:limestone_']
+    // let extra_ores = ['minecraft:', 'darkerdepths:aridrock_', 'darkerdepths:limestone_']
 
-    extra_ores.forEach(e => {
-        let iron = e + "iron_ore"
-        event.addJson(iron, metal_ores_drop_dust(iron, CR('crushed_iron_ore')))
-        let gold = e + "gold_ore"
-        event.addJson(gold, metal_ores_drop_dust(gold, CR('crushed_gold_ore')))
-    })
-    event.addJson(CR('copper_ore'), metal_ores_drop_dust(CR('copper_ore'), CR('crushed_copper_ore')))
-    event.addJson(CR('zinc_ore'), metal_ores_drop_dust(CR('zinc_ore'), CR('crushed_zinc_ore')))
-    event.addJson(TE('nickel_ore'), metal_ores_drop_dust(TE('nickel_ore'), CR('crushed_nickel_ore')))
-    event.addJson(TE('lead_ore'), metal_ores_drop_dust(TE('lead_ore'), CR('crushed_lead_ore')))
+    // extra_ores.forEach(e => {
+    //     let iron = e + "iron_ore"
+    //     event.addJson(iron, metal_ores_drop_dust(iron, CR('crushed_iron_ore')))
+    //     let gold = e + "gold_ore"
+    //     event.addJson(gold, metal_ores_drop_dust(gold, CR('crushed_gold_ore')))
+    // })
+    
+    event.addJson(MC('iron_ore'), metal_ores_drop_dust(MC('iron_ore'), CR('crushed_raw_iron')))
+    event.addJson(MC('deepslate_iron_ore'), metal_ores_drop_dust(MC('deepslate_iron_ore'), CR('crushed_raw_iron')))
+    event.addJson(MC('copper_ore'), metal_ores_drop_dust(MC('copper_ore'), CR('crushed_raw_copper')))
+    event.addJson(MC('deepslate_copper_ore'), metal_ores_drop_dust(MC('deepslate_copper_ore'), CR('crushed_raw_copper')))
+    event.addJson(CR('zinc_ore'), metal_ores_drop_dust(CR('zinc_ore'), CR('crushed_raw_zinc')))
+    event.addJson(CR('deepslate_zinc_ore'), metal_ores_drop_dust(CR('deepslate_zinc_ore'), CR('crushed_raw_zinc')))
+    event.addJson(TE('nickel_ore'), metal_ores_drop_dust(TE('nickel_ore'), CR('crushed_raw_nickel')))
+    event.addJson(TE('deepslate_nickel_ore'), metal_ores_drop_dust(TE('deepslate_nickel_ore'), CR('crushed_raw_nickel')))
+    event.addJson(TE('lead_ore'), metal_ores_drop_dust(TE('lead_ore'), CR('crushed_raw_lead')))
+    event.addJson(TE('deepslate_lead_ore'), metal_ores_drop_dust(TE('deepslate_lead_ore'), CR('crushed_raw_lead')))
+    event.addJson(MC('gold_ore'), metal_ores_drop_dust(MC('gold_ore'), CR('crushed_raw_gold')))
+    event.addJson(MC('deepslate_gold_ore'), metal_ores_drop_dust(MC('deepslate_gold_ore'), CR('crushed_raw_gold')))
 
     event.addJson("forbidden_arcanus:mysterywood_leaves", mystery_leaves_but_no_gapples)
 

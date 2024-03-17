@@ -17,3 +17,5 @@ patchouli_data.json
 rhino.local.properties
 *cache.json
 .cache
+config/worldedit/.archive-unpack/
+config/worldedit/sessions/

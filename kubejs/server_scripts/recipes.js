@@ -308,7 +308,7 @@ function unwantedRecipes(event) {
 	event.remove({ output: CR('chromatic_compound') })
 	event.remove({ input: '#forge:coins' })
 	event.remove({ input: '#forge:ores/redstone' })
-	event.remove({ input: '#create:crushed_ores' })
+	event.remove({ input: '#create:crushed_raw_materials' })
 	event.remove({ input: '#forge:ores/tin' })
 	event.remove({ input: '#forge:ores/silver' })
 	event.remove({ output: '#forge:plates/tin' })
