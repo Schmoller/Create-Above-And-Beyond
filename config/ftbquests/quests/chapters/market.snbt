@@ -55,70 +55,6 @@
 			y: 0.9107142857142847d
 		}
 		{
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Kinetic Mechanisms&r."]
-			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				id: "cb_microblock:diamond_saw"
-				tag: {
-					Damage: 0
-					Enchantments: [{
-						id: "minecraft:unbreaking"
-						lvl: 3s
-					}]
-					RepairCost: 0
-					display: {
-						Name: "{\"text\":\"Enchanted Saw\"}"
-					}
-				}
-			}
-			id: "4F953BACF4D1C151"
-			rewards: [{
-				id: "56DB21D18FB1FF64"
-				item: {
-					Count: 1b
-					id: "cb_microblock:diamond_saw"
-					tag: {
-						Damage: 0
-						Enchantments: [{
-							id: "minecraft:unbreaking"
-							lvl: 10s
-						}]
-						HideFlags: 1
-						RepairCost: 0
-						Unbreakable: 1
-						display: {
-							Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
-						}
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "5 Gold"
-			tasks: [
-				{
-					id: "4C77B71D0EC3B2EA"
-					item: {
-						Count: 1b
-						id: "cb_microblock:diamond_saw"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "3EE8736C08EF80F4"
-					item: "thermal:gold_coin"
-					type: "item"
-				}
-			]
-			title: "Saw everything"
-			x: -8.5d
-			y: -6.5d
-		}
-		{
 			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms&r."]
 			icon: {
 				Count: 1b
@@ -178,8 +114,8 @@
 				}
 			]
 			title: "Never Screwed"
-			x: -7.0d
-			y: -6.5d
+			x: -7.999999999999993d
+			y: -6.482142857142858d
 		}
 		{
 			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Inductive Mechanisms&r."]
@@ -236,8 +172,8 @@
 				}
 			]
 			title: "Magnetic Energetic"
-			x: -5.0d
-			y: -6.5d
+			x: -6.035714285714285d
+			y: -6.482142857142858d
 		}
 		{
 			description: [
@@ -685,8 +621,8 @@
 				}
 			]
 			title: "Windows Update"
-			x: -3.5d
-			y: -6.5d
+			x: -3.999999999999993d
+			y: -6.482142857142858d
 		}
 		{
 			description: ["In case you are struggling to find all the right Circuit Casts, we will sell you additional dice rolls!"]

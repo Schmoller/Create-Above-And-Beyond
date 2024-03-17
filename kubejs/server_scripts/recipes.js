@@ -37,7 +37,7 @@ let OC = (id, x) => MOD("occultism", id, x)
 
 let colours = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
 let native_metals = ['iron', 'zinc', 'lead', 'copper', 'nickel', 'gold']
-let wood_types = [MC('oak'), MC('spruce'), MC('birch'), MC('jungle'), MC('acacia'), MC('dark_oak'), MC('crimson'), MC('warped'), BOP('fir'), BOP('redwood'), BOP('cherry'), BOP('mahogany'), BOP('jacaranda'), BOP('palm'), BOP('willow'), BOP('dead'), BOP('magic'), BOP('umbran'), BOP('hellbark'), AP('twisted'), /*EG('poise')*/]
+let wood_types = [MC('oak'), MC('spruce'), MC('birch'), MC('jungle'), MC('acacia'), MC('dark_oak'), MC('crimson'), MC('warped'), MC('mangrove'), MC('cherry'), BOP('fir'), BOP('redwood'), BOP('cherry'), BOP('mahogany'), BOP('jacaranda'), BOP('palm'), BOP('willow'), BOP('dead'), BOP('magic'), BOP('umbran'), BOP('hellbark'), AP('twisted'), /*EG('poise')*/]
 
 let donutCraft = (event, output, center, ring) => {
 	event.shaped(output, [
@@ -964,13 +964,13 @@ function rocketScience(event) {
 			S: MC("iron_boots")
 		})
 
-	event.shaped("libvulpes:linker", [
-		'G',
-		'A'
-	], {
-		A: plastic,
-		G: MC("redstone_torch")
-	})
+	// event.shaped("libvulpes:linker", [
+	// 	'G',
+	// 	'A'
+	// ], {
+	// 	A: plastic,
+	// 	G: MC("redstone_torch")
+	// })
 
 	event.shaped("ad_astra:oxygen_loader", [
 		'IFI',
@@ -1135,12 +1135,12 @@ function unify(event) {
 		event.recipes.createCutting([Item.of(mod + ":" + slab, 2)], mod + ":" + planks).processingTime(50)
 	}
 
-	woodcutting("forbidden_arcanus", "cherrywood_log", "cherrywood_planks", "cherrywood_slab")
-	woodcutting("forbidden_arcanus", "mysterywood_log", "mysterywood_planks", "mysterywood_slab")
+	// woodcutting("forbidden_arcanus", "cherrywood_log", "cherrywood_planks", "cherrywood_slab")
+	// woodcutting("forbidden_arcanus", "mysterywood_log", "mysterywood_planks", "mysterywood_slab")
 	woodcutting("architects_palette", "twisted_log", "twisted_planks", "twisted_slab")
-	woodcutting("tconstruct", "greenheart_log", "greenheart_planks", "greenheart_planks_slab")
-	woodcutting("tconstruct", "skyroot_log", "skyroot_planks", "skyroot_planks_slab")
-	woodcutting("tconstruct", "bloodshroom_log", "bloodshroom_planks", "bloodshroom_planks_slab")
+	// woodcutting("tconstruct", "greenheart_log", "greenheart_planks", "greenheart_planks_slab")
+	// woodcutting("tconstruct", "skyroot_log", "skyroot_planks", "skyroot_planks_slab")
+	// woodcutting("tconstruct", "bloodshroom_log", "bloodshroom_planks", "bloodshroom_planks_slab")
 
 	event.replaceInput({}, 'ad_astra:fan', 'create:propeller')
 }
@@ -1285,7 +1285,6 @@ function oreProcessing(event) {
 		let fluid = KJ("molten_" + name)
 		let fluid_byproduct = KJ("molten_" + fluid_byproduct_name)
 
-		console.log(`${name}:`)
 		event.smelting(`3x ${nugget}`, crushed)
 		event.smelting(nugget, dust).cookingTime(40)
 		event.recipes.createMilling([crushed, Item.of(MC('cobblestone'), 1).withChance(.5)], ore)
@@ -1331,26 +1330,6 @@ function oreProcessing(event) {
 			"experience": 0.2,
 			"energy": 20000
 		})
-
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"item": dust
-			},
-			"result": {
-				"fluid": fluid,
-				"amount": 48
-			},
-			"temperature": 500,
-			"time": 30,
-			"byproducts": [
-				{
-					"fluid": fluid_byproduct,
-					"amount": 16
-				}
-			]
-		});
-
 	}
 
 	let melting = (name, ingot, nugget) => {
@@ -1584,7 +1563,7 @@ function copperMachine(event) {
 
 	event.remove({ id: TC("smeltery/casting/seared/smeltery_controller") })
 	event.remove({ id: TC("smeltery/melting/copper/smeltery_controller") })
-	donutCraft(event, TC('smeltery_controller'), TC('seared_bricks'), KJ('sealed_mechanism'))
+	// donutCraft(event, TC('smeltery_controller'), TC('seared_bricks'), KJ('sealed_mechanism'))
 
 	let copper_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
@@ -1663,7 +1642,7 @@ function brassMachine(event) {
 
 	brass_machine('create:mechanical_crafter', 3, MC('crafting_table'))
 	brass_machine('create:sequenced_gearshift', 2)
-	brass_machine('create:furnace_engine', 1)
+	brass_machine('create:steam_engine', 1)
 	brass_machine('create:rotation_speed_controller', 1)
 	brass_machine('create:mechanical_arm', 1)
 	brass_machine('create:stockpile_switch', 2)
@@ -1706,7 +1685,7 @@ function zincMachine(event) {
 	event.remove({ id: TC('smeltery/melting/soul/sand') })
 	// event.recipes.createMilling([Item.of(TE('basalz_powder'), 1)], TE("basalz_rod")).processingTime(300)
 
-	donutCraft(event, TC('foundry_controller'), TC('scorched_bricks'), KJ('infernal_mechanism'))
+	// donutCraft(event, TC('foundry_controller'), TC('scorched_bricks'), KJ('infernal_mechanism'))
 
 	event.recipes.createMixing(Fluid.of(KJ("liquid_soul"), 500), [MC('twisting_vines'), MC('weeping_vines')]).heated()
 
@@ -2057,9 +2036,9 @@ function enderMachine(event) {
 			event.stonecutting(`${amount}x ${id}`, 'kubejs:enderium_machine')
 	}
 
-	ender_machine("enderstorage:ender_chest", 1, MC('chest'))
-	ender_machine("enderstorage:ender_tank", 1, CR('fluid_tank'))
-	ender_machine("portality:controller", 1, MC('diamond'))
+	// ender_machine("enderstorage:ender_chest", 1, MC('chest'))
+	// ender_machine("enderstorage:ender_tank", 1, CR('fluid_tank'))
+	// ender_machine("portality:controller", 1, MC('diamond'))
 	ender_machine(TE("upgrade_augment_3"), 1, MC('redstone'))
 	ender_machine(TE("dynamo_lapidary"), 1, TE('rf_coil'))
 	ender_machine(AE2("quantum_ring"), 1, AE2('energy_cell'))
@@ -2072,31 +2051,31 @@ function enderMachine(event) {
  */
 function circuits(event) {
 
-	event.custom({
-		"type": "tconstruct:melting",
-		"ingredient": {
-			"item": MC('redstone')
-		},
-		"result": {
-			"fluid": TE('redstone'),
-			"amount": 100
-		},
-		"temperature": 300,
-		"time": 10
-	});
+	// event.custom({
+	// 	"type": "tconstruct:melting",
+	// 	"ingredient": {
+	// 		"item": MC('redstone')
+	// 	},
+	// 	"result": {
+	// 		"fluid": TE('redstone'),
+	// 		"amount": 100
+	// 	},
+	// 	"temperature": 300,
+	// 	"time": 10
+	// });
 
-	event.custom({
-		"type": "tconstruct:melting",
-		"ingredient": {
-			"item": MC('redstone_block')
-		},
-		"result": {
-			"fluid": TE('redstone'),
-			"amount": 900
-		},
-		"temperature": 500,
-		"time": 90
-	});
+	// event.custom({
+	// 	"type": "tconstruct:melting",
+	// 	"ingredient": {
+	// 		"item": MC('redstone_block')
+	// 	},
+	// 	"result": {
+	// 		"fluid": TE('redstone'),
+	// 		"amount": 900
+	// 	},
+	// 	"temperature": 500,
+	// 	"time": 90
+	// });
 
 	// event.remove({ output: PR_C('red_ingot') })
 	// event.remove({ output: PR_C('red_iron_comp') })
@@ -2296,16 +2275,17 @@ function madMaths(event) {
 
 	let meltOrCrucible = (id, out, outAmount) => {
 		event.recipes.thermal.crucible(Fluid.of(out, outAmount), [id]).energy(20)
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": { "item": id },
-			"result": {
-				"fluid": out,
-				"amount": outAmount
-			},
-			"temperature": 200,
-			"time": 20
-		})
+		event.recipes.createMixing([Fluid.of(out, outAmount)], [id]).heated()
+		// event.custom({
+		// 	"type": "tconstruct:melting",
+		// 	"ingredient": { "item": id },
+		// 	"result": {
+		// 		"fluid": out,
+		// 		"amount": outAmount
+		// 	},
+		// 	"temperature": 200,
+		// 	"time": 20
+		// })
 	}
 
 	let alloyAmount = 10
@@ -2542,7 +2522,7 @@ function alchemy(event) {
 		let jsonOut = []
 		if (outputs[0] > 0)
 			jsonOut.push({
-				"item": "darkerdepths:ash",
+				"item": "supplementaries:ash",
 				"count": outputs[0]
 			})
 		if (outputs[1] > 0)
@@ -2589,6 +2569,7 @@ function alchemy(event) {
 	}
 
 	event.recipes.createCrushing(CR("powdered_obsidian"), MC("obsidian"))
+	event.recipes.createMilling(TE("quartz_dust"), MC("quartz"))
 
 	recompact(CR("powdered_obsidian"), MC("obsidian"))
 	recompact(TE("diamond_dust"), MC("diamond"))

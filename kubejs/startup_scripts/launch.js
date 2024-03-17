@@ -238,7 +238,7 @@ StartupEvents.registry('block',  event => {
 	reagent(0xC7A94A, 0xEEF071, "sulfur", "Sulfuric", "thermal:sulfur_dust")
 	reagent(0x735A65, 0xB8AFAF, "niter", "Nitric", "thermal:niter_dust")
 	reagent(0x91C5FC, 0xA7CBCF, "certus", "Certus Quartz", "ae2:certus_quartz_dust")
-	reagent(0xB19E8F, 0xE7E2DB, "quartz", "Nether Quartz", "ae2:nether_quartz_dust")
+	reagent(0xB19E8F, 0xE7E2DB, "quartz", "Nether Quartz", "thermal:quartz_dust")
 	category()
 	reagent(0x616A60, 0xD0D2C5, "zinc", "Zinc", "kubejs:zinc_dust")
 	reagent(0xDD7E5D, 0xFCEFBA, "copper", "Copper", "thermal:copper_dust")
