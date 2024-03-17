@@ -19,3 +19,4 @@ rhino.local.properties
 .cache
 config/worldedit/.archive-unpack/
 config/worldedit/sessions/
+options.txt
