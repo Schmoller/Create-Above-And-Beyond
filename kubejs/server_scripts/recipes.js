@@ -1151,7 +1151,7 @@ function trickierWindmills(event) {
 		'NAN',
 		'SSS'
 	], {
-		A: '#ae2:wool',
+		A: '#minecraft:wool',
 		N: 'minecraft:iron_nugget',
 		S: 'minecraft:stick'
 	})
