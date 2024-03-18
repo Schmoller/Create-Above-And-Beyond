@@ -425,6 +425,8 @@ function unwantedRecipes(event) {
 	event.remove({ id: 'thermal:machines/refinery/refinery_light_oil'})
 	event.remove({ id: 'thermal:machines/refinery/refinery_heavy_oil'})
 
+	event.remove({ id: 'create:rope_pulley'})
+	event.remove({ id: 'create:elevator_pulley'})
 }
 /**
  * @param {Internal.RecipesEventJS} event 
@@ -1522,6 +1524,7 @@ function andesiteMachine(event) {
 	andesite_machine('create:andesite_funnel', 4)
 	andesite_machine('create:andesite_tunnel', 4)
 	andesite_machine('kubejs:pipe_module_utility', 4)
+	andesite_machine('create:rope_pulley', 1)
 
 }
 /**
@@ -1650,6 +1653,7 @@ function brassMachine(event) {
 	brass_machine('create:brass_funnel', 4)
 	brass_machine('create:brass_tunnel', 4)
 	brass_machine('kubejs:pipe_module_tier_1', 4)
+	brass_machine('create:elevator_pulley', 1)
 
 }
 /**
