@@ -9,6 +9,9 @@ JEIEvents.hideItems(event => {
 	event.hide('ad_astra:compressor')
 	event.hide('ad_astra:coal_generator')
 	event.hide('ad_astra:fuel_refinery')
+
+	event.hide(/^createdeco:.*coin(stack)?$/)
+	event.hide(/^thermal:(?!gold|silver).*_coin$/)
 })
 
 JEIEvents.subtypes(event => {

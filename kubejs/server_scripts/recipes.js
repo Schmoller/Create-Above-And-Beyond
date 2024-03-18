@@ -427,6 +427,8 @@ function unwantedRecipes(event) {
 
 	event.remove({ id: 'create:rope_pulley'})
 	event.remove({ id: 'create:elevator_pulley'})
+
+	event.remove({ id: /^createdeco:.*coin(stack)?$/})
 }
 /**
  * @param {Internal.RecipesEventJS} event 
