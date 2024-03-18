@@ -491,6 +491,7 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "6530AB7AA277197D"
 					item: "create:mechanical_mixer"
 					type: "item"
