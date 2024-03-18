@@ -59,48 +59,48 @@
 			y: 12.25d
 		}
 		{
-			title: "Early Shipping"
-			icon: "thermal:machine_press"
-			x: -2.0d
-			y: 12.25d
-			shape: "circle"
-			subtitle: "16 Silver"
+			dependencies: ["6AC1CED0D341150E"]
 			description: [
 				"Getting to the Brass Age is hard work!"
 				""
 				"The avid salesman can come here for purchasing Trading Machines from the get go. This should help you take off!"
 			]
-			dependencies: ["6AC1CED0D341150E"]
+			icon: "thermal:machine_press"
 			id: "4DFE4FD3B504AF4B"
-			tasks: [{
-				id: "3E2EAC7B2D274669"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 30b }
-				item: "thermal:silver_coin"
-				count: 30L
-			}]
 			rewards: [
 				{
-					id: "26C6A3ACA1B59772"
-					type: "item"
 					auto: "enabled"
+					id: "26C6A3ACA1B59772"
 					item: "thermal:machine_press"
-				}
-				{
-					id: "271E7F49C6719B0B"
 					type: "item"
-					auto: "no_toast"
-					item: "thermal:dynamo_stirling"
 				}
 				{
-					id: "61448EF131387AEF"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
 					auto: "no_toast"
+					id: "271E7F49C6719B0B"
+					item: "thermal:dynamo_stirling"
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					icon: "thermal:machine_cycle_augment"
+					id: "61448EF131387AEF"
+					tags: ["reset"]
+					title: "Repeatable"
+					type: "custom"
 				}
 			]
+			shape: "circle"
+			subtitle: "16 Silver"
+			tasks: [{
+				count: 30L
+				icon: { Count: 30b, id: "thermal:silver_coin" }
+				id: "3E2EAC7B2D274669"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Early Shipping"
+			x: -2.0d
+			y: 12.25d
 		}
 		{
 			disable_toast: true
