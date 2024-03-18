@@ -1448,6 +1448,7 @@ function electronTube(event) {
  * @param {Internal.RecipesEventJS} event 
  */
 function andesiteMachine(event) {
+	event.recipes.create.mixing(['createdeco:zinc_mesh_fence', Item.of('sand').withChance(.40)], [ 'createdeco:zinc_mesh_fence', 'gravel', Fluid.of('minecraft:water', 20) ])
 
 	event.replaceInput({ id: CR("crafting/kinetics/brass_hand") }, '#forge:plates/brass', CR('golden_sheet'))
 	wood_types.forEach(wood => {
