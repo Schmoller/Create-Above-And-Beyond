@@ -124,6 +124,8 @@ StartupEvents.registry('item', event => {
 	event.create('ingot_cast_filled_silver').texture("kubejs:item/ingot_cast_filled_silver").displayName('Filled Ingot Cast').unstackable()
 	event.create('ingot_cast_filled_nickel').texture("kubejs:item/ingot_cast_filled_nickel").displayName('Filled Ingot Cast').unstackable()
 	event.create('ingot_cast_filled_zinc').texture("kubejs:item/ingot_cast_filled_zinc").displayName('Filled Ingot Cast').unstackable()
+	event.create('ingot_cast_filled_brass').texture("kubejs:item/ingot_cast_filled_brass").displayName('Filled Ingot Cast').unstackable()
+	event.create('ingot_cast_filled_constantan').texture("kubejs:item/ingot_cast_filled_constantan").displayName('Filled Ingot Cast').unstackable()
 
 	event.create('screwdriver').texture('kubejs:item/screwdriver').maxDamage(250).displayName('Screwdriver')
 

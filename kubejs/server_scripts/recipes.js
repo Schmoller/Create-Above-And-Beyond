@@ -1357,9 +1357,14 @@ function oreProcessing(event) {
 	melting('silver', TE('silver_ingot'), '#forge:nuggets/silver');
 
 	cast('silver', TE('silver_ingot'), KJ('molten_silver'))
+	cast('brass', CR('brass_ingot'), KJ('molten_brass'))
+	cast('constantan', TE('constantan_ingot'), KJ('molten_constantan'))
 
 	// Melt coins
 	event.recipes.createMixing([Fluid.of(KJ('molten_silver'), 16)], ['#forge:coins/silver']).heated()
+
+	event.recipes.createMixing([Fluid.of(KJ('molten_brass'), 144)], ['#forge:ingots/brass']).heated()
+	event.recipes.createMixing([Fluid.of(KJ('molten_constantan'), 144)], ['#forge:ingots/constantan']).heated()
 
 	event.replaceInput({ id: TE("machine/smelter/smelter_iron_ore") }, MC('iron_ore'), CR('crushed_iron_ore'))
 	event.replaceInput({ id: TE("machine/smelter/smelter_gold_ore") }, MC('gold_ore'), CR('crushed_gold_ore'))
@@ -1384,9 +1389,8 @@ function alloys(event) {
 	event.remove({ type: MC("crafting_shapeless"), output: TE('bronze_dust') })
 	event.remove({ type: MC("crafting_shapeless"), output: TE('invar_dust') })
 
-	// FIXME: No TC molten
-	event.recipes.createMixing(Fluid.of(TC('molten_brass'), 16), [Fluid.of(KJ('molten_copper'), 16), Fluid.of(KJ('molten_zinc'), 16)])
-	event.recipes.createMixing(Fluid.of(TC('molten_constantan'), 16), [Fluid.of(KJ('molten_copper'), 16), Fluid.of(KJ('molten_nickel'), 16)])
+	event.recipes.createMixing(Fluid.of(KJ('molten_brass'), 16), [Fluid.of(KJ('molten_copper'), 16), Fluid.of(KJ('molten_zinc'), 16)])
+	event.recipes.createMixing(Fluid.of(KJ('molten_constantan'), 16), [Fluid.of(KJ('molten_copper'), 16), Fluid.of(KJ('molten_nickel'), 16)])
 	// event.recipes.createMixing(Fluid.of(TC('molten_rose_gold'), 16), [Fluid.of(KJ('molten_copper'), 16), Fluid.of(KJ('molten_gold'), 16)])
 
 	event.recipes.thermal.smelter([KJ("invar_compound"), KJ("invar_compound")], [TE("nickel_ingot"), MC("iron_ingot")])
