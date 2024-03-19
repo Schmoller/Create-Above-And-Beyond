@@ -1900,7 +1900,7 @@ function fluixMachine(event) {
 	event.shaped(KJ('flash_drive'), [
 		'SCA'
 	], {
-		A: TC('cobalt_ingot'),
+		A: AE2('fluix_slab'),
 		C: AE2('logic_processor'),
 		S: MC('iron_ingot')
 	})
