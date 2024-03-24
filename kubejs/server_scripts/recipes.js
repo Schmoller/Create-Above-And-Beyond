@@ -1579,7 +1579,7 @@ function copperMachine(event) {
 			event.stonecutting(`${amount}x ${id}`, 'kubejs:copper_machine')
 	}
 
-	copper_machine('create:copper_backtank', 1, CR("copper_block"))
+	copper_machine('create:copper_backtank', 1, MC("copper_block"))
 	copper_machine('create:portable_fluid_interface', 2)
 	copper_machine('create:spout', 1, MC('hopper'))
 	copper_machine('thermal:upgrade_augment_1', 1, MC('redstone'))
