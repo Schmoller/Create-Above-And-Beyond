@@ -1443,6 +1443,9 @@ function electronTube(event) {
 	grow(AE2("medium_quartz_bud"), KJ('growing_medium_quartz_bud'), AE2('large_quartz_bud'))
 	grow(AE2("large_quartz_bud"), KJ('growing_large_quartz_bud'), AE2('quartz_cluster'))
 
+	event.recipes.createMilling([Item.of(AE2('certus_quartz_crystal'), 4)], AE2('quartz_cluster')).processingTime(250)
+	event.recipes.createCrushing([Item.of(AE2('certus_quartz_crystal'), 6)], AE2('quartz_cluster')).processingTime(250)
+
 	event.recipes.createMixing(Fluid.of(KJ("sky_solution"), 500), [AE2('sky_dust'), AE2('sky_dust'), AE2('sky_dust'), AE2('sky_dust'), Fluid.of(MC('water'), 500)])
 	event.recipes.createMixing([AE2('certus_quartz_crystal'), Fluid.of(TE("redstone"), 250)], [AE2('charged_certus_quartz_crystal'), Fluid.of(KJ("sky_solution"), 250)])
 	event.recipes.createMixing(['create:polished_rose_quartz'], [AE2('quartz_cluster'), Fluid.of(TE("redstone"), 250)])
