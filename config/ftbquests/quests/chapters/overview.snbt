@@ -53,7 +53,7 @@
 				disable_toast: true
 				icon: "create:precision_mechanism"
 				id: "0FF38BBE3B19D9C2"
-				stat: "minecraft:play_one_minute"
+				stat: "minecraft:play_time"
 				title: "Complete Chapter 2"
 				type: "stat"
 				value: 1
@@ -79,7 +79,7 @@
 				disable_toast: true
 				icon: "kubejs:inductive_mechanism"
 				id: "7FEEF6BED2C3F31B"
-				stat: "minecraft:play_one_minute"
+				stat: "minecraft:play_time"
 				title: "Complete Chapter 3"
 				type: "stat"
 				value: 1
@@ -109,7 +109,7 @@
 				disable_toast: true
 				icon: "kubejs:calculation_mechanism"
 				id: "79AB928A6C8E21DA"
-				stat: "minecraft:play_one_minute"
+				stat: "minecraft:play_time"
 				title: "Complete Chapter 4"
 				type: "stat"
 				value: 1
@@ -135,7 +135,7 @@
 				disable_toast: true
 				icon: "kubejs:sealed_mechanism"
 				id: "27B07858A6018539"
-				stat: "minecraft:play_one_minute"
+				stat: "minecraft:play_time"
 				title: "Complete Bonus 1A"
 				type: "stat"
 				value: 1
@@ -161,7 +161,7 @@
 				disable_toast: true
 				icon: "kubejs:infernal_mechanism"
 				id: "12CFC84D3F01F49F"
-				stat: "minecraft:play_one_minute"
+				stat: "minecraft:play_time"
 				title: "Complete Bonus 2A"
 				type: "stat"
 				value: 1
@@ -183,7 +183,7 @@
 				disable_toast: true
 				icon: "kubejs:abstruse_mechanism"
 				id: "4BC5C43C7B23CA16"
-				stat: "minecraft:play_one_minute"
+				stat: "minecraft:play_time"
 				title: "Complete Bonus 3A"
 				type: "stat"
 				value: 1
@@ -244,7 +244,7 @@
 						tag: { }
 					}
 					id: "058AEB3EF218C7D2"
-					stat: "minecraft:play_one_minute"
+					stat: "minecraft:play_time"
 					title: "Complete Chapter 5"
 					type: "stat"
 					value: 1
