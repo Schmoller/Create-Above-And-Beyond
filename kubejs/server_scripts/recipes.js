@@ -286,6 +286,12 @@ ServerEvents.tags('item', event => {
 		.add(MC('chorus_fruit'))
 		.add(MC('blaze_powder'))
 
+	event.get('forge:dusts')
+		.add(KJ('zinc_dust'))
+
+	event.get('forge:dusts/zinc')
+		.add(KJ('zinc_dust'))
+
 })
 
 // Scripts
@@ -1297,6 +1303,8 @@ function oreProcessing(event) {
 
 		event.recipes.thermal.crucible(Fluid.of(fluid, 48), dust).energy(3000)
 		event.recipes.createSplashing([`2x ${nugget}`], dust)
+		const bulkSize = 3
+		event.recipes.createMixing([Fluid.of(fluid, 48 * bulkSize), Fluid.of(fluid_byproduct, 16 * bulkSize)], [Item.of(dust, bulkSize)]).heated()
 		event.recipes.createMixing([Fluid.of(fluid, 48), Fluid.of(fluid_byproduct, 16)], [dust]).heated()
 		event.recipes.createMixing([Fluid.of(fluid, 288)], [`3x ${dust}`, AE2('matter_ball')]).superheated()
 		
@@ -1335,11 +1343,8 @@ function oreProcessing(event) {
 
 	let melting = (name, ingot, nugget) => {
 		const fluid = KJ(`molten_${name}`)
-		event.recipes.createMixing([Fluid.of(fluid, 48)], [nugget]).heated()
+		event.recipes.createMixing([Fluid.of(fluid, 16)], [nugget]).heated()
 		event.recipes.createMixing([Fluid.of(fluid, 144)], [ingot]).heated()
-
-		event.recipes.createMixing([Fluid.of(fluid, 48)], [nugget, Fluid.of('lava', 10)])
-		event.recipes.createMixing([Fluid.of(fluid, 144)], [ingot, Fluid.of('lava', 100)])
 	}
 
 	dust_process('nickel', TE('nickel_ingot'), TE('nickel_nugget'), TE('nickel_dust'), TE('nickel_ore'), CR('copper_nugget'), 'copper')
@@ -1357,6 +1362,8 @@ function oreProcessing(event) {
 	melting('copper', MC('copper_ingot'), '#forge:nuggets/copper');
 	melting('zinc', CR('zinc_ingot'), '#forge:nuggets/zinc');
 	melting('silver', TE('silver_ingot'), '#forge:nuggets/silver');
+	melting('constantan', '#forge:ingots/constantan', '#forge:nuggets/constantan');
+	melting('brass', CR('brass_ingot'), '#forge:nuggets/brass');
 
 	cast('silver', TE('silver_ingot'), KJ('molten_silver'))
 	cast('brass', CR('brass_ingot'), KJ('molten_brass'))
@@ -1365,8 +1372,6 @@ function oreProcessing(event) {
 	// Melt coins
 	event.recipes.createMixing([Fluid.of(KJ('molten_silver'), 16)], ['#forge:coins/silver']).heated()
 
-	event.recipes.createMixing([Fluid.of(KJ('molten_brass'), 144)], ['#forge:ingots/brass']).heated()
-	event.recipes.createMixing([Fluid.of(KJ('molten_constantan'), 144)], ['#forge:ingots/constantan']).heated()
 
 	event.replaceInput({ id: TE("machine/smelter/smelter_iron_ore") }, MC('iron_ore'), CR('crushed_iron_ore'))
 	event.replaceInput({ id: TE("machine/smelter/smelter_gold_ore") }, MC('gold_ore'), CR('crushed_gold_ore'))
