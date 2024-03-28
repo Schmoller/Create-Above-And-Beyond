@@ -1188,7 +1188,7 @@ function rubberMatters(event) {
 	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_jungle'), MC('jungle_log'), MC('jungle_leaves'))
 	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_spruce'), MC('spruce_log'), MC('spruce_leaves'))
 	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_dark_oak'), MC('dark_oak_log'), MC('dark_oak_leaves'))
-	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_rubber'), TE('rubberwood_log'), TE('rubberwood_leaves'), 50)
+	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_rubberwood'), TE('rubberwood_log'), TE('rubberwood_leaves'), 50)
 	overrideTreeOutput(TE('compat/biomesoplenty/tree_extractor_bop_maple'), MC('oak_log'), 'biomesoplenty:maple_leaves')
 
 	event.remove({ id: CR('crafting/kinetics/belt_connector') })
