@@ -103,10 +103,12 @@ ServerEvents.tags('item', event => {
 
 	global.trades.forEach(element => {
 		event.get('forge:trade_cards').add(`kubejs:trade_card_${element}`)
+		event.get(TE('crafting/dies')).add(`kubejs:trade_card_${element}`)
 	});
 
 	global.professions.forEach(element => {
 		event.get('forge:profession_cards').add(`kubejs:profession_card_${element}`)
+		event.get(TE('crafting/dies')).add(`kubejs:profession_card_${element}`)
 	});
 
 	event.get("forge:tools/axes").add(TC("hand_axe"))
