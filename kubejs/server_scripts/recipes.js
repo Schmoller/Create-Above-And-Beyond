@@ -1172,15 +1172,15 @@ function trickierWindmills(event) {
  * @param {Internal.RecipesEventJS} event 
  */
 function rubberMatters(event) {
-	let overrideTreeOutput = (id, trunk, leaf) => {
+	let overrideTreeOutput = (id, trunk, leaf, amount) => {
 		event.remove({ id: id })
 		event.custom({
 			"type": "thermal:tree_extractor",
 			"trunk": trunk,
 			"leaves": leaf,
 			"result": {
-				"fluid": "thermal:resin",
-				"amount": 25
+				"fluid": "thermal:resin", 
+				"amount": amount || 25
 			}
 		});
 	}
@@ -1188,6 +1188,7 @@ function rubberMatters(event) {
 	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_jungle'), MC('jungle_log'), MC('jungle_leaves'))
 	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_spruce'), MC('spruce_log'), MC('spruce_leaves'))
 	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_dark_oak'), MC('dark_oak_log'), MC('dark_oak_leaves'))
+	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_rubber'), TE('rubberwood_log'), TE('rubberwood_leaves'), 50)
 	overrideTreeOutput(TE('compat/biomesoplenty/tree_extractor_bop_maple'), MC('oak_log'), 'biomesoplenty:maple_leaves')
 
 	event.remove({ id: CR('crafting/kinetics/belt_connector') })
@@ -1206,6 +1207,15 @@ function rubberMatters(event) {
 	event.remove({ id: 'thermal:rubber_from_dandelion' })
 	event.remove({ id: 'thermal:rubber_from_vine' })
 
+	event.custom({
+		"type": "thermal:tree_extractor",
+		"trunk": BOP('hellbark_log'),
+		"leaves": BOP('hellbark_leaves'),
+		"result": {
+			"fluid": "minecraft:lava",
+			"amount": 25
+		}
+	});
 }
 /**
  * @param {Internal.RecipesEventJS} event 
