@@ -104,15 +104,16 @@ StartupEvents.registry('item', event => {
 	])
 
 	profession("Mining", 0x1C1124, 0x88FFF7, [
-		{ in: CR('crushed_iron_ore', 16), out: S(8) },
-		{ in: CR('crushed_copper_ore', 16), out: S(8) },
-		{ in: CR('crushed_zinc_ore', 16), out: S(8) },
-		{ in: CR('crushed_gold_ore', 16), out: S(10) },
-		{ in: CR('crushed_nickel_ore', 16), out: S(12) },
-		{ in: CR('crushed_lead_ore', 16), out: S(12) },
+		{ in: CR('crushed_raw_iron', 16), out: S(8) },
+		{ in: CR('crushed_raw_copper', 16), out: S(8) },
+		{ in: CR('crushed_raw_zinc', 16), out: S(8) },
+		{ in: CR('crushed_raw_gold', 16), out: S(10) },
+		{ in: CR('crushed_raw_nickel', 16), out: S(12) },
+		{ in: CR('crushed_raw_lead', 16), out: S(12) },
 		{ in: MC('andesite', 64), out: S(1) },
 		{ in: MC('granite', 64), out: S(1) },
 		{ in: MC('diorite', 64), out: S(1) },
+		{ in: MC('calcite', 64), out: S(2) },
 		{ in: MC('sandstone', 64), out: S(1) },
 		{ in: CR('limestone', 64), out: S(1) },
 		{ in: MC('deepslate', 64), out: S(1) },
@@ -124,6 +125,7 @@ StartupEvents.registry('item', event => {
 		{ in: MC('lapis_lazuli', 16), out: S(6) },
 		{ in: TE('apatite', 16), out: S(4) },
 		{ in: TE('sapphire', 1), out: S(10) },
+		{ in: MC('amethyst_shard', 8), out: S(6) },
 		{ in: TE('ruby', 1), out: S(10) },
 		{ in: MC('diamond', 1), out: S(14) },
 		{ in: MC('coal', 16), out: S(2) }
