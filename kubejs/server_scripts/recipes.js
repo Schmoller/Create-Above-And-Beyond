@@ -2247,7 +2247,7 @@ function circuits(event) {
 			.id('kubejs:' + e + "_processor")
 	})
 
-	event.recipes.thermal.smelter(AE2('quartz_glass'), AE2("#dusts/quartz"))
+	event.recipes.thermal.smelter(AE2('quartz_glass'), F("#dusts/quartz"))
 
 }
 /**
