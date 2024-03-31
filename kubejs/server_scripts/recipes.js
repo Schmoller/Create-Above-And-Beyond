@@ -471,6 +471,7 @@ function unwantedRecipes(event) {
 	event.remove({ id: 'create:elevator_pulley'})
 
 	event.remove({ id: /^createdeco:.*coin(stack)?$/})
+	event.remove({ id: 'sliceanddice:slicer' })
 }
 /**
  * @param {Internal.RecipesEventJS} event 
@@ -1618,6 +1619,7 @@ function andesiteMachine(event) {
 	andesite_machine('create:andesite_tunnel', 4)
 	andesite_machine('kubejs:pipe_module_utility', 4)
 	andesite_machine('create:rope_pulley', 1)
+	andesite_machine('sliceanddice:slicer', 1, '#farmersdelight:tools/knives')
 
 }
 /**
