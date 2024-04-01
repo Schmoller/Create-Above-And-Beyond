@@ -300,7 +300,38 @@ ServerEvents.tags('item', event => {
  * @param {Internal.RecipesEventJS} event 
  */
 function beforeNuke(event) {
-	event.replaceInput({ id: "occultism:ritual/summon_foliot_crusher" }, F("#ores/silver"), CR("zinc_ore"))
+	event.custom({
+		"type": "occultism:ritual",
+		"ritual_type": "occultism:summon_spirit_with_job",
+		"activation_item": {
+			"item": "occultism:book_of_binding_bound_foliot"
+		},
+		"pentacle_id": "occultism:summon_foliot",
+		"duration": 60,
+		"spirit_max_age": 32400,
+		"spirit_job_type": "occultism:crush_tier1",
+		"entity_to_summon": "occultism:foliot",
+		"ritual_dummy": {
+			"item": "occultism:ritual_dummy/summon_foliot_crusher"
+		},
+		"ingredients": [
+			{
+				"item": "create:crushed_raw_iron"
+			},
+			{
+				"item": "create:crushed_raw_gold"
+			},
+			{
+				"item": "create:crushed_raw_copper"
+			},
+			{
+				"item": "create:crushed_raw_zinc"
+			}
+		],
+		"result": {
+			"item": "occultism:jei_dummy/none"
+		}
+	}).id(OC('ritual/summon_foliot_crusher'))
 }
 /**
  * @param {Internal.RecipesEventJS} event 
@@ -1072,7 +1103,39 @@ function unify(event) {
 	event.recipes.createMilling(TE("copper_dust"), CR("copper_ingot"))
 	event.recipes.createMilling(KJ("zinc_dust"), CR("zinc_ingot"))
 
-	event.replaceInput({ id: OC("ritual/summon_djinni_crusher") }, '#forge:dusts/silver', KJ('zinc_dust'))
+	event.custom({
+		"type": "occultism:ritual",
+		"ritual_type": "occultism:summon_spirit_with_job",
+		"activation_item": {
+			"item": "occultism:book_of_binding_bound_djinni"
+		},
+		"pentacle_id": "occultism:summon_djinni",
+		"duration": 90,
+		"spirit_max_age": -1,
+		"spirit_job_type": "occultism:crush_tier2",
+		"entity_to_summon": "occultism:djinni",
+		"ritual_dummy": {
+			"item": "occultism:ritual_dummy/summon_djinni_crusher"
+		},
+		"ingredients": [
+			{
+				"tag": "forge:dusts/iron"
+			},
+			{
+				"tag": "forge:dusts/gold"
+			},
+			{
+				"tag": "forge:dusts/copper"
+			},
+			{
+				"item": "kubejs:zinc_dust"
+			}
+		],
+		"result": {
+			"item": "occultism:jei_dummy/none"
+		}
+	}).id(OC('ritual/summon_djinni_crusher'))
+	
 	event.replaceInput({}, '#forge:dusts/quartz', AE2('nether_quartz_dust'))
 	event.replaceOutput({}, TE("quartz_dust"), AE2("nether_quartz_dust"))
 	event.replaceOutput({ id: CR('compat/ae2/milling/gold') }, AE2('gold_dust'), TE('gold_dust'))
