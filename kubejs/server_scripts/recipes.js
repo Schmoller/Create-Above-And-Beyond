@@ -123,6 +123,9 @@ ServerEvents.tags('item', event => {
 
 	event.get("minecraft:planks").add("forbidden_arcanus:mysterywood_planks").add("forbidden_arcanus:cherrywood_planks")
 
+	event.get('occultism:miners/ores').add('occultism:miner_djinni_ores').remove('occultism:miner_foliot_unspecialized')
+	event.get('occultism:miners/basic_resources').add('occultism:miner_djinni_ores')
+	
 	// event.get('forge:saws').add('cb_microblock:stone_saw').add('cb_microblock:iron_saw').add('cb_microblock:diamond_saw')
 	event.get('forge:screwdrivers').add(KJ('screwdriver'))
 	event.get('forge:chromatic_resonators').add(KJ('chromatic_resonator'))
