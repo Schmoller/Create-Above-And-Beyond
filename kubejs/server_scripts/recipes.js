@@ -472,6 +472,7 @@ function unwantedRecipes(event) {
 
 	event.remove({ id: /^createdeco:.*coin(stack)?$/})
 	event.remove({ id: 'sliceanddice:slicer' })
+	event.remove({ id: 'create:mechanical_roller' })
 }
 /**
  * @param {Internal.RecipesEventJS} event 
@@ -1749,6 +1750,7 @@ function brassMachine(event) {
 	brass_machine('create:brass_tunnel', 4)
 	brass_machine('kubejs:pipe_module_tier_1', 4)
 	brass_machine('create:elevator_pulley', 1)
+	brass_machine('create:mechanical_roller', 1, CR('crushing_wheel'))
 
 }
 /**
