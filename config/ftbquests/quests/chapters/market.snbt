@@ -194,6 +194,7 @@
 			y: -4.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0F870BEA235D662D"]
 			description: ["Here you can exchange a Gold Coin back to a Stack of Silver."]
 			icon: { Count: 16b, id: "thermal:silver_coin" }
@@ -228,6 +229,7 @@
 			y: -4.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0F870BEA235D662D"]
 			description: ["Some trades require you to hand in Gold Coins. These are worth a stack of Silver each."]
 			icon: { Count: 2b, id: "thermal:gold_coin" }

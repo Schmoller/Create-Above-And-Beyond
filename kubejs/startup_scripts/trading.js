@@ -338,6 +338,7 @@ StartupEvents.registry('item', event => {
 		let template = `
 		{
 			title: "${amount}x ${name}"
+			can_repeat: true
 			icon: "${id}"
 			disable_toast: true
 			x: ${x}d

@@ -31,6 +31,7 @@
 			description: ["This Trading card can convert the currency of coins inserted into the Trading Machine."]
 			icon: { Count: 2b, id: "thermal:gold_coin" }
 			id: "3B548F2C060C2229"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -67,6 +68,7 @@
 			]
 			icon: "thermal:machine_press"
 			id: "4DFE4FD3B504AF4B"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -106,6 +108,7 @@
 			disable_toast: true
 			icon: "minecraft:dirt"
 			id: "5DAECC797844D07D"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -139,6 +142,7 @@
 			disable_toast: true
 			icon: "minecraft:sand"
 			id: "6AD93F398A0B5082"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -172,6 +176,7 @@
 			disable_toast: true
 			icon: "minecraft:gravel"
 			id: "4C90F95DE0382549"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -205,6 +210,7 @@
 			disable_toast: true
 			icon: "minecraft:clay"
 			id: "5941413E02CB1939"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -238,6 +244,7 @@
 			disable_toast: true
 			icon: "minecraft:ice"
 			id: "7BF2971A0DF05795"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -271,6 +278,7 @@
 			disable_toast: true
 			icon: "minecraft:blackstone"
 			id: "0AE339575D0E9BFB"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -304,6 +312,7 @@
 			disable_toast: true
 			icon: "minecraft:cobblestone"
 			id: "1C316191A83A4317"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -337,6 +346,7 @@
 			disable_toast: true
 			icon: "minecraft:granite"
 			id: "76F4F60E6754CD47"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -370,6 +380,7 @@
 			disable_toast: true
 			icon: "minecraft:diorite"
 			id: "30F4732756C70D3F"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -403,6 +414,7 @@
 			disable_toast: true
 			icon: "minecraft:andesite"
 			id: "5D0D3333D5E2629B"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -436,6 +448,7 @@
 			disable_toast: true
 			icon: "minecraft:cobbled_deepslate"
 			id: "644783BAD0E3F03D"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -469,6 +482,7 @@
 			disable_toast: true
 			icon: "minecraft:tuff"
 			id: "420D57D247681DA5"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -502,6 +516,7 @@
 			disable_toast: true
 			icon: "minecraft:calcite"
 			id: "576CED95B27C0E71"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -535,6 +550,7 @@
 			disable_toast: true
 			icon: "minecraft:dripstone_block"
 			id: "76FAA3B2CB9689D6"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -568,6 +584,7 @@
 			disable_toast: true
 			icon: "create:limestone"
 			id: "0C07FEE1BFF6522A"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -601,6 +618,7 @@
 			disable_toast: true
 			icon: "create:cut_limestone"
 			id: "5F5A209C725C13A4"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -634,6 +652,7 @@
 			disable_toast: true
 			icon: "create:scoria"
 			id: "415819758EEB2888"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -667,6 +686,7 @@
 			disable_toast: true
 			icon: "create:scorchia"
 			id: "389F0C2DEC2E3425"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -700,6 +720,7 @@
 			disable_toast: true
 			icon: "minecraft:obsidian"
 			id: "508164390924DC29"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -733,6 +754,7 @@
 			disable_toast: true
 			icon: "biomesoplenty:dead_log"
 			id: "0D8AEBE1F287161F"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -766,6 +788,7 @@
 			disable_toast: true
 			icon: "minecraft:oak_log"
 			id: "52F4785ADB0AAFCC"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -799,6 +822,7 @@
 			disable_toast: true
 			icon: "minecraft:birch_log"
 			id: "4FBE860340F8E000"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -832,6 +856,7 @@
 			disable_toast: true
 			icon: "minecraft:spruce_log"
 			id: "4021EBE597D65C4F"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -865,6 +890,7 @@
 			disable_toast: true
 			icon: "minecraft:jungle_log"
 			id: "718009562F9162AF"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -898,6 +924,7 @@
 			disable_toast: true
 			icon: "minecraft:acacia_log"
 			id: "29B5C960C927FAE6"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -931,6 +958,7 @@
 			disable_toast: true
 			icon: "minecraft:dark_oak_log"
 			id: "67328675D257A7DD"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -964,6 +992,7 @@
 			disable_toast: true
 			icon: "minecraft:crimson_stem"
 			id: "11888524707125C6"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -997,6 +1026,7 @@
 			disable_toast: true
 			icon: "minecraft:warped_stem"
 			id: "18505E667ACF3F3B"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1030,6 +1060,7 @@
 			disable_toast: true
 			icon: "minecraft:iron_ingot"
 			id: "47A6F40AF0B9C7C3"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1063,6 +1094,7 @@
 			disable_toast: true
 			icon: "create:zinc_ingot"
 			id: "418256F37FACC237"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1096,6 +1128,7 @@
 			disable_toast: true
 			icon: "minecraft:copper_ingot"
 			id: "574C10D6BEECCD3D"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1129,6 +1162,7 @@
 			disable_toast: true
 			icon: "thermal:nickel_ingot"
 			id: "24D5C1598BB5FC01"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1162,6 +1196,7 @@
 			disable_toast: true
 			icon: "thermal:lead_ingot"
 			id: "41B48191E1F3FCB7"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1195,6 +1230,7 @@
 			disable_toast: true
 			icon: "minecraft:gold_ingot"
 			id: "70B69CC9C7680183"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1228,6 +1264,7 @@
 			disable_toast: true
 			icon: "create:andesite_alloy"
 			id: "508AA59CAFD819CF"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1261,6 +1298,7 @@
 			disable_toast: true
 			icon: "create:brass_ingot"
 			id: "4BBD9E93A9B32E8D"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1294,6 +1332,7 @@
 			disable_toast: true
 			icon: "thermal:invar_ingot"
 			id: "61F06B235BAB1383"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1327,6 +1366,7 @@
 			disable_toast: true
 			icon: "minecraft:coal"
 			id: "067F6AAB3CC26BC4"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1360,6 +1400,7 @@
 			disable_toast: true
 			icon: "minecraft:flint"
 			id: "2C9DE7D8BBAEAA8F"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1393,6 +1434,7 @@
 			disable_toast: true
 			icon: "thermal:cinnabar"
 			id: "02F40A111E54640E"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1426,6 +1468,7 @@
 			disable_toast: true
 			icon: "minecraft:redstone"
 			id: "0097286DB39E3C63"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1459,6 +1502,7 @@
 			disable_toast: true
 			icon: "minecraft:diamond"
 			id: "4C7309EB2FB244D7"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1492,6 +1536,7 @@
 			disable_toast: true
 			icon: "minecraft:lapis_lazuli"
 			id: "3E77558E93B7BBCE"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1525,6 +1570,7 @@
 			disable_toast: true
 			icon: "minecraft:emerald"
 			id: "4208F8118DF2EBB8"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1558,6 +1604,7 @@
 			disable_toast: true
 			icon: "thermal:sulfur"
 			id: "317118A6DD676D60"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1591,6 +1638,7 @@
 			disable_toast: true
 			icon: "thermal:apatite"
 			id: "71B84FE48C9979CE"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1624,6 +1672,7 @@
 			disable_toast: true
 			icon: "thermal:niter"
 			id: "3B304BDEF67FD767"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1657,6 +1706,7 @@
 			disable_toast: true
 			icon: "minecraft:quartz"
 			id: "076A49A624AF2966"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1690,6 +1740,7 @@
 			disable_toast: true
 			icon: "ae2:certus_quartz_crystal"
 			id: "7B87AA23DA4DB1F2"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1723,6 +1774,7 @@
 			disable_toast: true
 			icon: "ae2:fluix_crystal"
 			id: "47C8489954933599"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1756,6 +1808,7 @@
 			disable_toast: true
 			icon: "thermal:cured_rubber"
 			id: "7EEA7F1FF787D6D1"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1789,6 +1842,7 @@
 			disable_toast: true
 			icon: "minecraft:scaffolding"
 			id: "3AE2FCACDB253B7B"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1822,6 +1876,7 @@
 			disable_toast: true
 			icon: "minecraft:white_wool"
 			id: "3EB2573F2A1B3192"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1855,6 +1910,7 @@
 			disable_toast: true
 			icon: "minecraft:sponge"
 			id: "551E6160CB8A16AF"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1888,6 +1944,7 @@
 			disable_toast: true
 			icon: "minecraft:cobweb"
 			id: "7E30AFAB7FD2AF85"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1921,6 +1978,7 @@
 			disable_toast: true
 			icon: "farmersdelight:rice_bag"
 			id: "2CF04E3F53B96F63"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1954,6 +2012,7 @@
 			disable_toast: true
 			icon: "farmersdelight:straw"
 			id: "4F8CA64F36DB2FB7"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -1987,6 +2046,7 @@
 			disable_toast: true
 			icon: "biomesoplenty:glowshroom"
 			id: "53106C6C1BCEA878"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2020,6 +2080,7 @@
 			disable_toast: true
 			icon: "biomesoplenty:bramble"
 			id: "4B6CA9D6252372FA"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2053,6 +2114,7 @@
 			disable_toast: true
 			icon: "biomesoplenty:barley"
 			id: "1503AA68C9643ACC"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2086,6 +2148,7 @@
 			disable_toast: true
 			icon: "biomesoplenty:watergrass"
 			id: "3993D6538867F426"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2119,6 +2182,7 @@
 			disable_toast: true
 			icon: "minecraft:mangrove_roots"
 			id: "66E06489BC82CE9D"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2152,6 +2216,7 @@
 			disable_toast: true
 			icon: "biomesoplenty:reed"
 			id: "0F5D45FB783B4EA8"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2185,6 +2250,7 @@
 			disable_toast: true
 			icon: "biomesoplenty:huge_clover_petal"
 			id: "5732637E055DFDD5"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2218,6 +2284,7 @@
 			disable_toast: true
 			icon: "biomesoplenty:spanish_moss"
 			id: "7EA9805235E6BE8E"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2251,6 +2318,7 @@
 			disable_toast: true
 			icon: "biomesoplenty:willow_vine"
 			id: "29BAE59B313CEE65"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2284,6 +2352,7 @@
 			disable_toast: true
 			icon: "biomesoplenty:cattail"
 			id: "0B73978FB5E873F8"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2317,6 +2386,7 @@
 			disable_toast: true
 			icon: "minecraft:sugar_cane"
 			id: "4E60C41EB0ED3A06"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2350,6 +2420,7 @@
 			disable_toast: true
 			icon: "minecraft:kelp"
 			id: "2708AD537C5E9808"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2383,6 +2454,7 @@
 			disable_toast: true
 			icon: "minecraft:bamboo"
 			id: "4924B41F0860C559"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2416,6 +2488,7 @@
 			disable_toast: true
 			icon: "minecraft:sweet_berries"
 			id: "05C5018F682F9091"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2449,6 +2522,7 @@
 			disable_toast: true
 			icon: "minecraft:vine"
 			id: "03A02BDF9D7822B0"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2482,6 +2556,7 @@
 			disable_toast: true
 			icon: "create:tree_fertilizer"
 			id: "08965901B8AC32E3"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2515,6 +2590,7 @@
 			disable_toast: true
 			icon: "supplementaries:daub"
 			id: "09AB0690CD500210"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2548,6 +2624,7 @@
 			disable_toast: true
 			icon: "create:copper_shingles"
 			id: "7F890DB04FB2DDBC"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2581,6 +2658,7 @@
 			disable_toast: true
 			icon: "architects_palette:algal_bricks"
 			id: "48049BD6C8B350C6"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2614,6 +2692,7 @@
 			disable_toast: true
 			icon: "architects_palette:olivestone_bricks"
 			id: "36F2AAFBC4538E55"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2647,6 +2726,7 @@
 			disable_toast: true
 			icon: "architects_palette:sunmetal_block"
 			id: "03CA6AE1A42ADEA2"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2680,6 +2760,7 @@
 			disable_toast: true
 			icon: "architects_palette:plating_block"
 			id: "1487952957C71100"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2713,6 +2794,7 @@
 			disable_toast: true
 			icon: "architects_palette:twisted_planks"
 			id: "1A43471BB3C324B3"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2746,6 +2828,7 @@
 			disable_toast: true
 			icon: "architects_palette:osseous_bricks"
 			id: "6141EAF52D35F037"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2779,6 +2862,7 @@
 			disable_toast: true
 			icon: "minecraft:lantern"
 			id: "43FEB62FBC71B618"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2812,6 +2896,7 @@
 			disable_toast: true
 			icon: "minecraft:soul_lantern"
 			id: "5AED53AD2D3A1C2A"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2845,6 +2930,7 @@
 			disable_toast: true
 			icon: "architects_palette:nether_brass_lantern"
 			id: "07B48AF6F33DF110"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2878,6 +2964,7 @@
 			disable_toast: true
 			icon: "minecraft:slime_ball"
 			id: "5A88736F24A014B4"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2911,6 +2998,7 @@
 			disable_toast: true
 			icon: "minecraft:string"
 			id: "4B29639170D1BE3A"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2944,6 +3032,7 @@
 			disable_toast: true
 			icon: "minecraft:feather"
 			id: "166A8C795984D44B"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -2977,6 +3066,7 @@
 			disable_toast: true
 			icon: "minecraft:gunpowder"
 			id: "7A45070B911BE40C"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3010,6 +3100,7 @@
 			disable_toast: true
 			icon: "minecraft:leather"
 			id: "4DC05687DBFAA3E5"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3043,6 +3134,7 @@
 			disable_toast: true
 			icon: "minecraft:ink_sac"
 			id: "3BDC117CA2A5560F"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3076,6 +3168,7 @@
 			disable_toast: true
 			icon: "minecraft:experience_bottle"
 			id: "6FF5E8E4249D25EB"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3109,6 +3202,7 @@
 			disable_toast: true
 			icon: "minecraft:shulker_shell"
 			id: "5DEBCDC8A48B0BC8"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3142,6 +3236,7 @@
 			disable_toast: true
 			icon: "minecraft:spider_eye"
 			id: "4EDC4F517D6B032D"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3175,6 +3270,7 @@
 			disable_toast: true
 			icon: "minecraft:ender_pearl"
 			id: "792DC71365103821"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3208,6 +3304,7 @@
 			disable_toast: true
 			icon: "minecraft:rotten_flesh"
 			id: "4C6FCF69A2E6FC6F"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3241,6 +3338,7 @@
 			disable_toast: true
 			icon: "minecraft:blaze_rod"
 			id: "2E0BF3D6762A23CD"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3274,6 +3372,7 @@
 			disable_toast: true
 			icon: "minecraft:bone"
 			id: "412F7FC66D288509"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3307,6 +3406,7 @@
 			disable_toast: true
 			icon: "minecraft:prismarine_shard"
 			id: "4A65B4C84DB399DD"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3340,6 +3440,7 @@
 			disable_toast: true
 			icon: "minecraft:prismarine_crystals"
 			id: "5C40E0CA549DBC3A"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3373,6 +3474,7 @@
 			disable_toast: true
 			icon: "reliquary:witch_hat"
 			id: "7B47FE230E7BB45D"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3406,6 +3508,7 @@
 			disable_toast: true
 			icon: "reliquary:zombie_heart"
 			id: "00C5307CBF6A6A38"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3439,6 +3542,7 @@
 			disable_toast: true
 			icon: "reliquary:squid_beak"
 			id: "67B1BA4A4576E0AE"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3472,6 +3576,7 @@
 			disable_toast: true
 			icon: "reliquary:rib_bone"
 			id: "0317646E1D78A111"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3505,6 +3610,7 @@
 			disable_toast: true
 			icon: "reliquary:catalyzing_gland"
 			id: "74840B7AD8ECF92F"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3538,6 +3644,7 @@
 			disable_toast: true
 			icon: "reliquary:chelicerae"
 			id: "4922B4E178CBE0BE"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3571,6 +3678,7 @@
 			disable_toast: true
 			icon: "reliquary:slime_pearl"
 			id: "0E49B1BEF8247DE5"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3604,6 +3712,7 @@
 			disable_toast: true
 			icon: "reliquary:bat_wing"
 			id: "55395C1C444C4605"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3637,6 +3746,7 @@
 			disable_toast: true
 			icon: "reliquary:withered_rib"
 			id: "66D8C38B08BFC321"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3670,6 +3780,7 @@
 			disable_toast: true
 			icon: "reliquary:molten_core"
 			id: "0B75AD5467A1F4AE"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3703,6 +3814,7 @@
 			disable_toast: true
 			icon: "reliquary:eye_of_the_storm"
 			id: "61DFA4AAB2CBA853"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3736,6 +3848,7 @@
 			disable_toast: true
 			icon: "reliquary:frozen_core"
 			id: "51E28ABF597AEEF5"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3769,6 +3882,7 @@
 			disable_toast: true
 			icon: "reliquary:nebulous_heart"
 			id: "7C96BE5666683957"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3802,6 +3916,7 @@
 			disable_toast: true
 			icon: "reliquary:guardian_spike"
 			id: "3F5428C2A62B1F04"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3835,6 +3950,7 @@
 			disable_toast: true
 			icon: "minecraft:phantom_membrane"
 			id: "48EF402D23279EEC"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"
@@ -3868,6 +3984,7 @@
 			disable_toast: true
 			icon: "create:blaze_cake"
 			id: "0B19642D3D3A0CCA"
+			can_repeat: true
 			rewards: [
 				{
 					auto: "enabled"

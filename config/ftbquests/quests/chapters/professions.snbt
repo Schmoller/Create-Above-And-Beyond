@@ -49,6 +49,7 @@
 			y: -8.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["59B17CA4AA6D0DD4"]
 			description: ["Sell &6Crops&f, &6Flowers&f, &6Honey&f and more with the Farming permit."]
 			hide_dependency_lines: true
@@ -89,6 +90,7 @@
 			y: -8.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["59B17CA4AA6D0DD4"]
 			description: ["Sell &6Wood Logs&f with the Carpentry permit."]
 			hide_dependency_lines: true
@@ -129,6 +131,7 @@
 			y: -8.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["59B17CA4AA6D0DD4"]
 			description: ["Sell &6Prepared Food&f with the Cooking permit."]
 			hide_dependency_lines: true
@@ -169,64 +172,11 @@
 			y: -8.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["59B17CA4AA6D0DD4"]
 			description: ["Sell mass-produced &6Building Blocks&f for a profit with the Masonry permit."]
 			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				id: "tconstruct:sledge_hammer"
-				tag: {
-					Damage: 0
-					tic_broken: 0b
-					tic_materials: [
-						"tconstruct:electrum"
-						"tconstruct:constantan"
-						"tconstruct:tinkers_bronze"
-						"tconstruct:tinkers_bronze"
-					]
-					tic_modifiers: [
-						{
-							level: 1s
-							name: "tconstruct:experienced"
-						}
-						{
-							level: 2s
-							name: "tconstruct:maintained"
-						}
-						{
-							level: 2s
-							name: "tconstruct:smite"
-						}
-						{
-							level: 1s
-							name: "tconstruct:temperate"
-						}
-						{
-							level: 1s
-							name: "tconstruct:two_handed"
-						}
-					]
-					tic_multipliers: {
-						"tconstruct:attack_damage": 1.35f
-						"tconstruct:durability": 4.0f
-						"tconstruct:mining_speed": 0.4f
-					}
-					tic_persistent_data: {
-						abilities: 1
-						upgrades: 2
-					}
-					tic_stats: {
-						"tconstruct:attack_damage": 6.4125f
-						"tconstruct:attack_speed": 0.75f
-						"tconstruct:durability": 1792.0f
-						"tconstruct:harvest_level": 3.0f
-						"tconstruct:mining_speed": 3.68f
-					}
-					tic_volatile_data: {
-						"tconstruct:durability": 1792
-					}
-				}
-			}
+			icon: "minecraft:stonecutter"
 			id: "683AA93BE7DEA512"
 			rewards: [
 				{
@@ -257,6 +207,7 @@
 			y: -8.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["59B17CA4AA6D0DD4"]
 			description: ["Sell all manner of &6Monster Loot&f with the Hunting permit."]
 			hide_dependency_lines: true
@@ -379,6 +330,7 @@
 			y: -4.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["59B17CA4AA6D0DD4"]
 			description: ["Sell &6Fish&f and Subterranean &6Treasure&f with the Fishing permit."]
 			hide_dependency_lines: true
@@ -444,6 +396,7 @@
 			y: -3.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["59B17CA4AA6D0DD4"]
 			description: ["Sell &6Tools&f, &6Armour&f and more with the Smithing permit."]
 			hide_dependency_lines: true
