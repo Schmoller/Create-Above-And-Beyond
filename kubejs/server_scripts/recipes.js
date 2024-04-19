@@ -596,10 +596,11 @@ function tweaks(event) {
 	tweak_casing('brass', [CR('brass_sheet'), '#minecraft:logs'], CR)
 	tweak_casing('refined_radiance', [CR('refined_radiance'), '#minecraft:logs'], CR)
 	tweak_casing('shadow_steel', [CR('shadow_steel'), '#minecraft:logs'], CR)
-	tweak_casing('zinc', [KJ('zinc_sheet'), 'minecraft:stone'], KJ)
+	tweak_casing('zinc', ['createdeco:zinc_sheet', 'minecraft:stone'], KJ)
 	tweak_casing('invar', [TE('invar_ingot'), 'minecraft:stone'], KJ)
 	tweak_casing('enderium', [MC('ender_pearl'), 'minecraft:obsidian'], KJ)
 	tweak_casing('fluix', [TE('lead_plate'), 'minecraft:blackstone'], KJ)
+	tweak_casing('railway', [CR('sturdy_sheet'), '#minecraft:logs'], CR)
 
 	// event.custom({ // TODO: Replacement for TC
 	// 	"type": "tconstruct:melting",
@@ -692,7 +693,6 @@ function tweaks(event) {
 	bedrock_cobblegen(AP("chiseled_packed_ice"), "chipped:cobbled_diorite")
 	bedrock_cobblegen(AP("packed_ice_pillar"), "minecraft:cobbled_deepslate")
 
-	event.recipes.createPressing([KJ('zinc_sheet')], CR('zinc_ingot'))
 	event.recipes.createPressing([TE('nickel_plate')], TE('nickel_ingot'))
 
 	event.remove({ id: CR('splashing/gravel') })
@@ -1034,7 +1034,7 @@ function rocketScience(event) {
 	event.shapeless(KJ('matter_plastic_upgrade_template'), ['paper', plastic])
 
 	event.smithing('ad_astra:steel_engine', KJ('matter_plastic_upgrade_template'), CR('blaze_burner'), plastic)
-	event.smithing('ad_astra:rocket_fin', KJ('matter_plastic_upgrade_template'), KJ('zinc_sheet'), plastic)
+	event.smithing('ad_astra:rocket_fin', KJ('matter_plastic_upgrade_template'), 'createdeco:zinc_sheet', plastic)
 	event.smithing('ad_astra:rocket_nose_cone', KJ('matter_plastic_upgrade_template'), CR('sturdy_sheet'), plastic)
 	event.smithing('ad_astra:steel_tank', KJ('matter_plastic_upgrade_template'), CR('fluid_tank'), plastic)
 	event.smithing('ad_astra:steel_block', KJ('matter_plastic_upgrade_template'), CR('industrial_iron_block'), plastic)
@@ -1054,8 +1054,8 @@ function rocketScience(event) {
 	})
 
 	event.recipes.createMixing(
-		[Fluid.of("ad_astra:oxygen", 50), Fluid.of("ad_astra:hydrogen", 50), Item.of(CR('copper_sheet')), Item.of(KJ('zinc_sheet'))],
-		[Fluid.of(MC("water"), 100), Item.of(CR('copper_sheet')), Item.of(KJ('zinc_sheet'))]
+		[Fluid.of("ad_astra:oxygen", 50), Fluid.of("ad_astra:hydrogen", 50), Item.of(CR('copper_sheet')), Item.of('createdeco:zinc_sheet')],
+		[Fluid.of(MC("water"), 100), Item.of(CR('copper_sheet')), Item.of('createdeco:zinc_sheet')]
 	).heated()
 
 	event.recipes.thermal.compression_fuel(Fluid.of("ad_astra:hydrogen")).energy(100000)
