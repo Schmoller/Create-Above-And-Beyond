@@ -688,10 +688,23 @@ function tweaks(event) {
 		})
 	}
 
-	bedrock_cobblegen(MC("packed_ice"), "chipped:cobbled_andesite")
-	bedrock_cobblegen(AP("polished_packed_ice"), "chipped:cobbled_granite")
-	bedrock_cobblegen(AP("chiseled_packed_ice"), "chipped:cobbled_diorite")
+	bedrock_cobblegen(MC("packed_ice"), "minecraft:andesite")
+	bedrock_cobblegen(AP("polished_packed_ice"), "minecraft:granite")
+	bedrock_cobblegen(AP("chiseled_packed_ice"), "minecraft:diorite")
 	bedrock_cobblegen(AP("packed_ice_pillar"), "minecraft:cobbled_deepslate")
+	bedrock_cobblegen("chipped:rough_packed_ice", "minecraft:calcite")
+	bedrock_cobblegen("chipped:packed_ice_scales", "minecraft:tuff")
+
+	event.custom({
+		"type": "thermal:rock_gen",
+		"adjacent": "create:honey",
+		"result": { "item": "create:limestone" }
+	})
+	event.custom({
+		"type": "thermal:rock_gen",
+		"adjacent": "create:chocolate",
+		"result": { "item": "create:scoria" }
+	})
 
 	event.recipes.createPressing([TE('nickel_plate')], TE('nickel_ingot'))
 
@@ -1218,6 +1231,7 @@ function unify(event) {
 	// woodcutting("tconstruct", "bloodshroom_log", "bloodshroom_planks", "bloodshroom_planks_slab")
 
 	event.replaceInput({}, 'ad_astra:fan', 'create:propeller')
+	event.remove({id: 'thermal:machines/smelter/smelter_silver_plate_to_ingot'})
 }
 /**
  * @param {Internal.RecipesEventJS} event 
