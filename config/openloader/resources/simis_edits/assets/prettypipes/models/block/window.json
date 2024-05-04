@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "cutout",
 	"textures": {
 		"0": "prettypipes:block/pipe_end_inner",
 		"particle": "prettypipes:block/pipe_end_inner"
