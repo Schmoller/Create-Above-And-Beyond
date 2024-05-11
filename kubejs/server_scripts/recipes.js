@@ -295,6 +295,13 @@ ServerEvents.tags('item', event => {
 	event.get('forge:dusts/zinc')
 		.add(KJ('zinc_dust'))
 
+	event.get(TE('crafting/casts')).add('kubejs:ingot_cast')
+	event.get(TE('crafting/casts')).add('kubejs:three_cast')
+	event.get(TE('crafting/casts')).add('kubejs:eight_cast')
+	event.get(TE('crafting/casts')).add('kubejs:plus_cast')
+	event.get(TE('crafting/casts')).add('kubejs:minus_cast')
+	event.get(TE('crafting/casts')).add('kubejs:multiply_cast')
+
 })
 
 // Scripts
@@ -1377,6 +1384,8 @@ function oreProcessing(event) {
 			.loops(1)
 			.id('kubejs:cast_' + name + '_ingot')
 
+		event.recipes.thermal.chiller(ingot, [Fluid.of(fluid, 144), KJ('ingot_cast')]).energy(5000)
+		event.recipes.thermal.chiller(ingot, [Fluid.of(fluid, 144), TE('chiller_ingot_cast')]).energy(5000)
 	}
 
 	let dust_process = (name, ingot, nugget, dust, ore, byproduct, fluid_byproduct_name) => {
